@@ -1,0 +1,2 @@
+# barnett.cc
+Personal site
