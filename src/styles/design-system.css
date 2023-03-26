@@ -1,0 +1,32 @@
+.design-system {
+  font-size: 1rem;
+  padding: 2em;
+  min-height: 50vh;
+  margin-bottom: 4em;
+}
+
+.design-system .gallery {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  gap: 8em;
+}
+
+.design-system .gallery-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.design-system .gallery-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.design-system .gallery-video,
+.design-system .gallery-detail {
+  flex-basis: 40%;
+  min-width: 20em;
+  text-align: left;
+}

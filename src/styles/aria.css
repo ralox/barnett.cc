@@ -1,0 +1,23 @@
+.aria {
+    --color-secondary: #459a6a;
+}
+
+.project .aria-steps {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+.project .aria-steps .image-wrapper {
+    flex-basis: 40%;
+    min-width: 40vw;
+}
+
+
+/* Responsive */
+
+@media (width <= 1100px) {
+    .project .aria-steps .image-wrapper {
+      min-width: 80vw;
+    }
+}

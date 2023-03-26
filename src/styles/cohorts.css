@@ -1,0 +1,192 @@
+.cohorts {
+    --color-secondary: #2568fe;
+}
+
+.cohorts .slide-wrapper.customer-feedback::before {
+    background-color: #1a1c1e;
+}
+
+.portrait-animation {
+    position: relative;
+    font-size: clamp(10px, 0.8vw, 24px);
+}
+
+.portrait-animation .portrait-img {
+    width: 45em;
+}
+
+.portrait-img.portrait-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+
+.scrolling-up .portrait-img.portrait-cover,
+.scrolling-down .portrait-img.portrait-cover {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.portrait-animation .fade-out:hover {
+    opacity: 1;
+}
+
+.portrait-animation .gear-wrapper {
+    position: absolute;
+    top: 12em;
+    left: 16em;
+    width: 16em;
+}
+
+.gear-wrapper .small-gear,
+.gear-wrapper .big-gear {
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+.gear-wrapper .small-gear {
+    top: -0.6em;
+    left: 5.5em;
+    width: 5em;
+
+    animation-name: spin-gear-alt;
+    animation-duration: 6s;
+}
+
+.gear-wrapper .big-gear {
+    width: 10em;
+
+    animation-name: spin-gear;
+    animation-duration: 6s;
+}
+
+@keyframes spin-gear {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-gear-alt {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-720deg);
+    }
+}
+
+.ellip1,
+.ellip2,
+.ellip3 {
+    display: inline-block;
+    animation-name: ellipsis-dots;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-size: 1.5em;
+}
+
+.ellip2 {
+    animation-delay: 300ms;
+}
+
+.ellip3 {
+    animation-delay: 600ms;
+}
+
+@keyframes ellipsis-dots {
+    from {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0,-0.1em);
+        color: var(--color-primary-light)
+    }
+    75% {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(0,0);
+    }
+}
+
+
+.matrix-bg,
+.matrix-bg::before {
+    background-position-y: 0;
+    animation-name: matrix;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+.matrix-bg {
+    position: relative;
+    /*background-image: url('./img/.matrix-bg.png');*/
+    background-size: 12%;
+}
+
+.matrix-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 1;
+    background-image: inherit;
+    background-size: 20%;
+    background-position-x: 0.25em;
+}
+
+
+@keyframes matrix {
+    from {
+        background-position-y: 100%;
+    }
+    to {
+        background-position-y: 0;
+    }
+}
+
+.wiggle-icon {
+    display: inline-block;
+    position: relative;
+    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.wiggle-icon-1 {
+    animation-delay: 0ms;
+}
+
+.wiggle-icon-2 {
+    animation-delay: 300ms;
+}
+
+.wiggle-icon-3 {
+    animation-delay: 600ms;
+}
+
+@keyframes wiggle {
+    from {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}

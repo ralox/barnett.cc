@@ -1,0 +1,108 @@
+.about {
+  font-size: 1rem;
+  min-height: 50vh;
+  text-align: center;
+  padding: 4em 0;
+}
+
+.about h2 {
+  margin-bottom: 1em;;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  margin: 2em 0;
+  padding: 0 2em;
+  gap: 2em;
+}
+
+.bio-text {
+  flex-basis: 40vw;
+  min-width: 20em;
+  max-width: 40em;
+}
+
+.bio-text p {
+  margin-bottom: 1em;
+}
+
+.identity {
+  padding: 0;
+  list-style: none;
+}
+
+.about .image-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-position: top center;
+  background-size: cover;
+}
+
+.about .image-wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.4);
+}
+
+.about .bio-photo {
+  width: 50vw;
+  min-width: 30em;
+  border-radius: 0;
+  z-index: 5;
+}
+
+.bio-highlights {
+  display: flex;
+  flex-direction: row wrap;
+  margin: 4em 0 0;
+  gap: 2em;
+}
+
+.bio-skills,
+.bio-learning {
+  flex-basis: 50%;
+}
+
+.bio-highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bio-highlights li {
+  padding: 0.25em 0.5em;
+  color: #000;
+  border-radius: 4px;
+  background-color: var(--color-bg-offset);
+  background-image: linear-gradient(
+    to right,
+    var(--color) 0% var(--data-level),
+    rgba(255,255,255,0) var(--data-level)
+  );
+  margin-bottom: 0.5em;
+}
+
+.side-note {
+  font-size: 0.8em;
+}
+
+@media (width <= 985px) {
+  .bio {
+    flex-direction: column;
+  }
+
+  .bio-text,
+  .bio-photo {
+    flex-basis: unset;
+  }
+}

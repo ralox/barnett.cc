@@ -1,0 +1,103 @@
+.work {
+  font-size: 1rem;
+  min-height: 50vh;
+}
+
+.work .intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  text-align: left;
+  padding: 4em 2em 12em;
+}
+
+.work .intro h2 {
+  font-size: 3em;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.work .intro .details {
+  margin-top: 0.5em;
+}
+
+.work .intro .highlight {
+  color: var(--color-primary);
+  margin-right: 0.4em;
+  font-weight: 100;
+  font-family: var(--font-base);
+}
+
+.work .gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3em;
+  padding: 0 2em;
+}
+
+.work .gallery-item {
+  flex: 0 0 40%;
+  min-width: 20em;
+  padding: 1em;
+  text-align: left;
+  transition: all 500ms;
+  color: inherit;
+}
+
+.work .gallery-item h3 {
+  font-family: var(--font-base);
+}
+
+.work .gallery-item:hover,
+.work .gallery-item:focus,
+.work .gallery-item:active {
+  cursor: pointer;
+  box-shadow: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
+  border-radius: 4px;
+  transform: scale(1.05);
+}
+
+.work .gallery-title {
+  margin: 1em 0 0.25em;
+}
+
+.work .ds-cta {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: var(--color-primary);
+  color: #fff;
+  margin: 8em 0 2em;
+  border-radius: 4px;
+  transition: all 500ms;
+}
+
+.ds-cta:hover,
+.ds-cta:focus,
+.ds-cta:active {
+  background-color: var(--color-primary-light);
+}
+
+.ds-cta .arrow {
+  transition: all 500ms;
+}
+
+.ds-cta:hover .arrow,
+.ds-cta:focus .arrow,
+.ds-cta:active .arrow {
+  margin-left: 3em;
+}
+
+.good-highlight,
+.bad-highlight {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.good-highlight {
+  color: rgb(59, 97, 158);
+}
+
+.bad-highlight {
+  color: rgb(173, 92, 38);
+}
