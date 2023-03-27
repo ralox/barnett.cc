@@ -90,7 +90,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper">
+        <section className="slide-wrapper quick-common">
           <div className="slide txt-img">
             <div className="slide-images">
               <div className="image-wrapper">

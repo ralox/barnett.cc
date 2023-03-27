@@ -18,3 +18,8 @@
     background-color: rgba(19, 20, 21, 0.8);
     padding: 1em;
 }
+
+.mylw .quick-common .image-wrapper,
+.mylw .quick-common .slide-images {
+    max-width: 30em;
+}
