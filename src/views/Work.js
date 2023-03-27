@@ -71,7 +71,9 @@ export default function Work() {
         <Link to="/ds" className="ds-cta">
           Design System Examples <span className="arrow">→</span>
         </Link>
-        <About />
+        <div id="about">
+          <About />
+        </div>
       </main>
     </section>
   );

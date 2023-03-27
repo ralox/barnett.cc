@@ -25,14 +25,14 @@ export default function PageHeader() {
         */}
         <Link
           className="nav-link"
-          to="/about"
+          to={{ pathname: "/work", hash: "#about" }}
         >
           About
         </Link>
         <span className="non-page-nav">
           <a
             className="nav-link"
-            href=""
+            href="./Barnett UX Resume 2023.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,7 +40,7 @@ export default function PageHeader() {
           </a>
           <a
             className="nav-link linkedin-link"
-            href=""
+            href="https://www.linkedin.com/in/daveryanbarnett/"
             target="_blank"
             rel="noopener noreferrer"
           >
