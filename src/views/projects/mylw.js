@@ -15,7 +15,7 @@ export default function MyLW() {
           </div>
         </div>
 
-        <section className="slide-wrapper">
+        <section className="slide-wrapper logo-intro">
           <div className="slide txt-img">
             <div className="slide-notes">
               <h3>Why the redesign?</h3>
@@ -24,8 +24,8 @@ export default function MyLW() {
               </p>
             </div>
             <div className="slide-images">
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/wild-cohort.png"} alt="An example of a cohort setup in the wild" />
+              <div className="image-wrapper no-stretch">
+                <img src={process.env.PUBLIC_URL + "/img/lw-logo.png"} alt="Liquid Web logo" />
               </div>
             </div>
           </div>
@@ -49,10 +49,7 @@ export default function MyLW() {
           <div className="slide txt-img">
             <div className="slide-images img-group">
               <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
-              </div>
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-mobile-first.png"} alt="mobile menu and home screen" />
               </div>
             </div>
             <div className="slide-notes">
@@ -68,7 +65,7 @@ export default function MyLW() {
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-mobile-symbols.png"} alt="overview of sketch symbols with mobile variants" />
               </div>
             </div>
           </div>
@@ -87,7 +84,7 @@ export default function MyLW() {
             </div>
             <div className="slide-images">
               <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-home.png"} alt="Portal home page" />
               </div>
             </div>
           </div>
@@ -97,7 +94,7 @@ export default function MyLW() {
           <div className="slide txt-img">
             <div className="slide-images">
               <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-quick-common.png"} alt="Quick actions and common tasks" />
               </div>
             </div>
             <div className="slide-notes">
@@ -119,7 +116,7 @@ export default function MyLW() {
             </div>
             <div className="slide-images">
               <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-help-articles.png"} alt="Contextual help article list" />
               </div>
             </div>
           </div>
@@ -129,8 +126,7 @@ export default function MyLW() {
           <div className="slide txt-img">
             <div className="slide-images">
               <div className="image-wrapper">
-                {/* domains */}
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-domains.png"} alt="Domains description" />
               </div>
             </div>
             <div className="slide-notes">  
@@ -146,8 +142,7 @@ export default function MyLW() {
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
-                {/* birds eye view */}
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-domain-overview.png"} alt="A bird's eye view of domain tools" />
               </div>
             </div>
           </div>
@@ -168,14 +163,18 @@ export default function MyLW() {
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
-                {/* wendyswafles + nameservers */}
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-domain-dash-1.png"} alt="The domain dashboard" />
+              </div>
+              <div className="image-wrapper">
+                <img src={process.env.PUBLIC_URL + "/img/lw-domain-dash-2.png"} alt="Domain DNS settings" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="slide-wrapper hosting-intro"> {/* use background image of hosting mocks */}
+        <section className="slide-wrapper hosting-intro color-block-dark" 
+          style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/lw-host-dash-bg.png)"}}
+        > 
           <div className="slide txt-solo">
             <div className="slide-notes">  
               <h3>Hosting first and foremost</h3>
@@ -196,8 +195,7 @@ export default function MyLW() {
             </div>
             <div className="slide-images img-group">
               <div className="image-wrapper">
-                {/* dashboard */}
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/lw-host-dash.png"} alt="Hosting dashboard" />
               </div>
             </div>
           </div>

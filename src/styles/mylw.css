@@ -1,3 +1,20 @@
 .mylw {
     --color-secondary: #7D4265;
 }
+
+.mylw .color-block-dark::before {
+    background-color: #131415;
+}
+
+.mylw .logo-intro .slide-images {
+    flex-basis: auto;
+}
+
+.mylw .hosting-intro::before {
+    opacity: 0.6;
+}
+
+.mylw .hosting-intro .slide-notes {
+    background-color: rgba(19, 20, 21, 0.8);
+    padding: 1em;
+}
