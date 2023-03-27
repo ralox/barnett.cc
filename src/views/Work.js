@@ -13,6 +13,7 @@ export default function Work() {
           <p className="details">🎨 Product Designer + 💻 Front-End Developer based in Austin 🤠 formerly @ Mosaic</p>
         </div>
         <div className="gallery">
+          {/*
           <div className="gallery-item">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL + "/img/cohorts.png"} alt="Project 1"/>
@@ -27,6 +28,7 @@ export default function Work() {
               </div>
             </div>
           </div>
+          */}
           <Link to="/work/cohorts" className="gallery-item">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt="Project 1"/>

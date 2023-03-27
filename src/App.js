@@ -10,7 +10,7 @@ import Work from './views/Work';
 //import {Play} from './views/Play';
 import {NotFound} from './views/NotFound';
 import DesignSystem from './views/DesignSystem';
-import Dimensions from './views/projects/dimensions';
+//import Dimensions from './views/projects/dimensions';
 import Cohorts from './views/projects/cohorts';
 import Aria from './views/projects/aria';
 import MyLW from './views/projects/mylw';
@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Work />} />
           <Route exact path="/work" element={<Work />} />
-          <Route path="/work/dimensions" element={<Dimensions />} />
+          {/* <Route path="/work/dimensions" element={<Dimensions />} /> */}
           <Route path="/work/cohorts" element={<Cohorts />} />
           <Route path="/work/aria" element={<Aria />} />
           <Route path="/work/mylw" element={<MyLW />} />

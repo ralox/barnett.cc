@@ -10,7 +10,7 @@ export default function PageFooter(showRecs="true") {
         <Link className="link-item" to="/work/cohorts">Cohorts</Link>
         <Link className="link-item" to="/work/aria">ARIA</Link>
         <Link className="link-item" to="/work/mylw">My Liquid Web</Link>
-        <Link className="link-item" to="/work/dimensions">Dynamic Dimensions</Link>
+        {/*<Link className="link-item" to="/work/dimensions">Dynamic Dimensions</Link>*/}
         <Link className="link-item" to="/ds">Design System Bits</Link>
       </div>
       {/*
