@@ -11,7 +11,7 @@ export default function MyLW() {
           <h2 className="project-title">My Liquid Web</h2>
           <div className="project-subtitle">Customer Portal Redesign @ Liquid Web</div>
           <div className="project-summary">
-            My Liquid Web was a significant revamp of a hosting dashboard and my most public design work.
+            My Liquid Web was a significant revamp of a hosting dashboard and my most public and enduring design work to date.
           </div>
         </div>
 
