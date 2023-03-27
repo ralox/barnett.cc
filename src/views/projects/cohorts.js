@@ -117,9 +117,10 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-primary matrix-bg"
-          style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/matrix-bg.png)"}}
-        >
+        <section className="slide-wrapper color-block-primary matrix-bg">
+          <span className="slide-background"
+            style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/matrix-bg.png)"}}
+          ></span>
           <div className="slide stacked">
             <div className="slide-images img-group">
               <div className="image-wrapper">

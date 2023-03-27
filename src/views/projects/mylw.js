@@ -55,7 +55,7 @@ export default function MyLW() {
             <div className="slide-notes">
               <h3>My first mobile first</h3>
               <p>
-                One of the first considerations I made in the new design was to plan for a responsive site. Liquid Web's mobile site remained in beta for years and it was often neglected as features were tacked onto the main system. I was keen to delivery a single solution for all devices.
+                One of the first considerations I made in the new design was to plan for a responsive site. Liquid Web's mobile site remained in beta for years and it was often neglected as features were tacked onto the main system. I was keen to deliver a single solution for all devices.
               </p>
             </div>
           </div>
@@ -172,9 +172,10 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper hosting-intro color-block-dark" 
-          style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/lw-host-dash-bg.png)"}}
-        > 
+        <section className="slide-wrapper hosting-intro color-block-dark"> 
+          <span className="slide-background"
+              style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/lw-host-dash-bg.png)"}}
+          ></span>
           <div className="slide txt-solo">
             <div className="slide-notes">  
               <h3>Hosting first and foremost</h3>

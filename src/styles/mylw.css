@@ -10,8 +10,14 @@
     flex-basis: auto;
 }
 
+
+.mylw .hosting-intro {
+    isolation: isolate;
+}
+
 .mylw .hosting-intro::before {
     opacity: 0.6;
+    z-index: 2
 }
 
 .mylw .hosting-intro .slide-notes {
@@ -21,5 +27,5 @@
 
 .mylw .quick-common .image-wrapper,
 .mylw .quick-common .slide-images {
-    max-width: 30em;
+    max-width: 20em;
 }

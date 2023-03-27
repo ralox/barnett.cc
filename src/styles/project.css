@@ -76,6 +76,7 @@
     min-height: 70vh;
     margin: 2em;
     perspective: 2000px;
+    isolation: isolate;
     /* scroll-snap-align: center; maybe later, after events are improved */
 }
 
@@ -107,6 +108,17 @@
 .slide-wrapper.color-block-dark::before {
     background-color: var(--color-text-default);
 }
+
+.slide-background {
+    position: absolute;
+    inset: 0 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    z-index: 1;
+    transition: all 600ms;
+}
+
 
 /* Slide Content */
 
@@ -165,11 +177,13 @@
 }
 
 .scrolling-down .slide,
+.scrolling-down .slide-background,
 .scrolling-down .slide-wrapper::before {
     transform: rotate3d(1, 0, 0, -6deg);
 }
 
 .scrolling-up .slide,
+.scrolling-up .slide-background,
 .scrolling-up .slide-wrapper::before {
     transform: rotate3d(1, 0, 0, 6deg);
 }

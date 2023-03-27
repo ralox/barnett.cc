@@ -125,31 +125,15 @@
 }
 
 
-.matrix-bg,
-.matrix-bg::before {
+.matrix-bg .slide-background {
     background-position-y: 0;
+    background-size: 12%;
+    background-repeat: repeat;
     animation-name: matrix;
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
-}
-
-
-.matrix-bg {
-    position: relative;
-    /*background-image: url('./img/.matrix-bg.png');*/
-    background-size: 12%;
-}
-
-.matrix-bg::before {
-    content: '';
-    position: absolute;
-    inset: 0 0 0 0;
-    z-index: 1;
-    background-image: inherit;
-    background-size: 20%;
-    background-position-x: 0.25em;
 }
 
 
