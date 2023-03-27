@@ -6,12 +6,20 @@
     background-color: #1a1c1e;
 }
 
-.portrait-animation {
-    position: relative;
-    font-size: clamp(10px, 0.8vw, 24px);
+.thinking .slide-images {
+    flex-wrap: nowrap;
+    font-size: clamp(0.1rem, 0.8vw + 0.1rem, 1.5rem);
 }
 
-.portrait-animation .portrait-img {
+.portrait-animation {
+    position: relative;
+}
+
+.thinking .portrait-img {
+    width: 45em;
+}
+
+.thinking .how-to-cohort {
     width: 45em;
 }
 
@@ -188,5 +196,11 @@
     }
     to {
         transform: rotate(0);
+    }
+}
+
+@media (width <= 980px) {
+    .cohorts .thinking .slide-images {
+        flex-direction: column;
     }
 }

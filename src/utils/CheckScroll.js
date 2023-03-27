@@ -53,7 +53,9 @@ const CheckScroll = () => {
 
   
   React.useEffect(() => {
-
+    if ( window.pageYOffset <= 0 ) {
+      setIsScrolling(false);
+    }
   }, [isScrolling])
   
 

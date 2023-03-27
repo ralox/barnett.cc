@@ -53,7 +53,7 @@ export default function Work() {
               </div>
             </div>
           </Link>
-          <div className="gallery-item">
+          <Link to="/work/mylw" className="gallery-item">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt="Project 1"/>
             </div>
@@ -66,7 +66,7 @@ export default function Work() {
                 Complete overhaul, putting the power to manage and extend networks, devices, and services into customer hands.
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         <Link to="/ds" className="ds-cta">
           Design System Examples <span className="arrow">→</span>

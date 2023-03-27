@@ -11,123 +11,44 @@ export default function Aria() {
           <h2 className="project-title">ARIA</h2>
           <div className="project-subtitle">New Product Design and Development @ Quavo</div>
           <div className="project-summary">
-            Quavo's second flagship product, ARIA, was my first time truly stepping into a leadership role as I spearheaded the front-end framework and design.
+            Quavo's second flagship product, ARIA, was my first time truly stepping into a leadership role as I tackled both design and development.
           </div>
         </div>
-        <div className="two-column section">
-          <div className="role">
-            <h3>My Role</h3>
-            <p>
-              I served as the sole designer, lead front-end developer, and initial PM for this greenfield project. Notably, I had the opportunity to select the framework and establish all of the opening patterns. As we brought in other resources, I stepped more thoroughly into design and component development; playing more of a supporting role to a fresh project manager while mentoring junior teammates.
-            </p>
-          </div>
-          <div className="goal">
-            <h3>Goal</h3>
-            <p>
-              As the first build in a modern javascript framework, ARIA was a new horizon for Quavo and establishing those systems and teams was a key internal goal. The tool itself was meant to dramatically reduce costs for banks and credit unions while improving the consistency, accuracy, and transparency of their fraud decisions.
-            </p>
-          </div>
-        </div>
-        <div className="section">
-          <h3>Solution</h3>
-          <ul>
-            <li>
-              I divided the main process into four key steps within a wizard. 
-            </li>
-            <li>
-              A library of Profiles enable exploration and allow quick setup and education by way of professionaly-built presets.
-            </li>
-            <li>
-              Factors, or custom groups of factors, provide a score to either True Fraud or Friendly Fraud during Configuration. This loose template ensures that the structure is always viable without forcing clients to conform to the same mental model or placing extra demands on their data readiness.
-            </li>
-            <li>
-              Groups and Factors are displayed as a navigable folder structure in order to avoid information overload and reduce error.
-            </li>
-            <li>
-              Presenting the nine possible outcomes as a single control while showing the relationship between our two core groups.
-            </li>
-            <li>
-              Finally, Review & Evaluate is a powerful tool which allows clients to compare a breakdown of their changes against a selected control group.
-            </li>
-          </ul>
-        </div>
-        <div className="page-band">
-          <div className="two-column aria-steps">
-            <div className="image-wrapper">
-              <img src={process.env.PUBLIC_URL + "/img/aria-config.png"} alt="ARIA Profile Selection" />
-              <div className="caption">
-                A library of Profiles enable exploration and allow quick setup and education by way of professionaly-built presets.
-              </div>
-            </div>
-            <div className="image-wrapper">
-              <img src={process.env.PUBLIC_URL + "/img/aria-config-2.png"} alt="ARIA Configuration" />
-              <div className="caption">
-                Custom factor groups provide a score to either True Fraud or Friendly Fraud. This loose template ensures that the structure is always viable without forcing clients to conform to the same mental model or placing extra demands on their data readiness. The navigable folder structure limits information overload and makes form validation and repair a breeze.
-              </div>
-            </div>
-            <div className="image-wrapper">
-              <img src={process.env.PUBLIC_URL + "/img/aria-matrix.png"} alt="ARIA Decision Matrix" />
-              <div className="caption">
-                Presenting the nine possible outcomes as a single control while showing the relationship between our two core groups.
-              </div>
-            </div>
-            <div className="image-wrapper">
-              <img src={process.env.PUBLIC_URL + "/img/aria-test.png"} alt="ARIA Evaluation" />
-              <div className="caption">
-                Finally, Review & Evaluate is a powerful tool which allows clients to compare a breakdown of their changes against a selected control group.
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-
-        <section className="slide-wrapper">
-          <div className="slide txt-img">
-            <div className="slide-notes">
-              <h3>How it started</h3>
-              <p>
-                Mosaic needed a way to bring parity to the modeling process found in traditional spreadsheets. Actually, we needed it to be better. Cohorts are one of the most cumbersome models to setup and maintain, so making it simple would be a huge selling point for the product. 
-                
-                As the lead designer for all things Financial Model, that job fell to me.
-              </p>
-            </div>
-            <div className="slide-images">
-              <div className="image-wrapper captioned">
-                <img src={process.env.PUBLIC_URL + "/img/wild-cohort.png"} alt="An example of a cohort setup in the wild" />
-                <div className="caption">
-                  This example isn't mine but notice how each cell has this ugly, fragile, hand-written formula. Yikes.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
-          <div className="slide txt-solo">
-            <div className="slide-notes">
-              <h3>Alright, what's a cohort?</h3>
-              <p>
-                I'm not a financial expert so I had no idea what we were talking about. The next step was to reach out to our support staff; these folks ARE experts in the field and they spend every day converting old spreadsheets into functional Mosaic models. I learned a lot, but I also learned that I could get hands-on with real models! So I dug in.
-              </p>
-            </div>
-          </div>
-        </section>
 
         <section className="slide-wrapper color-block-primary">
-          <div className="slide">
-            <div className="slide-images img-group">
-              <div className="portrait-animation">
-                <img className="portrait-img portrait-cover" src={process.env.PUBLIC_URL + "/img/portrait-full.png"} alt="self portrait" />
-                <img className="portrait-img" src={process.env.PUBLIC_URL + "/img/portrait-mask.png"} alt="self portrait outline" />
-                <div className="gear-wrapper">
-                  <img className="big-gear" src={process.env.PUBLIC_URL + "/img/big-gear.svg"} alt="spinning gear" />
-                  <img className="small-gear" src={process.env.PUBLIC_URL + "/img/small-gear.svg"} alt="spinning gear" />
-                </div>
-              </div>
+          <div className="slide txt-solo">
+            <div className="slide-notes">
+              <p>
+                “I want a system that makes the correct decision for the cardholder using every piece of data that an investigator would use. I want to take care of them immediately, consistently, and in full compliance with the law”
+              </p>
+              - CEO & Quavo client
+            </div>
+          </div>
+        </section>
+
+        <section className="slide-wrapper aria-logo">
+          <div className="slide txt-img">
+            <div className="slide-images">
               <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                <img src={process.env.PUBLIC_URL + "/img/aria-logo.png"} alt="ARIA logo" />
               </div>
+            </div>
+            <div className="slide-notes">
+              <h3>We can do that...</h3>
+              <p>
+                At scale, the finance industry is swimming in claims of fraud and each of them must be evaluated. Even rejecting a claim can cost more than the cost to pay it. Quavo already had the necessary resources and experience, so we set out to solve that problem with data.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="slide-wrapper">
+          <div className="slide txt-solo">
+            <div className="slide-notes">
+              <h3>Let's try something new</h3>
+              <p>
+                Quavo was ready to jump into reactive frameworks for the first time. ARIA was a greenfield project. Perfect. So I was tasked with designing the thing, picking a framework, and getting the front-end up and running.
+              </p>
             </div>
           </div>
         </section>
@@ -135,11 +56,11 @@ export default function Aria() {
         <section className="slide-wrapper color-block-dark">
           <div className="slide stacked">
             <div className="slide-notes">
-              <h3>Ideating<span className="ellip1">.</span><span className="ellip2">.</span><span className="ellip3">.</span></h3>
+              <h3>I chose Vue.js and it was a lot of fun!</h3>
             </div>
             <div className="slide-images">
               <div className="image-wrapper captioned">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-process.png"} alt="Bird's eye view of the early iterations" />
+                <img src={process.env.PUBLIC_URL + "/img/pega-to-vue.png"} alt="from pega to vue.js" />
               </div>
             </div>
           </div>
@@ -148,87 +69,119 @@ export default function Aria() {
         <section className="slide-wrapper">
           <div className="slide txt-solo">
             <div className="slide-notes">
-              <h3>Finding signal in the noise</h3>
+              <h3>Great! Now what?</h3>
               <p>
-                As I studied the models and collaborated with the team, I identified the basic patterns that connected each of the use cases. I went through four major iterations and, for some elements, had to come up with meaningful language as it just didn't exist.
+                So now we have a blank slate to build on but no product. It was time to do some <span className="aria-design">research</span>.
+              </p>
+            </div>
+            <div className="slide-images">
+              <div className="image-wrapper">
+                <img src={process.env.PUBLIC_URL + "/img/aria-hello-world.png"} alt="default hello world" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+{/*
+        <section className="slide-wrapper">
+          <div className="slide txt-solo">
+            <div className="slide-notes">
+              <h3>Gathering information</h3>
+              <p>
+                Before I drew anything, I needed to to some research. Step one was looking around for any previous conversations or documents on the topic.
+              </p>
+            </div>
+          </div>
+        </section>
+  */}
+
+        <section className="slide-wrapper color-block-primary">
+          <div className="slide txt-solo">
+            <div className="slide-notes">
+              <h3>...playing catchup</h3>
+              <p>
+                I quickly learned that the API had been in-progress for a few months. I would need to make sure were weren't going in different directions.
+              </p>
+              <p>
+                More concerning, I found that we already had sales materials outlining the product.
               </p>
             </div>
           </div>
         </section>
 
         <section className="slide-wrapper">
-          <div className="slide img-group">
-            <div className="image-wrapper captioned">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-variants.png"} alt="Three major stages of ideation" />
-                <div className="caption">
-                  Left-to-right, you can see how the basic form evolved. Exploring copy, input detail, and micro information architecture.
-                </div>
+          <div className="slide txt-solo">
+            <div className="slide-notes">
+              <p>
+                After reviewing the documentation, I realized that a lot of careful thought already went into the user needs. I interviewed our Dispute Resolution team members, who specialize in exactly this kind of work, just to be sure. It was solid!
+              </p>
+              <p>
+                Cheers team <span className="cheers-beer">🍻</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="slide-wrapper color-block-dark">
+          <div className="slide txt-solo">
+            <div className="slide-notes">
+              <h3>So here's what I did</h3>
+              <p>
+                The basic elements were already settled. What I needed to do was figure out how to get that in front of the users in a way which was informative and gave our clients confidence in the output.
+              </p>
+              <p>
+                To do that, I broke the main setup into four steps.
+              </p>
+              <ol>
+                <li>
+                  Profile selection
+                </li>
+                <li>
+                  Factor configuration
+                </li>
+                <li>
+                  Decision mapping
+                </li>
+                <li>
+                  Review and evaluation
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section className="slide-wrapper">
+          <div className="slide txt-img">
+            <div className="slide-notes">
+              <h3>Select a Profile</h3>
+              <p>
+                Profiles would hold saved configurations and allow risk-free exploration of all options. They also gave us a means of conveying defaults and suggested setups in a world where "they can do whatever they want" was the directive.
+              </p>
             </div>
             <div className="image-wrapper captioned no-stretch">
-              <img src={process.env.PUBLIC_URL + "/img/cohort-index-sheet.png"} alt="New index sheet" />
+              <img src={process.env.PUBLIC_URL + "/img/aria-config.png"} alt="ARIA profile selection" />
               <div className="caption">
-                Early on, I added an "Index" tab that gave us the ability to define abstract lists of data such as sales ramps and schedules.
+                This profile list includes one example of a professionaly-built preset, creatively called "Master Template".
               </div>
             </div>
           </div>
         </section>
 
         <section className="slide-wrapper">
-          <div className="slide txt-solo">
-            <div className="slide-notes">
-              <h3>Power users demand power</h3>
-              <p>
-                Throughout the ideation phase, we spoke with professionals and it was clear that they loved their bespoke models even if the maintenance was a pain. We needed to consider the advanced route immediately or risk losing valuable clients.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper color-block-primary matrix-bg"
-          style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/matrix-bg.png)"}}
-        >
-          <div className="slide stacked">
-            <div className="slide-images img-group">
-              <div className="image-wrapper">
-                <img style={{width: "14em"}} src={process.env.PUBLIC_URL + "/img/cohort-formula-2.png"} alt="Cohorts formula notes" />
-              </div>
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-formula-helper.png"} alt="Formula helper and syntax exploration" />
+          <div className="slide txt-img">
+            <div className="image-wrapper captioned no-stretch">
+              <img src={process.env.PUBLIC_URL + "/img/aria-config-2.png"} alt="ARIA configuration" />
+              <div className="caption">
+                These Low, Medium, and High thresholds will come into play on the next step.
               </div>
             </div>
             <div className="slide-notes">
+              <h3>Set Configuration</h3>
               <p>
-                So I explored how the underlying function might work and how to provide guidance.
+                Configuration is like legos without the fun. Our users needed the ability to create custom groups from a long list of possible factors. These would add up scores towards the likelihood of genuine fraud. This loose template ensured that the structure would always be viable but that each org could approach the math their own way.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
-          <div className="slide txt-solo">
-            <div className="slide-notes">
-              <h3>Am I in the right ballpark?</h3>
               <p>
-                At this point, I'm feeling pretty good about the direction we're going. It's time to call in our users and run some tests. This means putting together a scenario and a prototype and then mentally preparing to be completely wrong about everything.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
-          <div className="slide txt-solo">
-            <div className="slide-images">
-              <div className="image-wrapper captioned">
-                <img src={process.env.PUBLIC_URL + "/img/proto-plan.png"} alt="Planning the flow" />
-                <div className="caption">
-                  Not all tests require this degree of setup and each project is a bit different.
-                </div>
-              </div>
-            </div>
-            <div className="slide-notes">
-              <h3>Drawing up a plan</h3>
-              <p>
-                I generally begin with a bullet list of key decisions to validate and then draw out a flow to hit those points. No one test will catch every wrinkle of a design so this can be a bit of a finger in the wind moment.
+                By nesting our factors, we could also present each unique item and its supporting text in isolation. This isolation limits information overload and makes errors easy to locate and repair.
               </p>
             </div>
           </div>
@@ -237,90 +190,33 @@ export default function Aria() {
         <section className="slide-wrapper">
           <div className="slide txt-img">
             <div className="slide-notes">
-              <h3>Make it move!</h3>
+              <h3>Set Decision Matrix</h3>
               <p>
-                From the flow, I map out the screens and hook up interaction. I like to allow for some non-linear movement because it helps highlight the user's thought process rather than confirm my assumptions.
+                Using a 3x3 grid, I was able to map nine possible outcomes onto a single control which shows the relationship between our two core possibilities.
+              </p>
+              <p>
+                A click cycles through decisions. Systems can automatically Pay or Deny claims without any human processing but, of course, some situations will always need to be referred to a human.
               </p>
             </div>
-            <div className="slide-images">
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/proto-flow.png"} alt="Wiring up the prototype" />
+            <div className="image-wrapper captioned no-stretch">
+              <img src={process.env.PUBLIC_URL + "/img/aria-matrix.png"} alt="ARIA decision matrix" />
+              <div className="caption">
+                Friendly Fraud? What? Trust me, that's standard industry lingo.
               </div>
             </div>
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
-          <div className="slide txt-solo">
-            <div className="slide-notes">
-              <h3>Then we get down to brass tacks</h3>
-              <p>
-                After reviewing the study sessions and breaking down wins <span className="wiggle-icon wiggle-icon-1">🏆</span>, things to improve <span className="wiggle-icon wiggle-icon-2">🛑</span>, and some clever insights <span className="wiggle-icon wiggle-icon-3">💡</span>, I followed up with the product manager and CPO. We each made a case for what concerned us and what didn't, ultimately drafting just a few adjustments. 
-              </p>
-              <p>
-                Our MVP looked a bit like this...
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
-          <div className="slide">
-            <div className="slide-images">
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-quick.png"} alt="Quick look at the key UI" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
+        <section className="slide-wrapper review-eval">
           <div className="slide txt-img">
-            <div className="slide-images">
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-sales-ramps.png"} alt="Quick look at a sales ramp" />
-              </div>
+            <div className="image-wrapper no-stretch">
+              <img src={process.env.PUBLIC_URL + "/img/aria-test.png"} alt="ARIA evaluation" />
             </div>
             <div className="slide-notes">
-              <h3>Sales Ramp</h3>
+              <h3>Review & Evaluate</h3>
               <p>
-                Here's the basic output of a sales ramp where representatives grow from 1k through 10k monthly sales over their first 6 months on the job. Pretty straightforward!
+                Finally, Review & Evaluate allows clients to compare their changes against a previous profile. The page begins with broad figures for quick assessment. If your goal is to pay around 3% more, you can quickly see if you're off the mark. Below that, I dive into each mismatch and what drove the change.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
-          <div className="slide txt-img">
-            <div className="slide-notes">
-              <h3>Allocations</h3>
-              <p>
-                It looks remarkably similar but here we begin with a definite number and then use math to "spread" that value out over time, usually a year. It's visually a bit of a yawn but the business value is huge!
-              </p>
-            </div>
-            <div className="slide-images">
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-spread-2.png"} alt="Quick look at a spread" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper">
-          <div className="slide txt-solo">
-            <div className="slide-notes">
-              <h3>Riveting.</h3>
-              <p>I know, it looks like a table in the end... but what did clients think of the setup?</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="slide-wrapper color-block-dark customer-feedback">
-          <div className="slide">
-            <div className="slide-images">
-              <div className="image-wrapper">
-                <img src={process.env.PUBLIC_URL + "/img/cohort-customer-feedback.png"} alt="Customer feedback" />
-              </div>
             </div>
           </div>
         </section>
@@ -331,13 +227,13 @@ export default function Aria() {
               <h3>Reflections</h3>
               <ul>
                 <li>
-                  <em className="good-highlight">Finding the right balance between <em>innovation</em> and <em>familiarity</em> is crucial</em>. The "Aging" option was regarded by younger and more technical users as an interesting take that could be valuable in cleaning up the visual data, but it got a cool reception from veterans who have experience leveraging the traditional tool when making business decisions.
+                  <em className="good-highlight">Letting go of control is okay / we're all on the same team</em>. I was concerned when I saw how many hands were in this project before I started. The work performed in market analysis and sales was superb and overlapped significantly with the primary research a UX professional would perform. This lightened the load in a situation where I was already wearing multiple hats.
                 </li>
                 <li>
-                <em className="good-highlight">Literal labels feel lazy, but are highly effective</em>. Arriving at labels such as "Multiply by Index Row" feels clunky and maybe a bit too much like a tech manual, but users loved it and knew immediately how to make use of the input.
+                  <em className="good-highlight">Project Managers are worth their weight in gold</em>. At the onset, I was attempting to manage Jira and hand out tasks to a junior dev and a dedicated tester. Being a designer, developer, and PM at the same time meant dropping the ball a lot. My performance suffered due to the lack of that external rudder and I now place a lot of value on quality PMs.
                 </li>
                 <li>
-                  <em className="good-highlight">"Dev" thinking can be great design thinking</em>. While a heavy UI can rely on many visual tools to present complex and layered data, customer-facing <em>functions</em> don't have the same grace. I thought "if I had to type out all of the various ways you can configure this, and those items had to be in a certain order and format, I would hate this tool." So, I trimmed until it felt almost too easy; deceptively simple.
+                  <em className="good-highlight">Pie charts were a bad idea</em>. The next phase of the project was meant to involve loads of rich reporting tools. I was inspired to look into visualizations and learned that even my simple evaluation screen would benefit from improved graphs.
                 </li>
               </ul>
             </div>

@@ -47,7 +47,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-primary">
+        <section className="slide-wrapper color-block-primary thinking">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="portrait-animation">
@@ -58,7 +58,7 @@ export default function Cohorts() {
                   <img className="small-gear" src={process.env.PUBLIC_URL + "/img/small-gear.svg"} alt="spinning gear" />
                 </div>
               </div>
-              <div className="image-wrapper">
+              <div className="image-wrapper how-to-cohort">
                 <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function Cohorts() {
         </section>
 
         <section className="slide-wrapper">
-          <div className="slide txt-solo">
+          <div className="slide txt-img">
             <div className="slide-images">
               <div className="image-wrapper captioned">
                 <img src={process.env.PUBLIC_URL + "/img/proto-plan.png"} alt="Planning the flow" />

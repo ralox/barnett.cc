@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/project.css';
-import '../../styles/cohorts.css';
+import '../../styles/mylw.css';
 
 
 export default function MyLW() {
