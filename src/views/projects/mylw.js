@@ -24,7 +24,7 @@ export default function MyLW() {
               </p>
             </div>
             <div className="slide-images">
-              <div className="image-wrapper no-stretch">
+              <div className="no-stretch">
                 <img src={process.env.PUBLIC_URL + "/img/lw-logo.png"} alt="Liquid Web logo" />
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide txt-img">
             <div className="slide-images img-group">
               <div className="image-wrapper">
@@ -61,12 +61,15 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide">
-            <div className="slide-images img-group">
+            <div className="slide-images txt-img">
               <div className="image-wrapper">
                 <img src={process.env.PUBLIC_URL + "/img/lw-mobile-symbols.png"} alt="overview of sketch symbols with mobile variants" />
               </div>
+            </div>
+            <div className="slide-notes">
+              <p>As the Sketch library grew, components were simultaneously built with desktop and mobile variants.</p>
             </div>
           </div>
         </section>
@@ -122,7 +125,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-primary">
+        <section className="slide-wrapper slide-tilt color-block color-block-primary">
           <div className="slide txt-img">
             <div className="slide-images">
               <div className="image-wrapper">
@@ -138,7 +141,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
@@ -172,7 +175,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper hosting-intro  slide-tilt color-block-dark"> 
+        <section className="slide-wrapper hosting-intro  slide-tilt color-block color-block-dark"> 
           <span className="slide-background"
               style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/lw-host-dash-bg.png)"}}
           ></span>
