@@ -47,7 +47,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-primary thinking">
+        <section className="slide-wrapper slide-tilt color-block color-block-primary thinking">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="portrait-animation">
@@ -58,14 +58,14 @@ export default function Cohorts() {
                   <img className="small-gear" src={process.env.PUBLIC_URL + "/img/small-gear.svg"} alt="spinning gear" />
                 </div>
               </div>
-              <div className="image-wrapper how-to-cohort">
+              <div className="how-to-cohort">
                 <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide stacked">
             <div className="slide-notes">
               <h3>Ideating<span className="ellip1">.</span><span className="ellip2">.</span><span className="ellip3">.</span></h3>
@@ -117,7 +117,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-primary matrix-bg">
+        <section className="slide-wrapper slide-tilt color-block color-block-primary matrix-bg">
           <span className="slide-background"
             style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/matrix-bg.png)"}}
           ></span>
@@ -177,14 +177,17 @@ export default function Cohorts() {
               </p>
             </div>
             <div className="slide-images">
-              <div className="image-wrapper">
+              <div className="image-wrapper captioned">
                 <img src={process.env.PUBLIC_URL + "/img/proto-flow.png"} alt="Wiring up the prototype" />
+                <div className="caption">
+                  Figma prototypes can get hectic in a hurry.
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <h3>Then we get down to brass tacks</h3>
@@ -249,12 +252,18 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark customer-feedback">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark customer-feedback">
           <div className="slide">
+            <div className="slide-notes mobile-help-text">
+              "Already getting AWESOME reactions to Cohorts in sales calls!"
+            </div>
             <div className="slide-images">
               <div className="image-wrapper">
                 <img src={process.env.PUBLIC_URL + "/img/cohort-customer-feedback.png"} alt="Customer feedback" />
               </div>
+            </div>
+            <div className="slide-notes mobile-help-text">
+              "This is a sales call with former power user... he's blown away..."
             </div>
           </div>
         </section>

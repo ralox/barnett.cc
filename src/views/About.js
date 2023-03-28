@@ -49,15 +49,15 @@ export default function About() {
                 <div className="bio-skills">
                   <h4>Skills</h4>
                   <ul>
-                    <li style={setLevel(70)}>UI Design</li>
+                    <li style={setLevel(90)}>UI Design</li>
                     <li style={setLevel(90)}>Figma</li>
-                    <li style={setLevel(60)}>Sketch</li>
+                    <li style={setLevel(70)}>Sketch</li>
                     <li style={setLevel(90)}>Prototyping</li>
-                    <li style={setLevel(30)}>UX Research</li>
-                    <li style={setLevel(70)}>UX Validation</li>
+                    <li style={setLevel(60)}>UX Research</li>
+                    <li style={setLevel(80)}>UX Validation</li>
                     <li style={setLevel(80)}>HTML & CSS</li>
-                    <li style={setLevel(40)}>Javascript</li>
-                    <li style={setLevel(40)}>Vue.js</li>
+                    <li style={setLevel(60)}>Javascript</li>
+                    <li style={setLevel(60)}>Vue.js</li>
                   </ul>
                 </div>
                 <div className="bio-learning">
@@ -65,7 +65,7 @@ export default function About() {
                   <ul>
                     <li style={setLevel(30)}>React*</li>
                     <li style={setLevel(10)}>Unity Game Engine</li>
-                    <li style={setLevel(40)}>Mandarin</li>
+                    <li style={setLevel(30)}>Mandarin</li>
                     <li style={setLevel(10)}>Basics of Entrepreneurship</li>
                     <li style={setLevel(30)}>Mixology</li>
                   </ul>

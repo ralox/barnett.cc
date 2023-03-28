@@ -15,7 +15,7 @@ export default function Aria() {
           </div>
         </div>
 
-        <section className="slide-wrapper slide-tilt color-block-primary">
+        <section className="slide-wrapper slide-tilt color-block color-block-primary">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <p>
@@ -29,7 +29,7 @@ export default function Aria() {
         <section className="slide-wrapper aria-logo">
           <div className="slide txt-img">
             <div className="slide-images">
-              <div className="image-wrapper">
+              <div>
                 <img src={process.env.PUBLIC_URL + "/img/aria-logo.png"} alt="ARIA logo" />
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Aria() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide stacked">
             <div className="slide-notes">
               <h3>I chose Vue.js and it was a lot of fun!</h3>
@@ -82,7 +82,7 @@ export default function Aria() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-primary">
+        <section className="slide-wrapper slide-tilt color-block color-block-primary">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <h3>...playing catchup</h3>
@@ -109,7 +109,7 @@ export default function Aria() {
           </div>
         </section>
 
-        <section className="slide-wrapper slide-tilt color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block color-block-dark">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <h3>So here's what I did</h3>

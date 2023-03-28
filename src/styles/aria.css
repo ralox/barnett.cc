@@ -1,5 +1,6 @@
 .aria {
-    --color-secondary: #56bb81;
+    /* --color-secondary: #56bb81; original green */
+    --color-secondary: var(--color-primary);
 }
 
 .aria .project-summary {
@@ -20,10 +21,6 @@
 
 .cheers-beer {
     font-size: 2em;
-}
-
-.aria .reflections .good-highlight {
-    color: var(--color-secondary);
 }
 
 

@@ -21,11 +21,12 @@ export default function PageFooter(showRecs="true") {
         <Link className="link-item">Example</Link>
         <Link className="link-item">Example</Link>
       </div>
-      */}
+      
       <div className="contact-links">
         <a className="email-me">✉️</a>
         <a><img className="linkedin-img" src={process.env.PUBLIC_URL +  "/img/In-Blue-34.png"} /></a>
       </div>
+      */ }
       <div className="copyright">©️2023 built by Dave Barnett</div>
     </footer>
   );
