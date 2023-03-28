@@ -148,6 +148,9 @@ export default function MyLW() {
                 <img src={process.env.PUBLIC_URL + "/img/lw-domain-overview.png"} alt="A bird's eye view of domain tools" />
               </div>
             </div>
+            <div className="slide-notes mobile-help-text">
+              <p>This birds eye view shows the domain registration feature.</p>
+            </div>
           </div>
         </section>
 
