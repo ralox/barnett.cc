@@ -176,19 +176,19 @@
     gap: 1em;
 }
 
-.scrolling-down .slide,
-.scrolling-down .slide-background,
-.scrolling-down .slide-wrapper::before {
+.scrolling-down .slide-tilt .slide,
+.scrolling-down .slide-tilt .slide-background,
+.scrolling-down .slide-tilt.slide-wrapper::before {
     transform: rotate3d(1, 0, 0, -6deg);
 }
 
-.scrolling-up .slide,
-.scrolling-up .slide-background,
-.scrolling-up .slide-wrapper::before {
+.scrolling-up  .slide-tilt .slide,
+.scrolling-up  .slide-tilt .slide-background,
+.scrolling-up  .slide-tilt.slide-wrapper::before {
     transform: rotate3d(1, 0, 0, 6deg);
 }
 
-.scrolling-down .slide-wrapper::before {
+.scrolling-down .slide-tilt.slide-wrapper::before {
     box-shadow: 0.5em 0 0.5em -0.5em rgba(50, 0, 50, 0.2),
                 -0.5em 0 0.5em -0.5em rgba(50, 0, 50, 0.2),
                 3em 0 3em -3em rgba(50, 0, 50, 0.2),
@@ -196,7 +196,7 @@
                 0 -2em 4em -3em rgba(50, 0, 50, 0.2);
 }
 
-.scrolling-up .slide-wrapper::before {
+.scrolling-up .slide-tilt.slide-wrapper::before {
     box-shadow: 0 0.5em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -1em rgba(50, 0, 50, 0.2);
 }
 

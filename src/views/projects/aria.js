@@ -15,7 +15,7 @@ export default function Aria() {
           </div>
         </div>
 
-        <section className="slide-wrapper color-block-primary">
+        <section className="slide-wrapper slide-tilt color-block-primary">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <p>
@@ -53,7 +53,7 @@ export default function Aria() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide stacked">
             <div className="slide-notes">
               <h3>I chose Vue.js and it was a lot of fun!</h3>
@@ -82,20 +82,7 @@ export default function Aria() {
           </div>
         </section>
 
-{/*
-        <section className="slide-wrapper">
-          <div className="slide txt-solo">
-            <div className="slide-notes">
-              <h3>Gathering information</h3>
-              <p>
-                Before I drew anything, I needed to to some research. Step one was looking around for any previous conversations or documents on the topic.
-              </p>
-            </div>
-          </div>
-        </section>
-  */}
-
-        <section className="slide-wrapper color-block-primary">
+        <section className="slide-wrapper slide-tilt color-block-primary">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <h3>...playing catchup</h3>
@@ -122,7 +109,7 @@ export default function Aria() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <h3>So here's what I did</h3>
