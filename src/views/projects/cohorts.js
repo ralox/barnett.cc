@@ -47,7 +47,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-primary thinking">
+        <section className="slide-wrapper slide-tilt color-block-primary thinking">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="portrait-animation">
@@ -65,7 +65,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide stacked">
             <div className="slide-notes">
               <h3>Ideating<span className="ellip1">.</span><span className="ellip2">.</span><span className="ellip3">.</span></h3>
@@ -117,7 +117,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-primary matrix-bg">
+        <section className="slide-wrapper slide-tilt color-block-primary matrix-bg">
           <span className="slide-background"
             style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/matrix-bg.png)"}}
           ></span>
@@ -184,7 +184,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide txt-solo">
             <div className="slide-notes">
               <h3>Then we get down to brass tacks</h3>
@@ -249,7 +249,7 @@ export default function Cohorts() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark customer-feedback">
+        <section className="slide-wrapper slide-tilt color-block-dark customer-feedback">
           <div className="slide">
             <div className="slide-images">
               <div className="image-wrapper">

@@ -45,7 +45,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide txt-img">
             <div className="slide-images img-group">
               <div className="image-wrapper">
@@ -61,7 +61,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
@@ -122,7 +122,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-primary">
+        <section className="slide-wrapper slide-tilt color-block-primary">
           <div className="slide txt-img">
             <div className="slide-images">
               <div className="image-wrapper">
@@ -138,7 +138,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper color-block-dark">
+        <section className="slide-wrapper slide-tilt color-block-dark">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
@@ -159,7 +159,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper">
+        <section className="slide-wrapper domain-images">
           <div className="slide">
             <div className="slide-images img-group">
               <div className="image-wrapper">
@@ -172,7 +172,7 @@ export default function MyLW() {
           </div>
         </section>
 
-        <section className="slide-wrapper hosting-intro color-block-dark"> 
+        <section className="slide-wrapper hosting-intro  slide-tilt color-block-dark"> 
           <span className="slide-background"
               style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/lw-host-dash-bg.png)"}}
           ></span>
