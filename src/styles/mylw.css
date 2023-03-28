@@ -10,6 +10,11 @@
     flex-basis: auto;
 }
 
+.mylw .domain-images .image-wrapper {
+    /*flex-basis: 40%;*/
+    width: clamp(25em, 40%, 40em);
+}
+
 
 .mylw .hosting-intro {
     isolation: isolate;
