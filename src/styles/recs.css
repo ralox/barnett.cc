@@ -1,6 +1,5 @@
 .rec-wrapper {
   background-color: var(--color-bg-offset);
-  padding: 0 2em;
   margin-bottom: 2em;
 }
 
@@ -11,13 +10,8 @@
 }
 
 .rec-item {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  max-width: 33vw;
-  text-align: left;
+  flex-grow: 1;
   padding: 1em;
-  border-radius: 4px;
 }
 
 .rec-item:not(.active):hover,
@@ -26,19 +20,10 @@
   cursor: pointer;
 }
 
-.rec-item.active {
-  min-width: 20em;
-  background-color: #444;
-  color: #fff;
-}
-
 .rec-photo {
-  width: 4em;
-  min-width: 4em;
-  height: 4em;
+  width: clamp(3.5em, 3vw + 1rem, 5em);
   filter: grayscale(100%);
-  border-radius: 4em;
-  overflow: hidden;
+  clip-path: circle(50%);
   transition: filter, transform 1s;
 }
 
@@ -58,6 +43,23 @@
   width: 100%;
 }
 
+
+/* Rec Details */
+
+.rec-detail-wrapper {
+  font-size: clamp(12px, 1vw + 1rem, 18px);
+  background-color: var(--color-text-default);
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.rec-detail {
+  width: 100%;
+  max-width: 30em;
+  text-align: left;
+  margin: 0 auto;
+}
+
 .rec-name {
   font-weight: 700;
 }
@@ -65,6 +67,7 @@
 .rec-title {
   font-size: 0.9em;
   font-weight: 300;
+  color: var(--color-secondary);
 }
 
 .rec-quote {
