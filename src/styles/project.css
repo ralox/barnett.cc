@@ -77,7 +77,6 @@
     margin: 2em;
     perspective: 2000px;
     isolation: isolate;
-    /* scroll-snap-align: center; maybe later, after events are improved */
 }
 
 .slide-wrapper::before {
@@ -298,11 +297,11 @@
     .scrolling-up  .slide-tilt .slide-background,
     .scrolling-up  .slide-tilt.slide-wrapper::before {
         transform: none;
+        box-shadow: none;
     }
-
+    
     .slide-wrapper {
         margin: 0.5em;
-        scroll-snap-align: start;
     }
 
     .slide.txt-solo .slide-notes,
