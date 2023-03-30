@@ -77,7 +77,6 @@
     margin: 2em;
     perspective: 2000px;
     isolation: isolate;
-    /* scroll-snap-align: center; maybe later, after events are improved */
 }
 
 .slide-wrapper::before {
@@ -291,6 +290,16 @@
         padding: 2em 2em 0;
     }
 
+    .scrolling-down .slide-tilt .slide,
+    .scrolling-down .slide-tilt .slide-background,
+    .scrolling-down .slide-tilt.slide-wrapper::before,
+    .scrolling-up  .slide-tilt .slide,
+    .scrolling-up  .slide-tilt .slide-background,
+    .scrolling-up  .slide-tilt.slide-wrapper::before {
+        transform: none;
+        box-shadow: none;
+    }
+    
     .slide-wrapper {
         margin: 0.5em;
     }

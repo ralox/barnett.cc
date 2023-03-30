@@ -4,16 +4,6 @@
 
 .App {
   text-align: center;
-  /*
-  I would love to do snapping behavior BUT event handlers for this just don't exist yet and I don't want to mess with a bunch of dirty workarounds right now. I like my up/down transforms and shadows more than I like quick snapping.
-
-  height: 100vh;
-  height: 100svh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  */
 }
 
 /* HEADER LOGO */
@@ -26,7 +16,6 @@
   justify-content: space-between;
   font-size: 1rem;
   padding: 1em 2em;
-  /* scroll-snap-align: start; */
 }
 
 .page-header .title {
@@ -116,7 +105,6 @@
 .page-footer {
   padding: 2em;
   margin-top: 2em;
-  /* scroll-snap-align: start; */
 }
 
 .page-footer .work-links,
