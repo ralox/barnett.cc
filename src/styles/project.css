@@ -291,8 +291,18 @@
         padding: 2em 2em 0;
     }
 
+    .scrolling-down .slide-tilt .slide,
+    .scrolling-down .slide-tilt .slide-background,
+    .scrolling-down .slide-tilt.slide-wrapper::before,
+    .scrolling-up  .slide-tilt .slide,
+    .scrolling-up  .slide-tilt .slide-background,
+    .scrolling-up  .slide-tilt.slide-wrapper::before {
+        transform: none;
+    }
+
     .slide-wrapper {
         margin: 0.5em;
+        scroll-snap-align: start;
     }
 
     .slide.txt-solo .slide-notes,
