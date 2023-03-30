@@ -26,6 +26,7 @@ function App() {
   useEffect(() => {
     if (TRACKING_ID && !initialized) {
       setInitialized(true);
+      ReactGA.initialize(TRACKING_ID);
       console.info('Analytics Running');
     }
   },[TRACKING_ID]);
