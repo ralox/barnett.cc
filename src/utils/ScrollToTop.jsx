@@ -1,20 +1,11 @@
 // src/ScrollToTop.jsx
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router";
 import ReactGA from 'react-ga';
 
 const ScrollToTop = (props) => {
   const location = useLocation();
-  const [initialized, setInitialized] = useState(false);
-  const TRACKING_ID = process.env.REACT_APP_GA_ID;
-
-  useEffect(() => {
-    if (TRACKING_ID) {
-      ReactGA.initialize(TRACKING_ID);
-      setInitialized(true);
-      console.info('Analytics Running');
-    }
-  },[]);
+  const initialized = props.initialized;
 
   useEffect(() => {
     if (!location.hash) {

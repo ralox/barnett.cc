@@ -1,5 +1,7 @@
 import './styles/App.css';
+import { useEffect, useState } from "react";
 import {Routes, Route} from "react-router-dom";
+import ReactGA from 'react-ga';
 import { CheckScroll } from './utils/CheckScroll';
 import ScrollToTop from './utils/ScrollToTop';
 
@@ -18,9 +20,19 @@ import Recs from './components/Recs';
 
 function App() {
   const scroller = CheckScroll();
+  const [initialized, setInitialized] = useState(false);
+  const TRACKING_ID = process.env.REACT_APP_GA_ID;
+
+  useEffect(() => {
+    if (TRACKING_ID && !initialized) {
+      setInitialized(true);
+      console.info('Analytics Running');
+    }
+  },[TRACKING_ID]);
+
   return (
     <div className={"App " + (scroller.isScrolling ? "scrolling-" + scroller.scrollDirection : '')}>
-      <ScrollToTop>
+      <ScrollToTop initialized={initialized}>
         <PageHeader />
         <Routes>
           <Route path="/" element={<Work />} />
