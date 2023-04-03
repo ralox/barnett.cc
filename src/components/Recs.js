@@ -45,6 +45,8 @@ Rec.defaultProps = {
 export default function Recs() {
   const currentLoc = useLocation(); 
 
+  // fire this off when it comes into view instead of on navigation...
+
   useEffect(() => {
     let newRec = activeRec + 1;
     if ( newRec >= recList.length ) {
@@ -53,7 +55,7 @@ export default function Recs() {
     setActiveRec(newRec);
   },[currentLoc])
 
-  const [activeRec, setActiveRec] = useState(0);
+  const [activeRec, setActiveRec] = useState(null);
   const makeActive = id => () => setActiveRec(id);
 
   const recList = [
@@ -103,11 +105,13 @@ export default function Recs() {
           )
         }
       </div>
-      <div className="rec-detail-wrapper">
-        <RecDetail 
-          activeRec={recList[activeRec]}
-        />
-      </div>
+      { activeRec &&
+        <div className="rec-detail-wrapper">
+          <RecDetail 
+            activeRec={recList[activeRec]}
+          />
+        </div>
+      }
     </section>
   )
 }

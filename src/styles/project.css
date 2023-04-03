@@ -208,7 +208,8 @@
 }
 
 .image-wrapper {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-wrapper img {
@@ -268,6 +269,32 @@
     background: #fff;
     padding: 0.25em 0.5em;
     border-radius: 4px;
+}
+
+
+/* Scrolling/Intersection Behavior */
+
+.slide-wrapper .fade-in {
+    opacity: 0;
+    transition: opacity 600ms ease-in, transform 600ms ease-out;
+}
+
+.slide-wrapper .fade-in.fade-from-left {
+    transform: translateX(-3em);
+}
+
+.slide-wrapper .fade-in.fade-from-right {
+    transform: translateX(3em);
+}
+
+.slide-wrapper .fade-in.fade-from-bottom {
+    transform: translateY(3em);
+}
+
+.slide-wrapper.slide-visited .fade-in,
+.slide-wrapper.slide-active .fade-in {
+    transform: translate(0);
+    opacity: 1;
 }
 
 
