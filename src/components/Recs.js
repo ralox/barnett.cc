@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/recs.css';
 import { useState, useEffect } from 'react';
-import { useLocation } from "react-router";
 
 
 function Rec(props) {
+  
   let isActive = false;
 
   if (props.id === props.activeRec) {
@@ -43,19 +43,9 @@ Rec.defaultProps = {
 }
 
 export default function Recs() {
-  const currentLoc = useLocation(); 
-
-  useEffect(() => {
-    let newRec = activeRec + 1;
-    if ( newRec >= recList.length ) {
-      newRec = 0;
-    }
-    setActiveRec(newRec);
-  },[currentLoc])
-
-  const [activeRec, setActiveRec] = useState(0);
+  const [observeReady, setObserveReady] = useState(false);
+  const [activeRec, setActiveRec] = useState(null);
   const makeActive = id => () => setActiveRec(id);
-
   const recList = [
     {
       id: 0,
@@ -86,6 +76,37 @@ export default function Recs() {
       recQuote:"Dave is one of the most impressive and intelligent designers I've ever worked with... I am a far better designer for working alongside him."
     },
   ]
+
+  useEffect(() => {
+    if (observeReady) {
+      const recElm = document.querySelector(".rec-wrapper");
+      const options = {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px"
+      };
+      let newRec = null;
+      
+      const recObserver = new IntersectionObserver(function(entries, recObserver) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            newRec++;
+
+            if ( newRec >= recList.length ) {
+              newRec = 0;
+            }
+
+            setActiveRec(newRec);
+          }
+        })
+      }, options);
+
+      recObserver.observe(recElm);
+    } else {
+      window.addEventListener('load', setObserveReady(true));
+      return () => window.removeEventListener('load', setObserveReady(true));
+    }
+  },[observeReady, recList.length]);
   
   return (
     <section className="rec-wrapper">
@@ -103,11 +124,13 @@ export default function Recs() {
           )
         }
       </div>
-      <div className="rec-detail-wrapper">
-        <RecDetail 
-          activeRec={recList[activeRec]}
-        />
-      </div>
+      { activeRec!==null &&
+        <div className="rec-detail-wrapper">
+          <RecDetail 
+            activeRec={recList[activeRec]}
+          />
+        </div>
+      }
     </section>
   )
 }
