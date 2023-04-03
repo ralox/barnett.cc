@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/recs.css';
 import { useState, useEffect } from 'react';
-import { useLocation } from "react-router";
 
 
 function Rec(props) {
@@ -43,20 +42,42 @@ Rec.defaultProps = {
 }
 
 export default function Recs() {
-  const currentLoc = useLocation(); 
-
-  // fire this off when it comes into view instead of on navigation...
-
-  useEffect(() => {
-    let newRec = activeRec + 1;
-    if ( newRec >= recList.length ) {
-      newRec = 0;
-    }
-    setActiveRec(newRec);
-  },[currentLoc])
-
+  const [observeReady, setObserveReady] = useState(false);
   const [activeRec, setActiveRec] = useState(null);
   const makeActive = id => () => setActiveRec(id);
+
+  useEffect(() => {
+    if (observeReady) {
+      const recElm = document.querySelector(".rec-wrapper");
+      const options = {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px"
+      };
+      let newRec = null;
+      
+      const recObserver = new IntersectionObserver(function(entries, recObserver) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            let prevRec = newRec;
+            let recDetailElm = document.querySelector(".rec-detail");
+            newRec++;
+
+            if ( newRec >= recList.length ) {
+              newRec = 0;
+            }
+
+            setActiveRec(newRec);
+          }
+        })
+      }, options);
+
+      recObserver.observe(recElm);
+    } else {
+      window.addEventListener('load', setObserveReady(true));
+      return () => window.removeEventListener('load', setObserveReady(true));
+    }
+  },[observeReady]);
 
   const recList = [
     {
@@ -105,7 +126,7 @@ export default function Recs() {
           )
         }
       </div>
-      { activeRec &&
+      { activeRec!==null &&
         <div className="rec-detail-wrapper">
           <RecDetail 
             activeRec={recList[activeRec]}
