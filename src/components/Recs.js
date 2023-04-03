@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 
 function Rec(props) {
+  
   let isActive = false;
 
   if (props.id === props.activeRec) {
@@ -45,40 +46,6 @@ export default function Recs() {
   const [observeReady, setObserveReady] = useState(false);
   const [activeRec, setActiveRec] = useState(null);
   const makeActive = id => () => setActiveRec(id);
-
-  useEffect(() => {
-    if (observeReady) {
-      const recElm = document.querySelector(".rec-wrapper");
-      const options = {
-        root: null,
-        threshold: 0.5,
-        rootMargin: "0px"
-      };
-      let newRec = null;
-      
-      const recObserver = new IntersectionObserver(function(entries, recObserver) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            let prevRec = newRec;
-            let recDetailElm = document.querySelector(".rec-detail");
-            newRec++;
-
-            if ( newRec >= recList.length ) {
-              newRec = 0;
-            }
-
-            setActiveRec(newRec);
-          }
-        })
-      }, options);
-
-      recObserver.observe(recElm);
-    } else {
-      window.addEventListener('load', setObserveReady(true));
-      return () => window.removeEventListener('load', setObserveReady(true));
-    }
-  },[observeReady]);
-
   const recList = [
     {
       id: 0,
@@ -109,6 +76,37 @@ export default function Recs() {
       recQuote:"Dave is one of the most impressive and intelligent designers I've ever worked with... I am a far better designer for working alongside him."
     },
   ]
+
+  useEffect(() => {
+    if (observeReady) {
+      const recElm = document.querySelector(".rec-wrapper");
+      const options = {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px"
+      };
+      let newRec = null;
+      
+      const recObserver = new IntersectionObserver(function(entries, recObserver) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            newRec++;
+
+            if ( newRec >= recList.length ) {
+              newRec = 0;
+            }
+
+            setActiveRec(newRec);
+          }
+        })
+      }, options);
+
+      recObserver.observe(recElm);
+    } else {
+      window.addEventListener('load', setObserveReady(true));
+      return () => window.removeEventListener('load', setObserveReady(true));
+    }
+  },[observeReady, recList.length]);
   
   return (
     <section className="rec-wrapper">
