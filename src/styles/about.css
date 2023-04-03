@@ -37,6 +37,7 @@
 
 .about .image-wrapper {
   display: flex;
+  flex-direction: row;
   position: relative;
   justify-content: center;
   background-position: top center;

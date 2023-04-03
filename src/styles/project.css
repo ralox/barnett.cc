@@ -27,7 +27,7 @@
     align-items: center;
     background-size: cover;
     background-position: center center;
-    padding: 2em 4em;
+    padding: 4em 4em 2em;
     margin-bottom: 8em;
     color: var(--color-text-dark);
 }
@@ -314,7 +314,7 @@
     }
 
     .project-intro {
-        padding: 2em 2em 0;
+        padding: 6em 2em 0;
     }
 
     .scrolling-down .slide-tilt .slide,
