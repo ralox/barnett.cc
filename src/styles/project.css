@@ -276,7 +276,7 @@
 
 .slide-wrapper .fade-in {
     opacity: 0;
-    transition: opacity 600ms ease-in, transform 600ms ease-out;
+    transition: opacity 500ms ease-in, transform 500ms ease-out;
 }
 
 .slide-wrapper .fade-in.fade-from-left {

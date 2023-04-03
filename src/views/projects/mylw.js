@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import '../../styles/project.css';
 import '../../styles/mylw.css';
 import SlideObserver from '../../utils/SlideObserver';
@@ -27,7 +27,7 @@ export default function MyLW() {
               </div>
               <div className="slide-images fade-in fade-from-right">
                 <div className="no-stretch">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-logo.png"} alt="Liquid Web logo" />
+                  <img src={process.env.PUBLIC_URL + "/img/lw-logo.png"} alt="Liquid Web logo" />
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ export default function MyLW() {
             <div className="slide txt-img">
               <div className="slide-images img-group fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-mobile-first.png"} alt="mobile menu and home screen" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-mobile-first.png"} alt="mobile menu and home screen" />
                 </div>
               </div>
               <div className="slide-notes fade-in">
@@ -67,7 +67,7 @@ export default function MyLW() {
             <div className="slide">
               <div className="slide-images txt-img fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-mobile-symbols.png"} alt="overview of sketch symbols with mobile variants" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-mobile-symbols.png"} alt="overview of sketch symbols with mobile variants" />
                 </div>
               </div>
               <div className="slide-notes">
@@ -89,7 +89,7 @@ export default function MyLW() {
               </div>
               <div className="slide-images fade-in fade-from-right">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-home.png"} alt="Portal home page" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-home.png"} alt="Portal home page" />
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function MyLW() {
             <div className="slide txt-img">
               <div className="slide-images fade-in fade-from-left">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-quick-common.png"} alt="Quick actions and common tasks" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-quick-common.png"} alt="Quick actions and common tasks" />
                 </div>
               </div>
               <div className="slide-notes fade-in fade-from-right">
@@ -121,7 +121,7 @@ export default function MyLW() {
               </div>
               <div className="slide-images fade-in fade-from-right">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-help-articles.png"} alt="Contextual help article list" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-help-articles.png"} alt="Contextual help article list" />
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function MyLW() {
             <div className="slide txt-img">
               <div className="slide-images fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-domains.png"} alt="Domains description" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-domains.png"} alt="Domains description" />
                 </div>
               </div>
               <div className="slide-notes fade-in">  
@@ -147,7 +147,7 @@ export default function MyLW() {
             <div className="slide">
               <div className="slide-images img-group fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-domain-overview.png"} alt="A bird's eye view of domain tools" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-domain-overview.png"} alt="A bird's eye view of domain tools" />
                 </div>
               </div>
               <div className="slide-notes mobile-help-text">
@@ -171,10 +171,10 @@ export default function MyLW() {
             <div className="slide">
               <div className="slide-images img-group fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-domain-dash-1.png"} alt="The domain dashboard" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-domain-dash-1.png"} alt="The domain dashboard" />
                 </div>
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-domain-dash-2.png"} alt="Domain DNS settings" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-domain-dash-2.png"} alt="Domain DNS settings" />
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function MyLW() {
               </div>
               <div className="slide-images img-group fade-in fade-from-right">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/lw-host-dash.png"} alt="Hosting dashboard" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/lw-host-dash.png"} alt="Hosting dashboard" />
                 </div>
               </div>
             </div>

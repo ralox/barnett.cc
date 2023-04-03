@@ -29,7 +29,7 @@ export default function Cohorts() {
               </div>
               <div className="slide-images fade-in fade-from-right">
                 <div className="image-wrapper captioned">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/wild-cohort.png"} alt="An example of a cohort setup in the wild" />
+                  <img src={process.env.PUBLIC_URL + "/img/wild-cohort.png"} alt="An example of a cohort setup in the wild" />
                   <div className="caption">
                     This example isn't mine but notice how each cell has this ugly, fragile, hand-written formula. Yikes.
                   </div>
@@ -53,15 +53,15 @@ export default function Cohorts() {
             <div className="slide">
               <div className="slide-images img-group fade-in">
                 <div className="portrait-animation">
-                  <img className="portrait-img portrait-cover" lazy-src={process.env.PUBLIC_URL + "/img/portrait-full.png"} alt="self portrait" />
-                  <img className="portrait-img" lazy-src={process.env.PUBLIC_URL + "/img/portrait-mask.png"} alt="self portrait outline" />
+                  <img className="portrait-img portrait-cover" src={process.env.PUBLIC_URL + "/img/portrait-full.png"} alt="self portrait" />
+                  <img className="portrait-img" src={process.env.PUBLIC_URL + "/img/portrait-mask.png"} alt="self portrait outline" />
                   <div className="gear-wrapper">
-                    <img className="big-gear" lazy-src={process.env.PUBLIC_URL + "/img/big-gear.svg"} alt="spinning gear" />
-                    <img className="small-gear" lazy-src={process.env.PUBLIC_URL + "/img/small-gear.svg"} alt="spinning gear" />
+                    <img className="big-gear" src={process.env.PUBLIC_URL + "/img/big-gear.svg"} alt="spinning gear" />
+                    <img className="small-gear" src={process.env.PUBLIC_URL + "/img/small-gear.svg"} alt="spinning gear" />
                   </div>
                 </div>
                 <div className="how-to-cohort fade-in">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
+                  <img src={process.env.PUBLIC_URL + "/img/cohort-mess.png"} alt="A mess of spreadsheet stuff" />
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Cohorts() {
               </div>
               <div className="slide-images fade-in">
                 <div className="image-wrapper captioned">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-process.png"} alt="Bird's eye view of the early iterations" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-process.png"} alt="Bird's eye view of the early iterations" />
                 </div>
               </div>
             </div>
@@ -94,13 +94,13 @@ export default function Cohorts() {
           <section className="slide-wrapper">
             <div className="slide img-group">
               <div className="image-wrapper captioned fade-in">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-variants.png"} alt="Three major stages of ideation" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-variants.png"} alt="Three major stages of ideation" />
                   <div className="caption">
                     Left-to-right, you can see how the basic form evolved. Exploring copy, input detail, and micro information architecture.
                   </div>
               </div>
               <div className="image-wrapper captioned no-stretch fade-in">
-                <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-index-sheet.png"} alt="New index sheet" />
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-index-sheet.png"} alt="New index sheet" />
                 <div className="caption">
                   Early on, I added an "Index" tab that gave us the ability to define abstract lists of data such as sales ramps and schedules.
                 </div>
@@ -126,10 +126,10 @@ export default function Cohorts() {
             <div className="slide stacked">
               <div className="slide-images img-group fade-in">
                 <div className="image-wrapper">
-                  <img style={{width: "14em"}} lazy-src={process.env.PUBLIC_URL + "/img/cohort-formula-2.png"} alt="Cohorts formula notes" />
+                  <img className="lazy-load" style={{width: "14em"}} lazy-src={process.env.PUBLIC_URL + "/img/cohort-formula-2.png"} alt="Cohorts formula notes" />
                 </div>
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-formula-helper.png"} alt="Formula helper and syntax exploration" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-formula-helper.png"} alt="Formula helper and syntax exploration" />
                 </div>
               </div>
               <div className="slide-notes fade-in">
@@ -155,7 +155,7 @@ export default function Cohorts() {
             <div className="slide txt-img">
               <div className="slide-images fade-in fade-from-left">
                 <div className="image-wrapper captioned">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/proto-plan.png"} alt="Planning the flow" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/proto-plan.png"} alt="Planning the flow" />
                   <div className="caption">
                     Not all tests require this degree of setup and each project is a bit different.
                   </div>
@@ -180,7 +180,7 @@ export default function Cohorts() {
               </div>
               <div className="slide-images fade-in fade-from-right">
                 <div className="image-wrapper captioned">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/proto-flow.png"} alt="Wiring up the prototype" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/proto-flow.png"} alt="Wiring up the prototype" />
                   <div className="caption">
                     Figma prototypes can get hectic in a hurry.
                   </div>
@@ -207,7 +207,7 @@ export default function Cohorts() {
             <div className="slide">
               <div className="slide-images fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-quick.png"} alt="Quick look at the key UI" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-quick.png"} alt="Quick look at the key UI" />
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@ export default function Cohorts() {
             <div className="slide txt-img">
               <div className="slide-images fade-in fade-from-left">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-sales-ramps.png"} alt="Snippet of a sales ramp" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-sales-ramps.png"} alt="Snippet of a sales ramp" />
                 </div>
               </div>
               <div className="slide-notes fade-in fade-from-right">
@@ -239,7 +239,7 @@ export default function Cohorts() {
               </div>
               <div className="slide-images fade-in fade-from-right">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-spread-2.png"} alt="Snippet of a spread" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-spread-2.png"} alt="Snippet of a spread" />
                 </div>
               </div>
             </div>
@@ -261,7 +261,7 @@ export default function Cohorts() {
               </div>
               <div className="slide-images fade-in">
                 <div className="image-wrapper">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/cohort-customer-feedback.png"} alt="Customer feedback" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-customer-feedback.png"} alt="Customer feedback" />
                 </div>
               </div>
               <div className="slide-notes mobile-help-text">

@@ -32,7 +32,7 @@ export default function Aria() {
             <div className="slide txt-img">
               <div className="slide-images fade-in fade-from-left">
                 <div>
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/aria-logo.png"} alt="ARIA logo" />
+                  <img src={process.env.PUBLIC_URL + "/img/aria-logo.png"} alt="ARIA logo" />
                 </div>
               </div>
               <div className="slide-notes fade-in fade-from-right">
@@ -62,7 +62,7 @@ export default function Aria() {
               </div>
               <div className="slide-images fade-in">
                 <div className="image-wrapper captioned">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/pega-to-vue.png"} alt="from pega to vue.js" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/pega-to-vue.png"} alt="from pega to vue.js" />
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Aria() {
               </div>
               <div className="slide-images">
                 <div className="image-wrapper fade-in fade-from-bottom">
-                  <img lazy-src={process.env.PUBLIC_URL + "/img/aria-hello-world.png"} alt="default hello world" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/aria-hello-world.png"} alt="default hello world" />
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function Aria() {
                 </p>
               </div>
               <div className="image-wrapper captioned no-stretch fade-in fade-from-right">
-                <img lazy-src={process.env.PUBLIC_URL + "/img/aria-config.png"} alt="ARIA profile selection" />
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/aria-config.png"} alt="ARIA profile selection" />
                 <div className="caption">
                   This profile list includes one example of a professionaly-built preset, creatively called "Master Template".
                 </div>
@@ -159,7 +159,7 @@ export default function Aria() {
           <section className="slide-wrapper">
             <div className="slide txt-img">
               <div className="image-wrapper captioned no-stretch fade-in fade-from-left">
-                <img lazy-src={process.env.PUBLIC_URL + "/img/aria-config-2.png"} alt="ARIA configuration" />
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/aria-config-2.png"} alt="ARIA configuration" />
                 <div className="caption">
                   These Low, Medium, and High thresholds will come into play on the next step.
                 </div>
@@ -188,7 +188,7 @@ export default function Aria() {
                 </p>
               </div>
               <div className="image-wrapper captioned no-stretch fade-in fade-from-right">
-                <img lazy-src={process.env.PUBLIC_URL + "/img/aria-matrix.png"} alt="ARIA decision matrix" />
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/aria-matrix.png"} alt="ARIA decision matrix" />
                 <div className="caption">
                   Friendly Fraud? What? Trust me, that's standard industry lingo.
                 </div>
@@ -199,7 +199,7 @@ export default function Aria() {
           <section className="slide-wrapper review-eval">
             <div className="slide txt-img">
               <div className="image-wrapper no-stretch fade-in fade-from-left">
-                <img lazy-src={process.env.PUBLIC_URL + "/img/aria-test.png"} alt="ARIA evaluation" />
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/aria-test.png"} alt="ARIA evaluation" />
               </div>
               <div className="slide-notes fade-in fade-from-right">
                 <h3>Review & Evaluate</h3>
