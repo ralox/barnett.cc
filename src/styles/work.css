@@ -49,9 +49,7 @@
   font-family: var(--font-base);
 }
 
-.work .gallery-item:hover,
-.work .gallery-item:focus,
-.work .gallery-item:active {
+.work .gallery-item:is(:hover,:active,:focus) {
   cursor: pointer;
   box-shadow: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
   border-radius: 4px;
@@ -72,9 +70,7 @@
   transition: all 500ms;
 }
 
-.ds-cta:hover,
-.ds-cta:focus,
-.ds-cta:active {
+.ds-cta:is(:hover,:active,:focus) {
   background-color: var(--color-primary-light);
 }
 
@@ -82,9 +78,7 @@
   transition: all 500ms;
 }
 
-.ds-cta:hover .arrow,
-.ds-cta:focus .arrow,
-.ds-cta:active .arrow {
+.ds-cta:is(:hover,:active,:focus) .arrow {
   margin-left: 3em;
 }
 

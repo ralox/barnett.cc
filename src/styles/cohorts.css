@@ -32,14 +32,9 @@
     transition: opacity 800ms;
 }
 
-.scrolling-up .portrait-img.portrait-cover,
-.scrolling-down .portrait-img.portrait-cover {
+:is(.scrolling-up, .scrolling-down) .portrait-img.portrait-cover {
     opacity: 1;
     transition: opacity 200ms;
-}
-
-.portrait-animation .fade-out:hover {
-    opacity: 1;
 }
 
 .portrait-animation .gear-wrapper {
@@ -49,8 +44,7 @@
     width: 16em;
 }
 
-.gear-wrapper .small-gear,
-.gear-wrapper .big-gear {
+.gear-wrapper :is(.small-gear, .big-gear) {
     position: relative;
     animation-iteration-count: infinite;
 }

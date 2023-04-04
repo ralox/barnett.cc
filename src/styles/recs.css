@@ -14,9 +14,7 @@
   padding: 1em;
 }
 
-.rec-item:not(.active):hover,
-.rec-item:not(.active):focus,
-.rec-item:not(.active):active {
+.rec-item:not(.active):is(:hover,:active,:focus) {
   cursor: pointer;
 }
 
@@ -32,9 +30,7 @@
   transform: scale(1.25);
 }
 
-.rec-item:hover .rec-photo,
-.rec-item:focus .rec-photo,
-.rec-item:active .rec-photo {
+.rec-item:is(:hover,:active,:focus) .rec-photo {
   filter: grayscale(0);
   transform: scale(1.25);
 }

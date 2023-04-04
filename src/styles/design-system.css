@@ -24,8 +24,7 @@
   flex-direction: row-reverse;
 }
 
-.design-system .gallery-video,
-.design-system .gallery-detail {
+.design-system :is(.gallery-video,.gallery-detail) {
   flex-basis: 40%;
   min-width: 20em;
   text-align: left;
