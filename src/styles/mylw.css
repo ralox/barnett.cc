@@ -30,7 +30,6 @@
     padding: 1em;
 }
 
-.mylw .quick-common .image-wrapper,
-.mylw .quick-common .slide-images {
+.mylw .quick-common :is(.image-wrapper,.slide-images) {
     max-width: 20em;
 }

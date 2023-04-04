@@ -6,8 +6,7 @@
 
 /* General Spacing */
 
-.project p,
-.project ul {
+.project :is(p, ul) {
     margin-bottom: 1em;
 }
 
@@ -171,14 +170,12 @@
     gap: 1em;
 }
 
-.scrolling-down .slide-tilt .slide,
-.scrolling-down .slide-tilt .slide-background,
+.scrolling-down .slide-tilt :is(.slide, .slide-background),
 .scrolling-down .slide-tilt.slide-wrapper::before {
     transform: rotate3d(1, 0, 0, -6deg);
 }
 
-.scrolling-up  .slide-tilt .slide,
-.scrolling-up  .slide-tilt .slide-background,
+.scrolling-up  .slide-tilt :is(.slide, .slide-background),
 .scrolling-up  .slide-tilt.slide-wrapper::before {
     transform: rotate3d(1, 0, 0, 6deg);
 }
@@ -264,8 +261,7 @@
     max-width: 80em;
 }
 
-.project .reflections .good-highlight,
-.project .reflections .bad-highlight {
+.project .reflections :is(.good-highlight, .bad-highlight) {
     background: #fff;
     padding: 0.25em 0.5em;
     border-radius: 4px;
@@ -291,8 +287,7 @@
     transform: translateY(3em);
 }
 
-.slide-wrapper.slide-visited .fade-in,
-.slide-wrapper.slide-active .fade-in {
+.slide-wrapper:is(.slide-visited,.slide-active) .fade-in {
     transform: translate(0);
     opacity: 1;
 }
@@ -317,12 +312,8 @@
         padding: 6em 2em 0;
     }
 
-    .scrolling-down .slide-tilt .slide,
-    .scrolling-down .slide-tilt .slide-background,
-    .scrolling-down .slide-tilt.slide-wrapper::before,
-    .scrolling-up  .slide-tilt .slide,
-    .scrolling-up  .slide-tilt .slide-background,
-    .scrolling-up  .slide-tilt.slide-wrapper::before {
+    :is(.scrolling-down, .scrolling-up) .slide-tilt :is(.slide,.slide-background),
+    :is(.scrolling-down, .scrolling-up) .slide-tilt.slide-wrapper::before {
         transform: none;
         box-shadow: none;
     }
@@ -331,15 +322,12 @@
         margin: 0.5em;
     }
 
-    .slide.txt-solo .slide-notes,
-    .slide.txt-img .slide-notes,
-    .reflections .slide-notes {
+    :is(.slide.txt-solo, .slide.txt-img, .reflections) .slide-notes {
         width: 100%;
         min-width: 100%;
     }
 
-    .project .slide-images,
-    .project .txt-img .slide-images {
+    .project :is(.slide-images,.txt-img .slide-images) {
         flex-basis: 100%;
     }
 
