@@ -1,5 +1,5 @@
 .mylw {
-    --color-secondary: #7D4265;
+    --color-secondary: rgb(129, 82, 110);
 }
 
 .mylw .color-block-dark::before {

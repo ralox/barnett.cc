@@ -66,7 +66,7 @@
 }
 
 .page-header .nav-link:is(:hover,:active,:focus) {
-  color: var(--color-primary);
+  color: var(--color-primary-offset);
 }
 
 .page-header .linkedin-img {
@@ -74,8 +74,28 @@
   opacity: 0.5;
 }
 
-.page-header .linkedin-img:is(:hover,:active,:focus) {
+.dark-mode .linkedin-img {
+  filter: grayscale(1) brightness(4);
+}
+
+.linkedin-link:is(:hover,:active,:focus) .linkedin-img,
+.dark-mode-toggle:is(:hover,:active,:focus) img {
   opacity: 1;
+}
+
+.dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-toggle img {
+  width: 1.5em;
+  opacity: 0.5;
+}
+
+.dark-mode .dark-mode-toggle img {
+  filter: invert(1);
 }
 
 .page-header .non-page-nav {
