@@ -16,6 +16,10 @@
     --color-secondary: #2568fe;
 }
 
+.dark-mode .cohorts {
+    --color-secondary: #3e7bc4;
+}
+
 .cohorts .customer-feedback::before {
     background-color: #1a1c1e;
 }

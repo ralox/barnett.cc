@@ -42,6 +42,10 @@
   font-family: var(--font-base);
 }
 
+.dark-mode .intro .highlight {
+  color: var(--color-secondary);
+}
+
 
 /* GALLERY */
 
@@ -68,7 +72,8 @@
 
 .work .gallery-item:is(:hover,:active,:focus) {
   cursor: pointer;
-  box-shadow: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
+  background-color: var(--color-util-pure-80);
+  box-shadow: var(--shadow-default);
   border-radius: 4px;
   transform: scale(1.05);
 }
@@ -80,7 +85,7 @@
 
 /* DS CTA */
 
-.work .ds-cta {
+.ds-cta {
   display: inline-block;
   padding: 1em 2em;
   background-color: var(--color-primary);
@@ -90,8 +95,17 @@
   transition: all 500ms;
 }
 
+.dark-mode .ds-cta {
+  background-color: var(--color-secondary);
+}
+
 .ds-cta:is(:hover,:active,:focus) {
   background-color: var(--color-primary-light);
+  color: var(--color-util-pure);
+}
+
+.dark-mode .ds-cta:is(:hover,:active,:focus) {
+  background-color: var(--color-secondary-light);
 }
 
 .ds-cta .arrow {

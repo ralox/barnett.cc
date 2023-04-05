@@ -6,7 +6,7 @@ export default function About() {
     let color;
 
     if ( level >= 70 ) {
-      color = '#ffd061';
+      color = "var(--color-secondary-light)";
     } else {
       color = "var(--color-primary-light)";
     }
