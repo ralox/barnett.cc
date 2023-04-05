@@ -1,74 +1,169 @@
+/*==================================
+  INDEX
+    DEFAULT VARS
+    DARK MODE
+
+    RESETS
+      Box-sizing
+      Default margin
+      Percent-based heights
+      Typography tweaks
+      Media defaults
+      Avoid text overflow
+      Root stacking context
+
+    BODY FOUNDATIONS
+    INTERACTION CORE
+    DECORATIVE HEADERS
+    CODE BLOCK
+==================================*/
+
+
+/* 
+  DEFAULT VARS
+*/
 :root {
-  /* colors */
-  --color-bg: #fefefe;
-  --color-primary: #2E9AA0;
-  --color-primary-light: #5eccd2;
-  --color-secondary: #feb225;
-  --color-text-default: #444;
-  --color-text-dark: #111;
-  --color-text-soft: #888;
-  --color-bg-offset: #eee;
-  --color-text-disabled: #bbb;
+  /* color pairs -- absolute + light mode */
+  --abs-color-bg: rgb(254, 254, 254);
+  --color-bg: var(--abs-color-bg);
 
-  /* fonts */
-  --font-base: Inter, 'Open Sans', sans-serif;
-  --font-feature: Philosopher, serif;
-}
+  --abs-color-bg-dark: rgb(17, 17, 17);
+  --color-bg-dark: var(--abs-color-bg-dark);
 
+  --abs-color-bg-offset: rgb(238, 238, 238);
+  --color-bg-offset: var(--abs-color-bg-offset);
 
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
-* {
-  margin: 0;
-}
-/*
-  3. Allow percentage-based heights in the application
-*/
-html, body {
-  height: 100%;
-}
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-/*
-  6. Improve media defaults
-*/
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-/*
-  7. Remove built-in form typography styles
-*/
-input, button, textarea, select {
-  font: inherit;
-}
-/*
-  8. Avoid text overflows
-*/
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-/*
-  9. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
+  --abs-color-primary: rgb(46, 154, 160);
+  --color-primary: var(--abs-color-primary);
+
+  --abs-color-primary-light: rgb(94, 204, 210);
+  --color-primary-light: var(--abs-color-primary-light);
+
+  --abs-color-primary-offset: rgb(157, 86, 169);
+  --color-primary-offset: var(--abs-color-primary-offset);
+
+  --abs-color-secondary: rgb(254, 178, 37);
+  --color-secondary: var(--abs-color-secondary);
+
+  --abs-color-text-default: rgb(68, 68, 68);
+  --color-text-default: var(--abs-color-text-default);
+
+  --abs-color-text-dark: rgb(17, 17, 17);
+  --color-text-dark: var(--abs-color-text-dark);
+
+  --abs-color-text-soft: rgb(136, 136, 136);
+  --color-text-soft: var(--abs-color-text-soft);
+
+  --abs-color-text-disabled: rgb(187, 187, 187);
+  --color-text-disabled: var(--abs-color-text-disabled);
+
+  --abs-color-util-pure: rgb(255, 255, 255);
+  --color-util-pure: var(--abs-color-util-pure);
+
+  --abs-color-util-pure-80: rgba(255, 255, 255, 0.8);
+  --color-util-pure-80: var(--abs-color-util-pure-80);
+
+  --abs-color-text-good: rgb(59, 97, 158);
+  --color-text-good: var(--abs-color-text-good);
+
+  --abs-color-text-bad: rgb(173, 92, 38);
+  --color-text-bad: var(--abs-color-text-bad);
+
+    /* fonts */
+    --font-base: Inter, 'Open Sans', sans-serif;
+    --font-feature: Philosopher, serif;
 }
 
+/*
+  DARK MODE
+*/
+.dark-mode {
+  --color-bg: rgb(65, 65, 65);
+  --color-bg-dark: rgb(254, 254, 254);
+  --color-bg-offset: rgb(136, 136, 136);
+  --color-text-default: rgb(254, 254, 254);
+  --color-text-dark: rgb(255, 255, 255);
+  --color-text-soft: rgb(238, 238, 238);
+  --color-text-disabled: rgb(187, 187, 187);
+  --color-util-pure: rgb(0, 0, 0);
+  --color-util-pure-80: rgba(0, 0, 0, 0.8);
+  --color-text-good: rgb(107, 160, 245);
+  --color-text-bad: rgb(231, 145, 89);
+}
+
+
+/* RESETS */
+
+  /*
+    1. Use a more-intuitive box-sizing model.
+  */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+
+
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+
+
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+
+  /*
+    7. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+/*
+  BODY FOUNDATIONS
+*/
 body {
   margin: 0;
   font-size: 16px;
@@ -79,16 +174,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/*
+  INTERACTION CORE
+*/
+:focus {
+  outline: 1px dotted var(--color-primary-offset);
+}
+
 a {
   text-decoration: none;
   color: var(--color-primary);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a:is(:hover,:focus,:active) {
+  color: var(--color-primary-offset);
 }
 
+
+/*
+  DECORATIVE HEADERS
+*/
 h2 {
   font-size: 2em;
   margin-bottom: 3em;
@@ -100,4 +206,13 @@ h3 {
   font-weight: 300;
   margin-bottom: 0.5em;
   font-family: var(--font-feature);
+}
+
+
+/*
+  CODE BLOCK
+*/
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

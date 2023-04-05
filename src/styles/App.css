@@ -1,6 +1,11 @@
-/*
-  Housing all "global" app styles here rather than writing unique sheets for header / footer which appear on every page
-*/
+/*==================================
+  INDEX
+    HEADER LOGO
+    HEADER NAV
+    GALLERY
+    FOOTER
+    NOT FOUND (404)
+==================================*/
 
 .App {
   text-align: center;
@@ -11,7 +16,7 @@
 .page-header {
   position: fixed;
   inset: 0 0 auto 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--color-util-pure-80);
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
@@ -24,7 +29,7 @@
 }
 
 .page-header:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-util-pure);
 }
 
 .page-header .title {
@@ -107,7 +112,10 @@
 
 .page-footer {
   padding: 2em;
-  margin-top: 2em;
+}
+
+.dark-mode .page-footer {
+  background-color: var(--color-util-pure);
 }
 
 .page-footer :is(.work-links, .play-links) {
@@ -133,4 +141,15 @@
 
 .page-footer .copyright {
   margin-top: 2em;
+}
+
+
+/* NOT FOUND */
+
+.not-found {
+  margin: 8em auto;
+}
+
+.not-found h2 {
+  margin-bottom: 1em;
 }

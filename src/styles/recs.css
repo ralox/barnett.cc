@@ -1,6 +1,19 @@
+/*==================================
+  INDEX
+    REC WRAPPER LIST
+    REC LIST ITEMS
+    ACTIVE REC DETAILS
+==================================*/
+
+
+/* REC WRAPPER LIST */
+
 .rec-wrapper {
   background-color: var(--color-bg-offset);
-  margin-bottom: 2em;
+}
+
+.dark-mode .rec-wrapper {
+  background-color: var(--color-util-pure);
 }
 
 .rec-list {
@@ -9,9 +22,14 @@
   overflow-x: auto;
 }
 
+
+/* REC LIST ITEMS */
+
 .rec-item {
   flex-grow: 1;
   padding: 1em;
+  border: none;
+  background: transparent;
 }
 
 .rec-item:not(.active):is(:hover,:active,:focus) {
@@ -40,12 +58,12 @@
 }
 
 
-/* Rec Details */
+/* ACTIVE REC DETAILS */
 
 .rec-detail-wrapper {
   font-size: clamp(12px, 1vw + 1rem, 18px);
-  background-color: var(--color-text-default);
-  color: #fff;
+  background-color: var(--abs-color-bg-dark);
+  color: var(--abs-color-util-pure);
   padding: 1em 2em;
 }
 
