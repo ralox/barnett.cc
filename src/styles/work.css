@@ -1,7 +1,21 @@
+/*==================================
+  INDEX
+    BASE
+    INTRO
+    GALLERY
+    DS CTA
+    GOOD/BAD HIGHLIGHTS
+==================================*/
+
+/* BASE */
+
 .work {
   font-size: 1rem;
   min-height: 50vh;
 }
+
+
+/* INTRO */
 
 .work .intro {
   display: flex;
@@ -27,6 +41,9 @@
   font-weight: 100;
   font-family: var(--font-base);
 }
+
+
+/* GALLERY */
 
 .work .gallery {
   display: flex;
@@ -60,11 +77,14 @@
   margin: 1em 0 0.25em;
 }
 
+
+/* DS CTA */
+
 .work .ds-cta {
   display: inline-block;
   padding: 1em 2em;
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-util-pure);
   margin: 8em 0 2em;
   border-radius: 4px;
   transition: all 500ms;
@@ -82,6 +102,9 @@
   margin-left: 3em;
 }
 
+
+/* GOOD/BAD HIGHLIGHTS */
+
 .good-highlight,
 .bad-highlight {
   font-style: italic;
@@ -89,9 +112,9 @@
 }
 
 .good-highlight {
-  color: rgb(59, 97, 158);
+  color: var(--color-text-good);
 }
 
 .bad-highlight {
-  color: rgb(173, 92, 38);
+  color: var(--color-text-bad)
 }

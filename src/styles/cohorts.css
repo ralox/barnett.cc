@@ -1,10 +1,27 @@
+/*==================================
+  INDEX
+    COLOR OVERRIDES
+    THINKING ANIM 
+    ELLIPSIS ANIM
+    MATRIX ANIM
+    WIGGLE ICON ANIM
+    MEDIA QUERIES
+        <= 980
+==================================*/
+
+
+/* COLOR OVERRIDES */
+
 .cohorts {
     --color-secondary: #2568fe;
 }
 
-.cohorts .slide-wrapper.customer-feedback::before {
+.cohorts .customer-feedback::before {
     background-color: #1a1c1e;
 }
+
+
+/* THINKING ANIM */
 
 .thinking .slide-images {
     flex-wrap: nowrap;
@@ -23,7 +40,7 @@
     width: 45em;
 }
 
-.portrait-img.portrait-cover {
+.portrait-cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,24 +49,25 @@
     transition: opacity 800ms;
 }
 
-:is(.scrolling-up, .scrolling-down) .portrait-img.portrait-cover {
+:is(.scrolling-up, .scrolling-down) .portrait-cover {
     opacity: 1;
     transition: opacity 200ms;
 }
 
-.portrait-animation .gear-wrapper {
+.gear-wrapper {
     position: absolute;
     top: 12em;
     left: 16em;
     width: 16em;
 }
 
-.gear-wrapper :is(.small-gear, .big-gear) {
+.small-gear, 
+.big-gear {
     position: relative;
     animation-iteration-count: infinite;
 }
 
-.gear-wrapper .small-gear {
+.small-gear {
     top: -0.6em;
     left: 5.5em;
     width: 5em;
@@ -58,7 +76,7 @@
     animation-duration: 6s;
 }
 
-.gear-wrapper .big-gear {
+.big-gear {
     width: 10em;
 
     animation-name: spin-gear;
@@ -82,6 +100,9 @@
         transform: rotate(-720deg);
     }
 }
+
+
+/* ELLIPSIS ANIM */
 
 .ellip1,
 .ellip2,
@@ -119,6 +140,8 @@
 }
 
 
+/* MATRIX ANIM */
+
 .matrix-bg .slide-background {
     background-position-y: 0;
     background-size: 12%;
@@ -139,6 +162,9 @@
         background-position-y: 0;
     }
 }
+
+
+/* WIGGLE ICON ANIM */
 
 .wiggle-icon {
     display: inline-block;
@@ -176,6 +202,9 @@
         transform: rotate(0);
     }
 }
+
+
+/* MEDIA QUERIES */
 
 @media (width <= 980px) {
     .cohorts .thinking .slide-images {

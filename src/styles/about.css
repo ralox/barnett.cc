@@ -1,3 +1,15 @@
+/*==================================
+  INDEX
+    BASE
+    IMAGE
+    BIO
+    SKILLS
+    MEDIA QUERIES
+        <= 985
+==================================*/
+
+/* BASE */
+
 .about {
   font-size: 1rem;
   min-height: 50vh;
@@ -5,35 +17,8 @@
   padding: 4em 0;
 }
 
-.about h2 {
-  margin-bottom: 1em;;
-}
 
-.bio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: left;
-  margin: 2em 0;
-  padding: 0 2em;
-  gap: 2em;
-}
-
-.bio-text {
-  flex-basis: 40vw;
-  min-width: 20em;
-  max-width: 40em;
-}
-
-.bio-text p {
-  margin-bottom: 1em;
-}
-
-.identity {
-  padding: 0;
-  list-style: none;
-}
+/* IMAGE */
 
 .about .image-wrapper {
   display: flex;
@@ -61,6 +46,38 @@
   border-radius: 0;
   z-index: 5;
 }
+
+
+/* BIO */
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  margin: 2em 0;
+  padding: 0 2em;
+  gap: 2em;
+}
+
+.bio-text {
+  flex-basis: 40vw;
+  min-width: 20em;
+  max-width: 40em;
+}
+
+.bio-text p {
+  margin-bottom: 1em;
+}
+
+.identity {
+  padding: 0;
+  list-style: none;
+}
+
+
+/* SKILLS */
 
 .bio-highlights {
   display: flex;
@@ -95,6 +112,9 @@
 .side-note {
   font-size: 0.8em;
 }
+
+
+/* MEDIA QUERIES */
 
 @media (width <= 985px) {
   .bio {

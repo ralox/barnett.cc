@@ -10,6 +10,10 @@
     flex-basis: auto;
 }
 
+.dark-mode .logo-intro .slide-images {
+    filter: drop-shadow(0 1px 2px #000);
+}
+
 .mylw .domain-images .image-wrapper {
     /*flex-basis: 40%;*/
     width: clamp(25em, 40%, 40em);
