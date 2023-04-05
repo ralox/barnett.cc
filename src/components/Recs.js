@@ -14,22 +14,22 @@ function Rec(props) {
   }
 
   return (
-    <div key={props.id} className={"rec-item " + (isActive ? "active":"")} onClick={props.makeActive(props.id)}>
+    <button aria-controls="rec-detail" key={props.id} className={"rec-item " + (isActive ? "active":"")} onClick={props.makeActive(props.id)}>
       <div className="rec-photo">
         <img src={process.env.PUBLIC_URL +  "/img/" + props.imgSrc} alt={"Former Coworker, " + props.recName}/>
       </div>
-    </div>
+    </button>
   )
 }
 
 function RecDetail(props) {
   return (
-    <div className="rec-detail">
-      <header className="rec-name">{props.activeRec.recName}</header>
+    <div id="rec-detail" className="rec-detail">
+      <div className="rec-name">{props.activeRec.recName}</div>
       <div className="rec-title">{props.activeRec.recTitle}</div>
-      <div className="rec-quote">
+      <p className="rec-quote">
         {props.activeRec.recQuote}
-      </div>
+      </p>
     </div>
   )
 }
