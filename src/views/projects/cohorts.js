@@ -13,7 +13,7 @@ export default function Cohorts() {
             <h2 className="project-title">Financial Model: Cohorts</h2>
             <div className="project-subtitle">Feature Design @ Mosaic</div>
             <div className="project-summary">
-              Cohorts was my first major release at Mosaic. This is a vital part of the CFO toolkit and covers a wide range of uses. Digging through real-world financial plans, I identified the common patterns and designed a very simple solution.
+              Cohort analysis is a vital part of the CFO toolkit and covers a wide range of uses. I dug through real-world plans, identified the common patterns, and designed a solution that saves clients roughly $10,000 a year.
             </div>
           </div>
 
@@ -22,8 +22,9 @@ export default function Cohorts() {
               <div className="slide-notes fade-in fade-from-left">
                 <h3>How it started</h3>
                 <p>
-                  Mosaic needed a way to bring parity to the modeling process found in traditional spreadsheets. Actually, we needed it to be better. Cohorts are one of the most cumbersome models to setup and maintain, so making it simple would be a huge selling point for the product. 
-                  
+                  Mosaic needed a way to bring parity to the modeling process found in traditional spreadsheets. Actually, we needed it to be better. <em className="good-highlight">Cohorts are one of the most cumbersome models for CFOs and FP&A professionals to setup and maintain</em>. Making it simple would be a huge selling point for the product. 
+                </p>
+                <p>
                   As the lead designer for all things Financial Model, that job fell to me.
                 </p>
               </div>
@@ -31,9 +32,30 @@ export default function Cohorts() {
                 <div className="image-wrapper captioned">
                   <img src={process.env.PUBLIC_URL + "/img/wild-cohort.png"} alt="An example of a cohort setup in the wild" />
                   <div className="caption">
-                    This example isn't mine but notice how each cell has this ugly, fragile, hand-written formula. Yikes.
+                    Notice how each cell has this ugly, fragile, hand-written formula. Yikes.
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="slide-wrapper color-block color-block-dark">
+            <div className="slide txt-solo">
+              <div className="slide-notes fade-in fade-from-bottom">
+                <h3>Alright, what's a cohort?</h3>
+                <p>
+                  I'm not a financial expert so I had no idea what we were talking about. The next step was to reach out to our support staff and a few key customers. I learned a lot and even got access to real models to explore.
+                </p>
+                <h4>Popular Use Cases</h4>
+                <ul>
+                  <li>Mapping a value over time, such as contract fulfillment</li>
+                  <li>Forecasting sales as the team grows and matures</li>
+                </ul>
+                <h4>Pain points</h4>
+                <ul>
+                  <li><em className="bad-highlight">The average cohort takes 3 hours to build</em> between data gathering, cleanup, organization, formula building, and constant sanity checks</li>
+                  <li><em className="bad-highlight">Each cohort requires significant rework with every update</em> and our fast-paced SMB clients need to generate reports monthly</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -41,10 +63,11 @@ export default function Cohorts() {
           <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
-                <h3>Alright, what's a cohort?</h3>
+                <h3>Setting expectations</h3>
                 <p>
-                  I'm not a financial expert so I had no idea what we were talking about. The next step was to reach out to our support staff; these folks ARE experts in the field and they spend every day converting old spreadsheets into functional Mosaic models. I learned a lot, but I also learned that I could get hands-on with real models! So I dug in.
+                  Because the base product removes much of the pain around cleanup and organization, we were already ahead of the curve. <em className="good-highlight">Cutting the setup and maintenance in half seemed like a realistic goal</em> which would allow us to go well beyond parity.
                 </p>
+                <p>To establish a baseline, I assumed a standard model with 2 cohorts. This model would be updated monthly. Given the average CFO salary of $390k in 2022, <em className="good-highlight">this would result in an annual savings of $6,750</em>.</p>
               </div>
             </div>
           </section>
@@ -67,6 +90,22 @@ export default function Cohorts() {
             </div>
           </section>
 
+          <section className="slide-wrapper">
+            <div className="slide txt-img">
+              <div className="slide-images fade-in fade-from-left">
+                <div className="image-wrapper">
+                  <img src={process.env.PUBLIC_URL + "/img/cohort-notes.png"} alt="Written notes from studying models" />
+                </div>
+              </div>
+              <div className="slide-notes fade-in fade-from-bottom">
+                <h3>Finding signal in the noise</h3>
+                <p>
+                  As I studied the models and collaborated with the team, I identified the basic patterns that connected each of the use cases. I went through four major iterations and, for some elements, had to come up with meaningful language as it just didn't exist.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <section className="slide-wrapper slide-tilt color-block color-block-dark">
             <div className="slide stacked">
               <div className="slide-notes fade-in">
@@ -76,17 +115,6 @@ export default function Cohorts() {
                 <div className="image-wrapper captioned">
                   <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/cohort-process.png"} alt="Bird's eye view of the early iterations" />
                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="slide-wrapper">
-            <div className="slide txt-solo">
-              <div className="slide-notes fade-in fade-from-bottom">
-                <h3>Finding signal in the noise</h3>
-                <p>
-                  As I studied the models and collaborated with the team, I identified the basic patterns that connected each of the use cases. I went through four major iterations and, for some elements, had to come up with meaningful language as it just didn't exist.
-                </p>
               </div>
             </div>
           </section>
@@ -113,7 +141,7 @@ export default function Cohorts() {
               <div className="slide-notes fade-in fade-from-bottom">
                 <h3>Power users demand power</h3>
                 <p>
-                  Throughout the ideation phase, we spoke with professionals and it was clear that they loved their bespoke models even if the maintenance was a pain. We needed to consider the advanced route immediately or risk losing valuable clients.
+                  Throughout the ideation phase, we spoke with professionals and it was clear that we were close with the UI <em>but</em> they also love their bespoke models and the ability to tackle edge-cases. We needed to consider the advanced formula route immediately or risk losing valuable clients.
                 </p>
               </div>
             </div>
@@ -145,7 +173,7 @@ export default function Cohorts() {
               <div className="slide-notes fade-in fade-from-bottom">
                 <h3>Am I in the right ballpark?</h3>
                 <p>
-                  At this point, I'm feeling pretty good about the direction we're going. It's time to call in our users and run some tests. This means putting together a scenario and a prototype and then mentally preparing to be completely wrong about everything.
+                  At this point, I'm feeling pretty good about the direction we're going. It's time to call in fresh users and run some tests. This means putting together a scenario and a prototype and then mentally preparing to be completely wrong about everything.
                 </p>
               </div>
             </div>
@@ -266,6 +294,23 @@ export default function Cohorts() {
               </div>
               <div className="slide-notes mobile-help-text">
                 "This is a sales call with former power user... he's blown away..."
+              </div>
+            </div>
+          </section>
+
+          <section className="slide-wrapper">
+            <div className="slide txt-img">
+              <div className="slide-notes fade-in fade-from-bottom">
+                <h3>How did we do?</h3>
+                <p>Our marketing team went so far as to release a video titled "cohort modeling in under 3 minutes”. Technically true but that ignores much of the mental prep and planning and gets right to the configuration.</p>
+                <p>
+                  The reality is that our sponsor <em className="good-highlight">clients report an annual savings of $10,000</em>. These numbers tell us that a realistic setup takes close to 45 minutes. That would be just <em>half</em> of our initial goal. But that isn't the full story. It's not that all CFOs are 75% more efficient. In some cases, <em className="good-highlight">the tool opened the door for these advanced techniques to be handed down to associates</em> who lack spreadsheet experience.
+                </p>
+              </div>
+              <div className="slide-images fade-in fade-from-right">
+                <div className="image-wrapper">
+                  <img src={process.env.PUBLIC_URL + "/img/marketing-vid.png"} alt="Marketing video - cohort modeling in under 3 minutes" />
+                </div>
               </div>
             </div>
           </section>
