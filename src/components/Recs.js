@@ -51,14 +51,14 @@ export default function Recs() {
       id: 0,
       recName:"James Hills",
       imgSrc:"james.png",
-      recTitle:"Senior Product Designer - Mosaic",
+      recTitle:"Senior UX/UI Designer - Crowdstrike",
       recQuote:"His understanding of design systems and reusable interactive components are some of the best I've seen. I was fortunate to learn quite a bit from Dave over the last year."
     },
     {
       id: 1,
       recName:"Heather McGeachy",
       imgSrc:"heather.png",
-      recTitle:"Senior UX Researcher - Google",
+      recTitle:"Research Strategist - Google",
       recQuote:"[Dave's] easy going nature makes him a good fit in any team. I have enjoyed seeing his insanely creative solutions to visual problems!"
     },
     {
@@ -72,8 +72,15 @@ export default function Recs() {
       id: 3,
       recName:"Domenic Taft",
       imgSrc:"dom.png",
-      recTitle:"Product Designer - Mosaic",
+      recTitle:"Senior Product Designer - Endpoint",
       recQuote:"Dave is one of the most impressive and intelligent designers I've ever worked with... I am a far better designer for working alongside him."
+    },
+    {
+      id: 4,
+      recName:"Jeffrey Riggle",
+      imgSrc:"riggle.png",
+      recTitle:"Staff Software Engineer - Mosaic",
+      recQuote:"Dave is an absolute rockstar designer. He has an unbelievable talent for taking complex and abstract problems and boiling them down to solid, well understood, and high fidelity mocks."
     },
   ]
 
