@@ -33,7 +33,7 @@ export default function PageHeader() {
         <span className="non-page-nav">
           <a
             className="nav-link"
-            href={process.env.PUBLIC_URL + "/resume/Barnett-UX-Resume-2025.pdf"}
+            href="https://s3.us-west-2.amazonaws.com/barnett.cc/Barnett-UX-Resume-2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
