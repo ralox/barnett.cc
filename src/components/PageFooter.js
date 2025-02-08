@@ -27,7 +27,7 @@ export default function PageFooter(showRecs="true") {
         <a><img className="linkedin-img" src={process.env.PUBLIC_URL +  "/img/In-Blue-34.png"} /></a>
       </div>
       */ }
-      <div className="copyright">©️2023 built by Dave Barnett</div>
+      <div className="copyright">©️2025 Dave Barnett</div>
     </footer>
   );
 }

@@ -88,7 +88,7 @@
 
 .bio-skills,
 .bio-learning {
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .bio-highlights ul {
