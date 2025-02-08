@@ -10,7 +10,7 @@ export default function Work() {
       <main className="work">
         <div className="intro">
           <h2><span className="highlight">Dave</span>designs ideas and systems.</h2>
-          <p className="details">🎨 Product Designer + 💻 Front-End Developer based in Austin 🤠 formerly @ Mosaic</p>
+          <p className="details">🎨 Product Designer + 💻 Front-End Developer | Lead UX Architect @CoxAutomotive 🚗</p>
         </div>
         <div className="gallery">
           {/*
