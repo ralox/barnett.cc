@@ -12,7 +12,9 @@ import Work from './views/Work';
 //import {Play} from './views/Play';
 import {NotFound} from './views/NotFound';
 import DesignSystem from './views/DesignSystem';
-//import Dimensions from './views/projects/dimensions';
+import Upgrades from './views/projects/upgrades';
+import ManageLiability from './views/projects/manage-liability';
+import WholesalePricing from './views/projects/wholesale-pricing';
 import Cohorts from './views/projects/cohorts';
 import Aria from './views/projects/aria';
 import MyLW from './views/projects/mylw';
@@ -39,6 +41,9 @@ function App() {
           <Route path="/" element={<Work />} />
           <Route exact path="/work" element={<Work />} />
           {/* <Route path="/work/dimensions" element={<Dimensions />} /> */}
+          <Route path="/work/upgrades" element={<Upgrades />} />
+          <Route path="/work/manage-liability" element={<ManageLiability />} />
+          <Route path="/work/wholesale-pricing" element={<WholesalePricing />} />
           <Route path="/work/cohorts" element={<Cohorts />} />
           <Route path="/work/aria" element={<Aria />} />
           <Route path="/work/mylw" element={<MyLW />} />

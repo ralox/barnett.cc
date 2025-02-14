@@ -82,6 +82,24 @@
   margin: 1em 0 0.25em;
 }
 
+.work .gallery-item.nda-locked {
+  position: relative;
+}
+
+.work .gallery-item.nda-locked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  background-image: url("/public/img/lock.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
 
 /* DS CTA */
 

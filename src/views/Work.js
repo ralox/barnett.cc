@@ -13,37 +13,57 @@ export default function Work() {
           <p className="details">🎨 Product Designer + 💻 Front-End Developer | Lead UX Architect @CoxAutomotive 🚗</p>
         </div>
         <div className="gallery">
-          {/*
-          <div className="gallery-item">
+          <Link to="/work/upgrades" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL + "/img/cohorts.png"} alt="Project 1"/>
+              <img src={process.env.PUBLIC_URL +  "/img/upgrades.png"} alt="Project 1"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">
-                Financial Model: Dynamic Dimensions
-              </h3>
-              <div className="gallery-subtitle">Feature Design @ Mosaic</div>
+              <h3 className="gallery-title">Vehicle Merchandising: Included Upgrades</h3>
+              <div className="gallery-subtitle">Multi-Feature Strategy @ Cox Automotive</div>
               <div className="gallery-summary">
-                New feature Empowering financial teams and executives to slice and dice model data to match their industries and organizational strategies.
+                Leveraging build data to empower and scale dealership marketing.
               </div>
             </div>
-          </div>
-          */}
+          </Link>
+          <Link to="/work/manage-liability" className="gallery-item nda-locked">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt="Project 2"/>
+            </div>
+            <div className="gallery-detail">
+              <h3 className="gallery-title">Wholesale Auto: Manage Liability</h3>
+              <div className="gallery-subtitle">Feature Design @ Cox Automotive</div>
+              <div className="gallery-summary">
+                Building auction transparency and trust while reducing financial liability.
+              </div>
+            </div>
+          </Link>
+          <Link to="/work/wholesale-pricing" className="gallery-item nda-locked">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt="Project 3"/>
+            </div>
+            <div className="gallery-detail">
+              <h3 className="gallery-title">Wholesale Auto: Pricing Strategy</h3>
+              <div className="gallery-subtitle">Internal Tools @ Cox Automotive</div>
+              <div className="gallery-summary">
+                Enriching administrative pricing tools for wholesale vehicles.
+              </div>
+            </div>
+          </Link>
           <Link to="/work/cohorts" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt="Project 1"/>
+              <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt="Project 4"/>
             </div>
             <div className="gallery-detail">
               <h3 className="gallery-title">Financial Model: Cohorts</h3>
               <div className="gallery-subtitle">Feature Design @ Mosaic</div>
               <div className="gallery-summary">
-                New feature enabling entrepreneurs and finance professionals to model the impact of groups such as new clients or sales staff changes over time.
+                Accelerating CFO forecasts for clients, investments, and staff over time.
               </div>
             </div>
           </Link>
           <Link to="/work/aria" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/aria.png"} alt="Project 1"/>
+              <img src={process.env.PUBLIC_URL +  "/img/aria.png"} alt="Project 5"/>
             </div>
             <div className="gallery-detail">
               <h3 className="gallery-title">ARIA</h3>
@@ -51,13 +71,13 @@ export default function Work() {
                 New Product Design and Development @ Quavo
               </div>
               <div className="gallery-summary">
-                New SaaS product automating configuration and benchmarking for fraudulent transaction detection and response.
+                Enabling automated fraudulent transaction detection and response.
               </div>
             </div>
           </Link>
           <Link to="/work/mylw" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt="Project 1"/>
+              <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt="Project 6"/>
             </div>
             <div className="gallery-detail">
               <h3 className="gallery-title">My Liquid Web</h3>
@@ -65,7 +85,7 @@ export default function Work() {
                 Customer Portal Redesign @  Liquid Web
               </div>
               <div className="gallery-summary">
-                Complete overhaul, putting the power to manage and extend networks, devices, and services into customer hands.
+                Empowering customers to build and manage network devices and services.
               </div>
             </div>
           </Link>

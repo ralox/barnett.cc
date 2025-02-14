@@ -7,10 +7,12 @@ export default function PageFooter(showRecs="true") {
     <footer className="page-footer">
       <div className="work-links">
         Check out my design work
+        <Link className="link-item" to="/work/upgrades">Included Upgrades</Link>
+        <Link className="link-item" to="/work/manage-liability">Manage Liability</Link>
+        <Link className="link-item" to="/work/wholesale-pricing">Pricing Strategy</Link>
         <Link className="link-item" to="/work/cohorts">Cohorts</Link>
         <Link className="link-item" to="/work/aria">ARIA</Link>
         <Link className="link-item" to="/work/mylw">My Liquid Web</Link>
-        {/*<Link className="link-item" to="/work/dimensions">Dynamic Dimensions</Link>*/}
         <Link className="link-item" to="/ds">Design System Bits</Link>
       </div>
       {/*

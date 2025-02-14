@@ -1,0 +1,24 @@
+/*==================================
+  INDEX
+    COLOR OVERRIDES
+==================================*/
+
+
+/* COLOR OVERRIDES */
+
+.manage-liability {
+    --color-secondary: #2568fe;
+}
+
+.dark-mode .manage-liability {
+    --color-secondary: #3e7bc4;
+}
+
+.manage-liability .slide-wrapper {
+    align-items: baseline;
+}
+
+.manage-liability .slide.txt-img .slide-notes {
+    flex-basis: 55%;
+    width: clamp(15em, 55%, 100%);
+}

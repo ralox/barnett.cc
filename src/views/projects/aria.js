@@ -13,7 +13,7 @@ export default function Aria() {
             <h2 className="project-title">ARIA</h2>
             <div className="project-subtitle">New Product Design and Development @ Quavo</div>
             <div className="project-summary">
-              Quavo's second flagship product, ARIA, was my first time truly stepping into a leadership role as I tackled both design and development.
+              Stepped into a leadership role, tackling design and development for Quavo's second flagship product, ARIA.
             </div>
           </div>
 

@@ -1,0 +1,24 @@
+/*==================================
+  INDEX
+    COLOR OVERRIDES
+==================================*/
+
+
+/* COLOR OVERRIDES */
+
+.wholesale-pricing {
+    --color-secondary: #2568fe;
+}
+
+.dark-mode .wholesale-pricing {
+    --color-secondary: #3e7bc4;
+}
+
+.wholesale-pricing .slide-wrapper {
+    align-items: baseline;
+}
+
+.wholesale-pricing .slide.txt-img .slide-notes {
+    flex-basis: 55%;
+    width: clamp(15em, 55%, 100%);
+}
