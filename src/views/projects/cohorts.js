@@ -13,7 +13,7 @@ export default function Cohorts() {
             <h2 className="project-title">Financial Model: Cohorts</h2>
             <div className="project-subtitle">Feature Design @ Mosaic</div>
             <div className="project-summary">
-              Cohort analysis is a vital part of the CFO toolkit and covers a wide range of uses. I dug through real-world plans, identified the common patterns, and designed a solution that saves clients roughly $10,000 a year.
+              Demystified cohort analysis, a vital part of the CFO toolkit, to deliver a solution that saves clients roughly $10,000 a year.
             </div>
           </div>
 

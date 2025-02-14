@@ -1,0 +1,24 @@
+/*==================================
+  INDEX
+    COLOR OVERRIDES
+==================================*/
+
+
+/* COLOR OVERRIDES */
+
+.upgrades {
+    --color-secondary: #2568fe;
+}
+
+.dark-mode .upgrades {
+    --color-secondary: #3e7bc4;
+}
+
+.upgrades .slide-wrapper {
+    align-items: baseline;
+}
+
+.upgrades .slide.txt-img .slide-notes {
+    flex-basis: 55%;
+    width: clamp(15em, 55%, 100%);
+}
