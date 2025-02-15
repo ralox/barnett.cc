@@ -9,7 +9,6 @@ import PageHeader from './components/PageHeader';
 import PageFooter from './components/PageFooter';
 
 import Work from './views/Work';
-//import {Play} from './views/Play';
 import {NotFound} from './views/NotFound';
 import DesignSystem from './views/DesignSystem';
 import Upgrades from './views/projects/upgrades';
@@ -40,7 +39,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Work />} />
           <Route exact path="/work" element={<Work />} />
-          {/* <Route path="/work/dimensions" element={<Dimensions />} /> */}
           <Route path="/work/upgrades" element={<Upgrades />} />
           <Route path="/work/manage-liability" element={<ManageLiability />} />
           <Route path="/work/wholesale-pricing" element={<WholesalePricing />} />
@@ -49,7 +47,6 @@ function App() {
           <Route path="/work/mylw" element={<MyLW />} />
 
           <Route path="/ds" element={<DesignSystem />} />
-          {/*<Route exact path="/play" element={<Play />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Recs />
