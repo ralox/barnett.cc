@@ -295,12 +295,12 @@
 
 .scrolling-down .slide-tilt :is(.slide, .slide-background),
 .scrolling-down .slide-tilt.slide-wrapper::before {
-    transform: rotate3d(1, 0, 0, -6deg);
+    transform: rotate3d(1, 0, 0, -4deg);
 }
 
 .scrolling-up  .slide-tilt :is(.slide, .slide-background),
 .scrolling-up  .slide-tilt.slide-wrapper::before {
-    transform: rotate3d(1, 0, 0, 6deg);
+    transform: rotate3d(1, 0, 0, 4deg);
 }
 
 .scrolling-down .slide-tilt.slide-wrapper::before {
