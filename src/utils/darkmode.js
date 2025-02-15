@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 export default function DarkModeToggle() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'true' : 'false';
     let initial = localStorage.getItem('darkMode') === null ? prefersDark : localStorage.getItem('darkMode');
-    initial = localStorage.getItem('darkMode') === 'true' ? true : false;
-    const [darkMode, setDarkMode] = useState(initial);
+    localStorage.setItem('darkMode', initial);
+    initial = initial === 'true' ? true : false;
+    const [darkMode, setDarkMode] =  useState(initial);
     const docBody = document.querySelector('body');
 
     
