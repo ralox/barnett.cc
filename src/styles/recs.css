@@ -19,6 +19,7 @@
 .rec-list {
   display: inline-flex;
   align-items: center;
+  max-width: 100vw;
   overflow-x: auto;
 }
 
