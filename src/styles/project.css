@@ -239,6 +239,13 @@
     margin-right: 0.5em;
 }
 
+.callout-block {
+    padding: 1.5em;
+    border-radius: 1em;
+    color: var(--color-util-pure);
+    background-color: var(--color-secondary);
+}
+
 
 /* REFLECTIONS */
 
@@ -286,6 +293,10 @@
     transform: translateY(3em);
 }
 
+.fade-in.fade-from-top {
+    transform: translateY(-3em);
+}
+
 .slide-wrapper:is(.slide-visited,.slide-active) .fade-in {
     transform: translate(0);
     opacity: 1;
@@ -295,12 +306,12 @@
 
 .scrolling-down .slide-tilt :is(.slide, .slide-background),
 .scrolling-down .slide-tilt.slide-wrapper::before {
-    transform: rotate3d(1, 0, 0, -6deg);
+    transform: rotate3d(1, 0, 0, -4deg);
 }
 
 .scrolling-up  .slide-tilt :is(.slide, .slide-background),
 .scrolling-up  .slide-tilt.slide-wrapper::before {
-    transform: rotate3d(1, 0, 0, 6deg);
+    transform: rotate3d(1, 0, 0, 1deg);
 }
 
 .scrolling-down .slide-tilt.slide-wrapper::before {

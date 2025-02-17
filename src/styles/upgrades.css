@@ -1,24 +1,76 @@
 /*==================================
   INDEX
     COLOR OVERRIDES
+    PERSONA SLIDES
+    C-W-R MOCKS
+    FOLLOW-UP PROJECTS
 ==================================*/
 
 
 /* COLOR OVERRIDES */
 
 .upgrades {
-    --color-secondary: #2568fe;
+    --color-primary: #072158;
+    --color-secondary: #1c469f;
 }
 
 .dark-mode .upgrades {
+    --color-primary: #3e5c9c;
     --color-secondary: #3e7bc4;
 }
 
-.upgrades .slide-wrapper {
-    align-items: baseline;
+/* PERSONA SLIDES */
+
+.persona-subtitle {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: -0.5em;
 }
 
-.upgrades .slide.txt-img .slide-notes {
-    flex-basis: 55%;
-    width: clamp(15em, 55%, 100%);
+.persona-list-header {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.persona-gary .slide.txt-img .slide-notes {
+    flex-basis: 60%;
+    width: clamp(15em, 60%, 100%);
+}
+
+.persona-gary .slide.txt-img .slide-images {
+    flex-basis: 30%;
+}
+
+/* C-W-R MOCKS */
+
+.upgrades-crawl-walk-run-inset {
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em 0 2em;
+}
+
+.upgrades-crawl-walk-run-inset .image-wrapper {
+    flex-grow: 1;
+    width: clamp(8em, 30%, 100%);
+    min-width: 8em;
+}
+
+/* FOLLOW-UP PROJECTS */
+
+.upgrade-follow-up .project-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.upgrade-follow-up .slide-notes {
+    width: clamp(30em, 60%, 100%);
+}
+
+.upgrade-follow-up .project-group .slide-images {
+    flex-grow: 1;
+    /*min-width: 25em;*/
+    /*max-width: 90vw;*/
+    width: clamp(20em, 45%, 90vw);
 }

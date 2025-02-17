@@ -58,8 +58,8 @@ export default function Recs() {
       id: 1,
       recName:"Heather McGeachy",
       imgSrc:"heather.png",
-      recTitle:"Research Strategist - Google",
-      recQuote:"[Dave's] easy going nature makes him a good fit in any team. I have enjoyed seeing his insanely creative solutions to visual problems!"
+      recTitle:"Research Leader | Strategist - Google",
+      recQuote:"His easy going nature makes him a good fit in any team. I have enjoyed seeing his insanely creative solutions to visual problems!"
     },
     {
       id: 2,
