@@ -96,7 +96,7 @@
 .dark-mode {
   --color-bg: rgb(65, 65, 65);
   --color-bg-dark: rgb(254, 254, 254);
-  --color-bg-offset: rgb(136, 136, 136);
+  --color-bg-offset: rgb(39, 39, 39);
   --color-text-default: rgb(254, 254, 254);
   --color-text-dark: rgb(255, 255, 255);
   --color-text-soft: rgb(238, 238, 238);
