@@ -169,7 +169,7 @@ export default function Upgrades() {
               <h3>Final Featue As-Delivered</h3>
               <div className="slide-images fade-in fade-from-bottom">
                 <div className="image-wrapper">
-                  <img className="lazy-load" style={{maxWidth: "50em"}} lazy-src={process.env.PUBLIC_URL + "/img/upgrades-vi360-final.png"} alt="high-fidelity outcome" />
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/vi360-clip-hidef.gif"} alt="high-fidelity outcome" />
                 </div>
               </div>
             </div>
