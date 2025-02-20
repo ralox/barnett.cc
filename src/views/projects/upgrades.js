@@ -184,10 +184,10 @@ export default function Upgrades() {
                 </p>
                 <ul>
                   <li>
-                    <em>Factory equipment sheets</em> offer a one-click solution for a reliable, no-frills display that generates a similar level of trust to OEM-branded documentation.
+                    <em>Factory equipment sheets</em> offer a reliable, no-frills display that my research shows shoppers trust at the same level as OEM-branded documents. In addition to marketing, this format also serves dealers during appraisals.
                   </li>
                   <li>
-                    <em>Included Upgrades billboards</em> leverage all the same data to create unique value, but gives dealers control over the messaging and branding.
+                    <em>Included Upgrades billboards</em> leverage all of the same data to create unique value for shoppers, but gives dealers control over the messaging and branding.
                   </li>
                 </ul>
               </div>
