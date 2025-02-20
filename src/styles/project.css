@@ -304,15 +304,23 @@
 
 /* SCROLL - TILT */
 
+.slide-tilt :is(.slide, .slide-background),
+.slide-tilt.slide-wrapper::before {
+    transition: all 1.5s;
+}
+
+
 .scrolling-down .slide-tilt :is(.slide, .slide-background),
 .scrolling-down .slide-tilt.slide-wrapper::before {
-    transform: rotate3d(1, 0, 0, -4deg);
+    transform: rotate3d(1, 0, 0, -2deg);
 }
+
 
 .scrolling-up  .slide-tilt :is(.slide, .slide-background),
 .scrolling-up  .slide-tilt.slide-wrapper::before {
-    transform: rotate3d(1, 0, 0, 1deg);
+    transform: rotate3d(1, 0, 0, 2deg);
 }
+
 
 .scrolling-down .slide-tilt.slide-wrapper::before {
     box-shadow: 0.5em 0 0.5em -0.5em rgba(50, 0, 50, 0.2),
