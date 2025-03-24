@@ -76,6 +76,32 @@
   list-style: none;
 }
 
+.country-tag {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+  filter: opacity(80%);
+}
+
+.country-tag:hover,
+.country-tag:active {
+  cursor: pointer;
+  filter: saturate(100%) opacity(100%);
+}
+
+.country-tag:hover::after,
+.country-tag:active::after {
+  content: attr(alt);
+  display: block;
+  position: absolute;
+  bottom: 1.5em;
+  left: 0.25em;
+  padding: 0.2em 0.8em;
+  width: auto;
+  border-radius: 1em 1em 1em 0;
+  background: #444;
+  color: #fff;
+}
 
 /* SKILLS */
 
