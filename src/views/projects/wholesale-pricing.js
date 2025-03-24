@@ -21,13 +21,10 @@ export default function WholesalePricing() {
           
           <section className="slide-wrapper">
             <div className="slide txt-img">
-              <div className="slide-notes">
-                <h3>Interested?</h3>
+              <div className="slide-notes nda-locked">
+                <h3>Non-Disclosure Agreement</h3>
                 <p>
-                  I'm currently working on telling this story and I may be limited in what details I can share publicly.
-                </p>
-                <p>
-                  If you're interested in hearing more about the process, insights, and outcomes, please contact me.
+                  This project falls under an active NDA. More information about the process, insights, and outcomes may be shared in an interview setting.
                 </p>
               </div>
             </div>

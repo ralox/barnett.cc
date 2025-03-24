@@ -7,6 +7,7 @@
         Color Blocks
     SLIDE CONTENT
         Images
+        NDAs
     REFLECTIONS
     INTERSECTION - FADE
     SCROLL - TILT
@@ -245,6 +246,42 @@
     color: var(--color-util-pure);
     background-color: var(--color-secondary);
 }
+
+/* NDAs */
+
+.slide-wrapper .nda-locked {
+    position: relative;
+    padding: 1em;
+    background: var(--color-bg-offset);
+    text-align: center;
+}
+
+.slide-wrapper .nda-locked::before {
+    content:'';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -2em;
+    bottom: 0;
+    left: -2em;
+    z-index: -1;
+    border-radius: 0.5em;
+    background-image: repeating-linear-gradient(-45deg, #222, #222 25px, #fa0 26px, #fa0 50px);
+}
+
+.slide-wrapper .nda-locked::after {
+    content:'';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #fff;
+    border-radius: 4px;
+}
+
 
 
 /* REFLECTIONS */
