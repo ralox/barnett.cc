@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/design-system.css';
+import '../../styles/advanced-prototyping.css';
 
 
-export default function DesignSystem() {
+export default function AdvancedPrototyping() {
   return (
     <div className="page-wrapper">
-      <main className="design-system">
-        <h2>Design System Examples</h2>
+      <main className="advanced-prototyping">
+        <h2>Advanced Figma Prototyping</h2>
         <div className="gallery">
           <div className="gallery-item">
             <div className="gallery-detail">

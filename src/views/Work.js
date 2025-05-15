@@ -10,7 +10,7 @@ export default function Work() {
       <main className="work">
         <div className="intro">
           <h2><span className="highlight">Dave</span>designs ideas and systems.</h2>
-          <p className="details">🎨 Product Designer + 💻 Front-End Developer | Lead UX Architect @CoxAutomotive 🚗</p>
+          <p className="details">🎨 Product Designer + 💻 Front-End Developer | former Lead UX Architect @CoxAutomotive 🚗</p>
         </div>
         <div className="gallery">
           <Link to="/work/upgrades" className="gallery-item">
@@ -90,8 +90,8 @@ export default function Work() {
             </div>
           </Link>
         </div>
-        <Link to="/ds" className="ds-cta">
-          Design System Examples <span className="arrow">→</span>
+        <Link to="/advanced-components" className="ds-cta">
+          Advanced Figma Components <span className="arrow">→</span>
         </Link>
         <div id="about">
           <About />

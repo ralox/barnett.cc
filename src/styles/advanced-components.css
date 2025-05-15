@@ -1,0 +1,31 @@
+.advanced-components {
+  font-size: 1rem;
+  padding: 8em 2em 2em;
+  min-height: 50vh;
+  margin-bottom: 4em;
+}
+
+.advanced-components .gallery {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  gap: 8em;
+}
+
+.advanced-components .gallery-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.advanced-components .gallery-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.advanced-components :is(.gallery-video,.gallery-detail) {
+  flex-basis: 40%;
+  min-width: 20em;
+  text-align: left;
+}

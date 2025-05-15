@@ -13,7 +13,7 @@ export default function PageFooter(showRecs="true") {
         <Link className="link-item" to="/work/cohorts">Cohorts</Link>
         <Link className="link-item" to="/work/aria">ARIA</Link>
         <Link className="link-item" to="/work/mylw">My Liquid Web</Link>
-        <Link className="link-item" to="/ds">Design System Bits</Link>
+        <Link className="link-item" to="/advanced-components">Advanced Figma Components</Link>
       </div>
       {/*
       <div className="play-links">
@@ -23,12 +23,7 @@ export default function PageFooter(showRecs="true") {
         <Link className="link-item">Example</Link>
         <Link className="link-item">Example</Link>
       </div>
-      
-      <div className="contact-links">
-        <a className="email-me">✉️</a>
-        <a><img className="linkedin-img" src={process.env.PUBLIC_URL +  "/img/In-Blue-34.png"} /></a>
-      </div>
-      */ }
+      */}
       <div className="copyright">©️2025 Dave Barnett</div>
     </footer>
   );

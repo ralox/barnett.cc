@@ -1,18 +1,18 @@
-.design-system {
+.advanced-prototyping {
   font-size: 1rem;
   padding: 8em 2em 2em;
   min-height: 50vh;
   margin-bottom: 4em;
 }
 
-.design-system .gallery {
+.advanced-prototyping .gallery {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
   gap: 8em;
 }
 
-.design-system .gallery-item {
+.advanced-prototyping .gallery-item {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -20,11 +20,11 @@
   justify-content: center;
 }
 
-.design-system .gallery-item:nth-child(odd) {
+.advanced-prototyping .gallery-item:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
-.design-system :is(.gallery-video,.gallery-detail) {
+.advanced-prototyping :is(.gallery-video,.gallery-detail) {
   flex-basis: 40%;
   min-width: 20em;
   text-align: left;

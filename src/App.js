@@ -10,7 +10,8 @@ import PageFooter from './components/PageFooter';
 
 import Work from './views/Work';
 import {NotFound} from './views/NotFound';
-import DesignSystem from './views/DesignSystem';
+import AdvancedComponents from './views/demos/AdvancedComponents';
+import AdvancedPrototyping from './views/demos/AdvancedPrototyping';
 import Upgrades from './views/projects/upgrades';
 import ManageLiability from './views/projects/manage-liability';
 import WholesalePricing from './views/projects/wholesale-pricing';
@@ -46,7 +47,8 @@ function App() {
           <Route path="/work/aria" element={<Aria />} />
           <Route path="/work/mylw" element={<MyLW />} />
 
-          <Route path="/ds" element={<DesignSystem />} />
+          <Route path="/advanced-prototyping" element={<AdvancedPrototyping />} />
+          <Route path="/advanced-components" element={<AdvancedComponents />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Recs />
