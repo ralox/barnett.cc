@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../styles/project.css';
 import '../../styles/upgrades.css';
 import SlideObserver from '../../utils/SlideObserver';
@@ -6,12 +6,15 @@ import SlideObserver from '../../utils/SlideObserver';
 
 
 export default function Upgrades() {
+  useEffect(() => {
+    document.title = "Merchandising Vehicle Upgrades | Work | Barnett UX";
+  },[]);
   return (
     <SlideObserver>
       <div className="page-wrapper">
         <article className="upgrades project">
           <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/upgrades.png)"}}>
-            <h2 className="project-title">Vehicle Merchandising: Included Upgrades</h2>
+            <h1 className="project-title">Merchandising Vehicle Upgrades</h1>
             <div className="project-subtitle">Multi-Feature Strategy @ Cox Automotive</div>
             <div className="project-summary">
               Supercharged dealer merchanising through automated vehicle highlights which enable busy dealers to tell unique stories 
@@ -22,7 +25,7 @@ export default function Upgrades() {
           <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
-                <h3>Problem Discovery</h3>
+                <h2>Problem Discovery</h2>
                 <p>
                   Cox Automotive works with thousands of dealers who rely on millions of used vehicle sales every year. Marketing this fluxuating and unfamiliar inventory is time consuming and margins are razor-thin.
                 </p>
@@ -42,7 +45,7 @@ export default function Upgrades() {
               </div>
               <div className="slide-notes fade-in fade-from-right">
                 <div className="persona-subtitle">Persona Notes</div>
-                <h3>Gary, Merchandising Manager</h3>
+                <h2>Gary, Merchandising Manager</h2>
                 <p>
                   Gary markets his revolving, used vehicle inventory around common features, often relying on automatic tools and bulk operations to save time. Chasing down package data is prohibitive and would take away time from other tasks; especially when dealing with numerous makes. Without surfacing each vehicle's differentiating features or manufacturer-specific selling points, he's potentially leaving money on the table.
                 </p>
@@ -82,7 +85,7 @@ export default function Upgrades() {
           <section className="slide-wrapper slide-tilt color-block color-block-primary">
             <div className="slide txt-img">
               <div className="slide-notes fade-in fade-from-left">
-                <h3>Solution Discovery</h3>
+                <h2>Solution Discovery</h2>
                 <p>
                   With an understanding of user pain points and our own resources, we were ready to explore solutions. Our Vehicle Intelligence 360 tool was already performing automated markup of vehicle features, so we opted to expand on that first.
                 </p>
@@ -148,7 +151,7 @@ export default function Upgrades() {
                 </div>
               </div>
               <div className="slide-notes fade-in fade-from-right">
-                <h3>User Testing Findings</h3>
+                <h2>User Testing Findings</h2>
                 <ol>
                   <li>
                     Despite being industry-standard language, our shoppers were reading "options" as an additional cost or choice but our solution targetted used vehicles being sold as-configured.
@@ -166,7 +169,7 @@ export default function Upgrades() {
 
           <section className="slide-wrapper color-block color-block-dark">
             <div className="slide img-group stacked">
-              <h3>Final Featue As-Delivered</h3>
+              <h2>Final Featue As-Delivered</h2>
               <div className="slide-images fade-in fade-from-bottom">
                 <div className="image-wrapper">
                   <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/vi360-clip-hidef.gif"} alt="high-fidelity outcome" />
@@ -178,7 +181,7 @@ export default function Upgrades() {
           <section className="slide-wrapper upgrade-follow-up">
             <div className="slide img-group">
               <div className="slide-notes fade-in">
-                <h3>Fast-Follow Projects</h3>
+                <h2>Fast-Follow Projects</h2>
                 <p>
                   With the release of Included Upgrades, we were immediately delivering value. But we now had access to a rich data resource and wanted to give dealers more control over how they engaged with it.
                 </p>
@@ -215,7 +218,7 @@ export default function Upgrades() {
           <section className="slide-wrapper reflections">
             <div className="slide txt-solo">
               <div className="slide-notes">
-                <h3>Reflections</h3>
+                <h2>Reflections</h2>
                 <ul>
                   <li>
                     <em className="good-highlight">Simple surveys are powerful</em> and yield quantifiable, actionable insight in a hurry. We saved a lot of back-and-forth on copy disagreement by going right to the customer.

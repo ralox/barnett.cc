@@ -9,7 +9,7 @@ import PageHeader from './components/PageHeader';
 import PageFooter from './components/PageFooter';
 
 import Work from './views/Work';
-import {NotFound} from './views/NotFound';
+import NotFound from './views/NotFound';
 import AdvancedComponents from './views/demos/AdvancedComponents';
 import AdvancedPrototyping from './views/demos/AdvancedPrototyping';
 import Upgrades from './views/projects/upgrades';

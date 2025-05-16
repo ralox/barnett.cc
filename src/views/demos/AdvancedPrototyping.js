@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import '../../styles/advanced-prototyping.css';
 
 
 export default function AdvancedPrototyping() {
+  useEffect(() => {
+    document.title = "Advanced Prototyping | Barnett UX";
+  },[]);
   return (
     <div className="page-wrapper">
       <main className="advanced-prototyping">
-        <h2>Advanced Figma Prototyping</h2>
+        <h1>Advanced Figma Prototyping</h1>
         <div className="gallery">
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h3 className="gallery-title">Tags</h3>
+              <h2 className="gallery-title">Tags</h2>
               <div className="gallery-subtitle">Easy-Baked Dynamic Variants</div>
               <p>
                 Tags, or pills, were something of a swiss army knife in our system; informational callout, quick selection dropdown, multi-select list item, and contextual badge… 
@@ -26,7 +29,7 @@ export default function AdvancedPrototyping() {
           </div>
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h3 className="gallery-title">Core Inputs</h3>
+              <h2 className="gallery-title">Core Inputs</h2>
               <div className="gallery-subtitle">Removing Micro Decisions and Redundancy</div>
               <p>
                 After noticing that <span className="bad-highlight">all of our forms had a tendency to vary on everything from font weight and spacing, to help text and error states</span> I 
@@ -44,7 +47,7 @@ export default function AdvancedPrototyping() {
           </div>
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h3 className="gallery-title">Icon Wrapper</h3>
+              <h2 className="gallery-title">Icon Wrapper</h2>
               <div className="gallery-subtitle">Normalizing and Enhancing a Messy Library</div>
               <p>
                 Our custom icon library was a bit of a mess and constantly expanding. Each icon was defined as a stand-alone component and
@@ -62,7 +65,7 @@ export default function AdvancedPrototyping() {
           </div>
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h3 className="gallery-title">Buttons</h3>
+              <h2 className="gallery-title">Buttons</h2>
               <div className="gallery-subtitle">Demonstrating Atomic Design</div>
               <p>
                 The button component is built around a shared atomic base which defines the dimensions and spacing while also providing the default content; 

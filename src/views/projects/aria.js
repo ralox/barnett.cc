@@ -1,16 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../styles/project.css';
 import '../../styles/aria.css';
 import SlideObserver from '../../utils/SlideObserver';
 
 
 export default function Aria() {
+  useEffect(() => {
+    document.title = "ARIA | Work | Barnett UX";
+  },[]);
   return (
     <SlideObserver>
       <div className="page-wrapper">
         <article className="aria project">
           <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/aria.png)"}}>
-            <h2 className="project-title">ARIA</h2>
+            <h1 className="project-title">ARIA</h1>
             <div className="project-subtitle">New Product Design and Development @ Quavo</div>
             <div className="project-summary">
               Stepped into a leadership role, tackling design and development for Quavo's second flagship product, ARIA.
@@ -36,7 +39,7 @@ export default function Aria() {
                 </div>
               </div>
               <div className="slide-notes fade-in fade-from-right">
-                <h3>We can do that...</h3>
+                <h2>We can do that...</h2>
                 <p>
                   At scale, the finance industry is swimming in claims of fraud and each of them must be evaluated. Even rejecting a claim can cost more than the cost to pay it. Quavo already had the necessary resources and experience, so we set out to solve that problem with data.
                 </p>
@@ -47,7 +50,7 @@ export default function Aria() {
           <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
-                <h3>Let's try something new</h3>
+                <h2>Let's try something new</h2>
                 <p>
                   Quavo was ready to jump into reactive frameworks for the first time. ARIA was a greenfield project. Perfect. So I was tasked with designing the thing, picking a framework, and getting the front-end up and running.
                 </p>
@@ -58,7 +61,7 @@ export default function Aria() {
           <section className="slide-wrapper slide-tilt color-block color-block-dark">
             <div className="slide stacked">
               <div className="slide-notes fade-in">
-                <h3>I chose Vue.js and it was a lot of fun!</h3>
+                <h2>I chose Vue.js and it was a lot of fun!</h2>
               </div>
               <div className="slide-images fade-in">
                 <div className="image-wrapper captioned">
@@ -71,7 +74,7 @@ export default function Aria() {
           <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in">
-                <h3>Great! Now what?</h3>
+                <h2>Great! Now what?</h2>
                 <p>
                   So now we have a blank slate to build on but no product. It was time to do some <span className="aria-design">research</span>.
                 </p>
@@ -87,7 +90,7 @@ export default function Aria() {
           <section className="slide-wrapper slide-tilt color-block color-block-primary">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in">
-                <h3>...playing catchup</h3>
+                <h2>...playing catchup</h2>
                 <p>
                   I quickly learned that the API had been in-progress for a few months. I would need to make sure were weren't going in different directions.
                 </p>
@@ -114,7 +117,7 @@ export default function Aria() {
           <section className="slide-wrapper slide-tilt color-block color-block-dark">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in">
-                <h3>So here's what I did</h3>
+                <h2>So here's what I did</h2>
                 <p>
                   The basic elements were already settled. What I needed to do was figure out how to get that in front of the users in a way which was informative and gave our clients confidence in the output.
                 </p>
@@ -142,7 +145,7 @@ export default function Aria() {
           <section className="slide-wrapper">
             <div className="slide txt-img">
               <div className="slide-notes fade-in fade-from-left">
-                <h3>Select a Profile</h3>
+                <h2>Select a Profile</h2>
                 <p>
                   Profiles would hold saved configurations and allow risk-free exploration of all options. They also gave us a means of conveying defaults and suggested setups in a world where "they can do whatever they want" was the directive.
                 </p>
@@ -165,7 +168,7 @@ export default function Aria() {
                 </div>
               </div>
               <div className="slide-notes fade-in fade-from-right">
-                <h3>Set Configuration</h3>
+                <h2>Set Configuration</h2>
                 <p>
                   Configuration is like legos without the fun. Our users needed the ability to create custom groups from a long list of possible factors. These would add up scores towards the likelihood of genuine fraud. This loose template ensured that the structure would always be viable but that each org could approach the math their own way.
                 </p>
@@ -179,7 +182,7 @@ export default function Aria() {
           <section className="slide-wrapper">
             <div className="slide txt-img">
               <div className="slide-notes fade-in fade-from-left">
-                <h3>Set Decision Matrix</h3>
+                <h2>Set Decision Matrix</h2>
                 <p>
                   Using a 3x3 grid, I was able to map nine possible outcomes onto a single control which shows the relationship between our two core possibilities.
                 </p>
@@ -202,7 +205,7 @@ export default function Aria() {
                 <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/aria-test.png"} alt="ARIA evaluation" />
               </div>
               <div className="slide-notes fade-in fade-from-right">
-                <h3>Review & Evaluate</h3>
+                <h2>Review & Evaluate</h2>
                 <p>
                   Finally, Review & Evaluate allows clients to compare their changes against a previous profile. The page begins with broad figures for quick assessment. If your goal is to pay around 3% more, you can quickly see if you're off the mark. Below that, I dive into each mismatch and what drove the change.
                 </p>
@@ -213,7 +216,7 @@ export default function Aria() {
           <section className="slide-wrapper reflections">
             <div className="slide txt-solo">
               <div className="slide-notes">
-                <h3>Reflections</h3>
+                <h2>Reflections</h2>
                 <ul>
                   <li>
                     <em className="good-highlight">Letting go of control is okay / we're all on the same team</em>. I was concerned when I saw how many hands were in this project before I started. The work performed in market analysis and sales was superb and overlapped significantly with the primary research a UX professional would perform. This lightened the load in a situation where I was already wearing multiple hats.

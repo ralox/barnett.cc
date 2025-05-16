@@ -108,7 +108,6 @@
 .bio-highlights {
   display: flex;
   flex-direction: row wrap;
-  margin: 4em 0 0;
   gap: 2em;
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../styles/project.css';
 import '../../styles/manage-liability.css';
 import SlideObserver from '../../utils/SlideObserver';
@@ -6,12 +6,15 @@ import SlideObserver from '../../utils/SlideObserver';
 
 
 export default function ManageLiability() {
+  useEffect(() => {
+    document.title = "Wholesale Auto Liability | Work | Barnett UX";
+  },[]);
   return (
     <SlideObserver>
       <div className="page-wrapper">
         <article className="manage-liability project">
           <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/manage-liability.png)"}}>
-            <h2 className="project-title">Wholesale Auto: Manage Liability</h2>
+            <h1 className="project-title">Wholesale Auto Liability</h1>
             <div className="project-subtitle">Feature Design @ Cox Automotive</div>
             <div className="project-summary">
               Simplified and elevated dealer disclosure on wholesale vehicles, reducing post-sale arbitration by 50 units a week and 
@@ -22,7 +25,7 @@ export default function ManageLiability() {
           <section className="slide-wrapper">
             <div className="slide txt-img">
               <div className="slide-notes nda-locked">
-                <h3>Non-Disclosure Agreement</h3>
+                <h2>Non-Disclosure Agreement</h2>
                 <p>
                   This project falls under an active NDA. More information about the process, insights, and outcomes may be shared in an interview setting.
                 </p>
@@ -34,7 +37,7 @@ export default function ManageLiability() {
           <section className="slide-wrapper reflections">
             <div className="slide txt-solo">
               <div className="slide-notes">
-                <h3>Reflections</h3>
+                <h2>Reflections</h2>
                 <ul>
                   <li>
                     <em className="good-highlight"> Thinking</em> happy thoughts.

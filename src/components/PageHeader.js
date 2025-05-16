@@ -5,9 +5,9 @@ import DarkModeToggle from '../utils/darkmode';
 export default function PageHeader() {
   return (
     <header className="page-header">
-      <Link to="/" className="title">
+      <Link role="heading" aria-level="1" to="/" className="title">
         <img src={process.env.PUBLIC_URL +  "/img/portrait.png"} className="logo" alt="logo" />
-        <h1>Dave Barnett</h1>
+        <div class="site-title">Dave Barnett</div>
       </Link>
       <nav>
         <Link

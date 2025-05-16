@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/work.css';
 import About from './About';
 
 
 export default function Work() {
+  useEffect(() => {
+      document.title = "Barnett UX";
+  },[]);
   return (
     <section className="page-wrapper">
       <main className="work">
         <div className="intro">
-          <h2><span className="highlight">Dave</span>designs ideas and systems.</h2>
+          <h1 class="page-title"><span className="highlight">Dave</span>designs ideas and systems.</h1>
           <p className="details">🎨 Product Designer + 💻 Front-End Developer | former Lead UX Architect @CoxAutomotive 🚗</p>
         </div>
         <div className="gallery">
@@ -18,7 +21,7 @@ export default function Work() {
               <img src={process.env.PUBLIC_URL +  "/img/upgrades.png"} alt="Project 1"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">Vehicle Merchandising: Included Upgrades</h3>
+              <h2 className="gallery-title">Merchandising Vehicle Upgrades</h2>
               <div className="gallery-subtitle">Multi-Feature Strategy @ Cox Automotive</div>
               <div className="gallery-summary">
                 Leveraging build data to empower and scale dealership marketing.
@@ -30,7 +33,7 @@ export default function Work() {
               <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt="Project 2"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">Wholesale Auto: Manage Liability</h3>
+              <h2 className="gallery-title">Wholesale Auto Liability</h2>
               <div className="gallery-subtitle">Feature Design @ Cox Automotive</div>
               <div className="gallery-summary">
                 Building auction transparency and trust while reducing financial liability.
@@ -42,7 +45,7 @@ export default function Work() {
               <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt="Project 3"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">Wholesale Auto: Pricing Strategy</h3>
+              <h2 className="gallery-title">Wholesale Auto Pricing</h2>
               <div className="gallery-subtitle">Internal Tools @ Cox Automotive</div>
               <div className="gallery-summary">
                 Enriching administrative pricing tools for wholesale vehicles.
@@ -54,7 +57,7 @@ export default function Work() {
               <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt="Project 4"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">Financial Model: Cohorts</h3>
+              <h2 className="gallery-title">Financial Model Cohorts</h2>
               <div className="gallery-subtitle">Feature Design @ Mosaic</div>
               <div className="gallery-summary">
                 Accelerating CFO forecasts for clients, investments, and staff over time.
@@ -66,7 +69,7 @@ export default function Work() {
               <img src={process.env.PUBLIC_URL +  "/img/aria.png"} alt="Project 5"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">ARIA</h3>
+              <h2 className="gallery-title">ARIA</h2>
               <div className="gallery-subtitle">
                 New Product Design and Development @ Quavo
               </div>
@@ -80,7 +83,7 @@ export default function Work() {
               <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt="Project 6"/>
             </div>
             <div className="gallery-detail">
-              <h3 className="gallery-title">My Liquid Web</h3>
+              <h2 className="gallery-title">My Liquid Web</h2>
               <div className="gallery-subtitle">
                 Customer Portal Redesign @  Liquid Web
               </div>

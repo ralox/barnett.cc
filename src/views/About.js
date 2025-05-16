@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/about.css';
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About Me | Barnett UX";
+  },[]);
+
   function setLevel(level) {
     let color;
 
@@ -23,6 +27,7 @@ export default function About() {
         <div className="image-wrapper"  style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/neworleans.png"}}>
           <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/neworleans.png"} alt="Dave and Blair in New Orleans"/>
         </div>
+        <h2 class="section-title" hidden>About Me</h2>
         <div className="bio">
           <div className="bio-text">
             <h3>Career</h3>
@@ -55,14 +60,14 @@ export default function About() {
               <span class="country-tag" alt="Thailand">🇹🇭</span>
             </p>
             <ul className="identity">
-              <li>🤝 <a href="https://www.16personalities.com/infp-personality" target="blank">Assertive Mediator (INFP-A)</a></li>
+              <li>🤝 <a href="https://www.16personalities.com/infps-at-work" target="blank">Assertive Mediator (INFP-A)</a></li>
               <li>🦅 Ravenclaw</li>
             </ul>
           </div>
           <div className="skills-and-learning">
             <div className="bio-highlights">
                 <div className="bio-skills">
-                  <h4>Skills</h4>
+                  <h3>Skills</h3>
                   <ul>
                     <li style={setLevel(99)}>UI & Interaction Design</li>
                     <li style={setLevel(95)}>Figma</li>

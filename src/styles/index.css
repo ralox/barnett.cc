@@ -219,13 +219,13 @@ a:where(:hover,:focus,:active) {
 /*
   DECORATIVE HEADERS
 */
-h2 {
+h1 {
   font-size: 2em;
   margin-bottom: 3em;
   font-family: var(--font-feature);
 }
 
-h3 {
+h2 {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 0.5em;
