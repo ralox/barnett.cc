@@ -28,30 +28,6 @@ export default function Work() {
               </div>
             </div>
           </Link>
-          <Link to="/work/manage-liability" className="gallery-item nda-locked">
-            <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt="Project 2"/>
-            </div>
-            <div className="gallery-detail">
-              <h2 className="gallery-title">Wholesale Auto Liability</h2>
-              <div className="gallery-subtitle">Feature Design @ Cox Automotive</div>
-              <div className="gallery-summary">
-                Building auction transparency and trust while reducing financial liability.
-              </div>
-            </div>
-          </Link>
-          <Link to="/work/wholesale-pricing" className="gallery-item nda-locked">
-            <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt="Project 3"/>
-            </div>
-            <div className="gallery-detail">
-              <h2 className="gallery-title">Wholesale Auto Pricing</h2>
-              <div className="gallery-subtitle">Internal Tools @ Cox Automotive</div>
-              <div className="gallery-summary">
-                Enriching administrative pricing tools for wholesale vehicles.
-              </div>
-            </div>
-          </Link>
           <Link to="/work/cohorts" className="gallery-item">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt="Project 4"/>
@@ -89,6 +65,30 @@ export default function Work() {
               </div>
               <div className="gallery-summary">
                 Empowering customers to build and manage network devices and services.
+              </div>
+            </div>
+          </Link>
+          <Link to="/work/manage-liability" className="gallery-item nda-locked">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt="Project 2"/>
+            </div>
+            <div className="gallery-detail">
+              <h2 className="gallery-title">Wholesale Auto Liability</h2>
+              <div className="gallery-subtitle">Feature Design @ Cox Automotive</div>
+              <div className="gallery-summary">
+                Building auction transparency and trust while reducing financial liability.
+              </div>
+            </div>
+          </Link>
+          <Link to="/work/wholesale-pricing" className="gallery-item nda-locked">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt="Project 3"/>
+            </div>
+            <div className="gallery-detail">
+              <h2 className="gallery-title">Wholesale Auto Pricing</h2>
+              <div className="gallery-subtitle">Internal Tools @ Cox Automotive</div>
+              <div className="gallery-summary">
+                Enriching administrative pricing tools for wholesale vehicles.
               </div>
             </div>
           </Link>
