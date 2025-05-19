@@ -13,7 +13,15 @@ export default function Work() {
       <main className="work">
         <div className="intro">
           <h1 class="page-title"><span className="highlight">Dave</span>designs ideas and systems.</h1>
-          <p className="details">🎨 Product Designer + 💻 Front-End Developer | former Lead UX Architect @CoxAutomotive 🚗</p>
+          <p className="details">🎨 Product Designer + 💻 Front-End Developer | former Lead UX Architect @CoxAutomotive</p>
+        </div>
+        <div className="cta-group">
+          <Link to="/advanced-prototyping" className="cta-btn">
+            Explore an advanced Figma prototype <span className="arrow">→</span>
+          </Link>
+          <Link to="/advanced-components" className="cta-btn">
+            Learn useful component techniques <span className="arrow">→</span>
+          </Link>
         </div>
         <div className="gallery">
           <Link to="/work/upgrades" className="gallery-item">
@@ -93,9 +101,6 @@ export default function Work() {
             </div>
           </Link>
         </div>
-        <Link to="/advanced-components" className="ds-cta">
-          Advanced Figma Components <span className="arrow">→</span>
-        </Link>
         <div id="about">
           <About />
         </div>

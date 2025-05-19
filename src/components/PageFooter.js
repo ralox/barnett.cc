@@ -13,6 +13,7 @@ export default function PageFooter(showRecs="true") {
         <Link className="link-item" to="/work/aria">ARIA</Link>
         <Link className="link-item" to="/work/mylw">My Liquid Web</Link>
         <Link className="link-item" to="/advanced-components">Advanced Components</Link>
+        <Link className="link-item" to="/advanced-prototyping">Advanced Prototyping</Link>
       </div>
       {/*
       <div className="play-links">

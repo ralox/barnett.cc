@@ -10,74 +10,69 @@ export default function AdvancedPrototyping() {
   return (
     <div className="page-wrapper">
       <main className="advanced-prototyping">
-        <h1>Advanced Figma Prototyping</h1>
+        <div className="embedded-prototype-container">
+          <div className="intro">
+            <h1>Advanced Figma Prototyping</h1>
+            <p className="callout">Explore this fun Figma prototype!</p>
+            <p>Then read on to see how it's done.</p>
+          </div>
+          <iframe className="embedded-prototype" width="450" height="1000" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
+        </div>
         <div className="gallery">
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h2 className="gallery-title">Tags</h2>
-              <div className="gallery-subtitle">Easy-Baked Dynamic Variants</div>
+              <h2 className="gallery-title">Overview</h2>
+              <div className="gallery-subtitle">Three Simple Frames</div>
               <p>
-                Tags, or pills, were something of a swiss army knife in our system; informational callout, quick selection dropdown, multi-select list item, and contextual badge… 
-                all with a little splash of color. Though their use is at times problematic, they weren't going anywhere and
-                <span className="bad-highlight"> their initial implementation was too rigid and invited inconsistency</span>. 
-                While updating the component to be flexible in terms of dimensions and supported actions, 
-                <span className="good-highlight"> I explored a novel way to bake-in dynamic colors and give tags a whole new (and reusable) level of personality</span>. 
-                Watch the video to see how I enabled the creation of interactive variants by changing one property.
+                Despite having multiple interactions, this prototype boils down to 3 simple frames. Each frame has its own graphics, text details, and a unique video file. Each frame also repeats the player controls at the bottom. The video sits visually outside of the frame so we can hear but not see it. Now to make the basic controls.
               </p>
             </div>
-            <iframe className="gallery-video" width="560" height="315" src="https://www.youtube.com/embed/HrmeiaiCak0" title="Component Walkthrough: Tags" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            <img className="gallery-img" src={process.env.PUBLIC_URL + "/img/figma-demo-overview.png"} alt="Overview of the 3 main frames in Figma" />
           </div>
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h2 className="gallery-title">Core Inputs</h2>
-              <div className="gallery-subtitle">Removing Micro Decisions and Redundancy</div>
+              <h2 className="gallery-title">Adding Basic Interactions</h2>
+              <div className="gallery-subtitle">Interactive Components</div>
               <p>
-                After noticing that <span className="bad-highlight">all of our forms had a tendency to vary on everything from font weight and spacing, to help text and error states</span> I 
-                sought to reduce the number of micro decisions and deviations. What occured to me right away was that the various input types are more alike than they are unique. 
-                That in mind, <span className="good-highlight">I created a universal core which bundled up field labels, hints and help text, error messages, placeholders, 
-                internal iconography, as well as the active, disabled, and error states.</span>
+                Most designs today rely on reusable, interactive components. In this demo, our player is controlled with 3 buttons. The PlayBtn component handles play and pause with a hover state for both. The NextBtn and PrevBtn components let us move between frames and have hover and disabled states.
               </p>
-
               <p>
-                With these bits and bobs, I was able to provide a consistent structure for existing plain text inputs, dates, numbers, and dropdowns... 
-                but it also made it <em>really</em> easy to add more unique fields.
+                To show that the song is playing, we use a scrubber and time readout. That's all of the pieces, now let's look into how they work!
               </p>
             </div>
-            <iframe className="gallery-video" width="560" height="315" src="https://www.youtube.com/embed/8h0E48zpIQQ" title="Component Walkthrough: Core Inputs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className="gallery-img">
+              <img  src={process.env.PUBLIC_URL + "/img/figma-demo-buttons.png"} alt="Group of basic buttons as design components" />
+              <img src={process.env.PUBLIC_URL + "/img/figma-demo-scrubber.png"} alt="An audio scrubber broken down into a few components parts" />
+            </div>
           </div>
           <div className="gallery-item">
             <div className="gallery-detail">
-              <h2 className="gallery-title">Icon Wrapper</h2>
-              <div className="gallery-subtitle">Normalizing and Enhancing a Messy Library</div>
+              <h2 className="gallery-title">Bringing it to Life</h2>
+              <div className="gallery-subtitle">Variables and Conditional Logic</div>
               <p>
-                Our custom icon library was a bit of a mess and constantly expanding. Each icon was defined as a stand-alone component and
-                <span className="bad-highlight"> it wasn't unusual for icon components to have different dimensions and one-off color definitions</span>. 
-                With each use, it was just as common for each designer to recolor and resize icons in a non-resuable way.
+                To get the job done, we need variables. These values track if the song is playing, the song's length, and how long it's played. Some drive behavior while others are for the display. PlayTime, for example, is a logical control but a bit of math gives us MinPlayed and SecPlayed so we can show those to the user in the expected format (ex. 124 = 2:04).
               </p>
               <p>
-                One of my early discoveries when coordinating design system updates with the dev team was that our
-                <span className="good-highlight"> icons were being normalized by the code</span> regardless of the inconcistencies in the SVGs we delivered.
-                <span className="good-highlight"> This inspired me to do the same thing in Figma</span> by creating a utility component to wrap our snowflake icons. 
-                This ultimately allowed us to place icons into our designs in a way that would mimic the front end while giving us a convenient space to expand our toolset.
+                If you're familiar with Figma, you're aware that basic interaction events won't cut it. The "Conditional" action is the perfect solution for handling multiple updates at once; performing calculations, setting variables, and responding to changing conditions. But, even with complicated conditional logic, you're stuck relying on the user to take action.
               </p>
             </div>
-            <iframe className="gallery-video" width="560" height="315" src="https://www.youtube.com/embed/xF6pW8QR3w4" title="Component Walkthrough: Icon Wrapper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img className="gallery-img" src={process.env.PUBLIC_URL + "/img/figma-demo-variables.png"} alt="A list of variables and default values" />
           </div>
-          <div className="gallery-item">
+          <div className="gallery-item variant-loop">
             <div className="gallery-detail">
-              <h2 className="gallery-title">Buttons</h2>
-              <div className="gallery-subtitle">Demonstrating Atomic Design</div>
+              <h2 className="gallery-title">Beyond User-Driven Events</h2>
+              <div className="gallery-subtitle">Variant Loop Engines</div>
               <p>
-                The button component is built around a shared atomic base which defines the dimensions and spacing while also providing the default content; 
-                text and iconography. With these elements defined in one location, it's easy to update all of our system buttons without going through each iteration.
+                To update and respond to events over time, we need loops. Figma doesn't offer loops... but maybe you noticed that my scrubber has a variant with an "After delay" event that points right back to the default variant. By ending our logic with a variant "Change to" action and having that variant point right back, we can have these two run in circles!
               </p>
               <p>
-                <span className="good-highlight">Changes to padding, borders, layout, and additional contents can all be performed in one location and will 
-                automatically apply to all button types system-wide</span>. Of course, as with all good components, the buttons are setup to quickly adapt 
-                to their context by either scaling with their contents (default) or filling their containers.
+                Because the loop uses variables, changes outside of the loop are automatically picked up. When we move between songs, the player remembers if it should keep playing, while our controls reset the PlayTime and calculate the new width of the scrubber to match the song length; all without interrupting the loop.
+              </p>
+              <p>
+                Variant loop engines can execute and react to all sorts of situations and make Figma prototypes powerful, even without dipping into Figma Make.
               </p>
             </div>
-            <iframe className="gallery-video" width="560" height="315" src="https://www.youtube.com/embed/UrUP6Lk6Z1c" title="Component Walkthrough: Buttons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img className="gallery-img" src={process.env.PUBLIC_URL + "/img/figma-demo-loop-logic.png"} alt="Screenshot of advanced conditional logic using variables" />
           </div>
         </div>
       </main>

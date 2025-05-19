@@ -22,7 +22,7 @@
   flex-flow: column wrap;
   align-content: center;
   text-align: left;
-  padding: 8em 2em 12em;
+  padding: 8em 2em 4em;
 }
 
 .work .intro .page-title {
@@ -54,7 +54,7 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 3em;
-  padding: 0 2em;
+  padding: 2em;
 }
 
 .work .gallery-item {
@@ -105,36 +105,40 @@
 }
 
 
-/* DS CTA */
+/* CTA */
 
-.ds-cta {
+.cta-group {
+  padding: 4em 0;
+}
+
+.cta-btn {
   display: inline-block;
   padding: 1em 2em;
   background-color: var(--color-primary);
   color: var(--color-util-pure);
-  margin: 8em 0 2em;
   border-radius: 4px;
   transition: all 500ms;
+  margin: 0 2em;
 }
 
-.dark-mode .ds-cta {
+.dark-mode .cta-btn {
   background-color: var(--color-secondary);
 }
 
-.ds-cta:is(:hover,:active,:focus) {
+.cta-btn:is(:hover,:active,:focus) {
   background-color: var(--color-primary-light);
   color: var(--color-util-pure);
 }
 
-.dark-mode .ds-cta:is(:hover,:active,:focus) {
+.dark-mode .cta-btn:is(:hover,:active,:focus) {
   background-color: var(--color-secondary-light);
 }
 
-.ds-cta .arrow {
+.cta-btn .arrow {
   transition: all 500ms;
 }
 
-.ds-cta:is(:hover,:active,:focus) .arrow {
+.cta-btn:is(:hover,:active,:focus) .arrow {
   margin-left: 3em;
 }
 
