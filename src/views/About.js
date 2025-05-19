@@ -24,22 +24,22 @@ export default function About() {
   return (
     <section className="page-wrapper">
       <main className="about">
-        <div className="image-wrapper"  style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/neworleans.png"}}>
-          <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/neworleans.png"} alt="Dave and Blair in New Orleans"/>
-        </div>
         <h2 class="section-title" hidden>About Me</h2>
         <div className="bio">
+          <div className="img-wrapper">
+            <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.jpeg"} alt="Portrait photo of Dave"/>
+          </div>
           <div className="bio-text">
             <h3>Career</h3>
             <p>
-              I'm a product creator who loves to tinker and play with new tools. My expertise lies in technical execution and user validation, but I'm always excited to speak directly with users or get a team together for a product workshop. As of 2025, I've spent 2 years automating tests, 4 years developing UIs, and a combined <em>12 years designing</em>.
+              I'm a product creator with deep expertise in technical execution and user validation but I'm also passionate about direct user research and collaborative product workshops. As of 2025, I've spent 2 years automating tests, 4 years developing UIs, and a combined <em>12 years designing</em> at both startups and Fortune 500s.
             </p>
             <p>
-              What I love most is building dynamic and durable components, whether that's advanced Figma tooling or getting directly into the front-end code. This practice evelvates usability evaluation by removing assumptions and takes guesswork out of your implementation. Building quality foundations with ease-of-use, upkeep, and intelligent growth in mind is also a sound way to empower teammates.
+              What I love most is building dynamic and durable systems, in Figma and in code. I believe that building quality foundations with ease-of-use, upkeep, and intelligent growth in mind is a sound way to set your organization up for success.
             </p>
             <h3>Personal</h3>
             <p>
-              Originally from Michigan, I now live in Texas with my wife and three cats. I enjoy games, audio books, documentaries, and traveling.
+              Originally from Michigan, I now live in Texas with my wife and three cats. We love to see the world whenever possible.
             </p>
             <p>
               <span class="country-tag" alt="Canada">🇨🇦</span>
@@ -72,14 +72,14 @@ export default function About() {
                     <li style={setLevel(99)}>UI & Interaction Design</li>
                     <li style={setLevel(95)}>Figma</li>
                     <li style={setLevel(90)}>Prototyping</li>
-                    <li style={setLevel(90)}>UX Validation</li>
-                    <li style={setLevel(75)}>Research & Design Thinking</li>
-                    <li style={setLevel(75)}>HTML & CSS</li>
+                    <li style={setLevel(90)}>Usability Testing</li>
+                    <li style={setLevel(80)}>Research & Design Thinking</li>
+                    <li style={setLevel(80)}>HTML & CSS</li>
+                    <li style={setLevel(75)}>WCAG Accessibility</li>
                     <li style={setLevel(65)}>Sketch / Axure</li>
                     <li style={setLevel(60)}>Javascript</li>
                     <li style={setLevel(50)}>Vue.js</li>
                     <li style={setLevel(50)}>React*</li>
-                    <li style={setLevel(10)}>Mandarin</li>
                   </ul>
                 </div>
               </div>

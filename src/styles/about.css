@@ -25,25 +25,17 @@
   flex-direction: row;
   position: relative;
   justify-content: center;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
 }
 
-.about .image-wrapper::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.4);
+.img-wrapper {
+  flex-basis: 25%;
 }
 
 .about .bio-photo {
-  width: clamp(30em, 50vw, 100svw);
-  border-radius: 0;
+  aspect-ratio: 14/17;
+  border-radius: 4px;
   z-index: 5;
 }
 
@@ -144,6 +136,11 @@
 @media (width <= 985px) {
   .bio {
     flex-direction: column;
+  }
+
+  .img-wrapper {
+    width: 60vw;
+    align-self: center;
   }
 
   .bio-text,
