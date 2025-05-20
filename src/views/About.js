@@ -27,7 +27,7 @@ export default function About() {
         <h2 class="section-title" hidden>About Me</h2>
         <div className="bio">
           <div className="img-wrapper">
-            <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.jpeg"} alt="Portrait photo of Dave"/>
+            <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait photo of Dave"/>
           </div>
           <div className="bio-text">
             <h3>Career</h3>
