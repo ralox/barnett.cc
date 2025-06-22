@@ -19,6 +19,7 @@ import Cohorts from './views/projects/cohorts';
 import Aria from './views/projects/aria';
 import MyLW from './views/projects/mylw';
 import Recs from './components/Recs';
+import MapNews from './views/MapNews';
 
 function App() {
   const scroller = CheckScroll();
@@ -46,7 +47,7 @@ function App() {
           <Route path="/work/cohorts" element={<Cohorts />} />
           <Route path="/work/aria" element={<Aria />} />
           <Route path="/work/mylw" element={<MyLW />} />
-
+          <Route path="/play/map-news" element={<MapNews />} />
           <Route path="/advanced-prototyping" element={<AdvancedPrototyping />} />
           <Route path="/advanced-components" element={<AdvancedComponents />} />
           <Route path="*" element={<NotFound />} />
