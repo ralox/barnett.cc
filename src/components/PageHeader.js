@@ -16,14 +16,6 @@ export default function PageHeader() {
         >
           Work
         </Link>
-        {/*
-        <Link
-          className="nav-link"
-          to="/play"
-        >
-          Play
-        </Link>
-        */}
         <Link
           className="nav-link"
           to={{ pathname: "/work", hash: "#about" }}

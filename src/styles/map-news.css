@@ -1,0 +1,21 @@
+.map-news {
+    --color-primary: #222;
+    --color-secondary: #cc0;
+}
+
+.map-news .page-title {
+    margin: 4em 0 2em;
+}
+
+.embedded-map {
+    width: 100vw;
+    height: clamp(50vh,800px,100vh);
+}
+
+.news-header {
+    color: var(--color-primary);
+}
+
+.news-window {
+    color: var(--color-primary);
+}
