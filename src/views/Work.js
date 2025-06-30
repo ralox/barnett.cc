@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import Recs from '../components/Recs';
 import {Link} from 'react-router-dom';
 import '../styles/work.css';
-import About from './About';
 
 
 export default function Work() {
@@ -14,7 +13,7 @@ export default function Work() {
       <main className="work">
         <div className="intro">
           <div className="intro-bio">
-            <img className="intro-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait photo of Dave"/>
+            <img className="intro-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait of Dave"/>
             <h1 className="page-title">Product leader <br/>Designer <br/>& Developer</h1>
             <p className="details">With 12 years of experience solving <br/>complex design challenges and <br/>mastering new tools and tech stacks</p>
           </div>
@@ -40,7 +39,7 @@ export default function Work() {
         <div className="gallery">
           <Link to="/work/upgrades" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/upgrades.png"} alt="Project 1"/>
+              <img src={process.env.PUBLIC_URL +  "/img/upgrades.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Merchandising Vehicle Upgrades</h2>
@@ -52,7 +51,7 @@ export default function Work() {
           </Link>
           <Link to="/work/cohorts" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt="Project 4"/>
+              <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Financial Model Cohorts</h2>
@@ -64,7 +63,7 @@ export default function Work() {
           </Link>
           <Link to="/work/aria" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/aria.png"} alt="Project 5"/>
+              <img src={process.env.PUBLIC_URL +  "/img/aria.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">ARIA</h2>
@@ -78,7 +77,7 @@ export default function Work() {
           </Link>
           <Link to="/work/mylw" className="gallery-item">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt="Project 6"/>
+              <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">My Liquid Web</h2>
@@ -92,7 +91,7 @@ export default function Work() {
           </Link>
           <Link to="/work/manage-liability" className="gallery-item nda-locked">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt="Project 2"/>
+              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Wholesale Auto Liability</h2>
@@ -104,7 +103,7 @@ export default function Work() {
           </Link>
           <Link to="/work/wholesale-pricing" className="gallery-item nda-locked">
             <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt="Project 3"/>
+              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Wholesale Auto Pricing</h2>

@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import {Link} from 'react-router-dom';
 import '../../styles/advanced-prototyping.css';
 
 
@@ -16,7 +15,7 @@ export default function AdvancedPrototyping() {
             <p className="callout">Explore this fun Figma prototype!</p>
             <p>Then read on to see how it's done.</p>
           </div>
-          <iframe className="embedded-prototype" width="450" height="1000" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
+          <iframe title="Live Figma Prototype" className="embedded-prototype" width="450" height="1000" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
         </div>
         <div className="gallery">
           <div className="gallery-item">

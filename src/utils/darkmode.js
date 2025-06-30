@@ -34,7 +34,7 @@ export default function DarkModeToggle() {
     return (
         <button id="dark-mode-toggle" className="dark-mode-toggle" title="Toggle Dark Mode" onClick={toggleDarkMode}>
             <span hidden>Toggle Dark Mode</span>
-            <img src={process.env.PUBLIC_URL +  "/img/dark-mode.svg"} />
+            <img src={process.env.PUBLIC_URL +  "/img/dark-mode.svg"} alt=""/>
         </button>
     );
 }
