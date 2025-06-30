@@ -9,12 +9,14 @@ export default function PageHeader() {
         Barnett
       </Link>
       <nav>
+        {/*
         <Link
           className="nav-link"
           to="/"
         >
           Work
         </Link>
+        */}
         {/*
         <Link
           className="nav-link"
@@ -38,6 +40,7 @@ export default function PageHeader() {
           >
             Resume
           </a>
+          {/*}
           <a
             className="nav-link linkedin-link"
             href="https://www.linkedin.com/in/daveryanbarnett/"
@@ -48,6 +51,7 @@ export default function PageHeader() {
             <span hidden>View LinkedIn Profile</span>
             <img className="linkedin-img" src={process.env.PUBLIC_URL +  "/img/In-Blue-34.png"} alt="LinkedIn Logo" />
           </a>
+          */}
           <DarkModeToggle />
         </span>
       </nav>

@@ -230,7 +230,7 @@
 @media screen and (width <= 586px) {
   .intro .intro-photo {
     float: right;
-    width: clamp(12rem, 30vw, 30rem);
+    width: clamp(10rem, 30vw, 30rem);
     aspect-ratio: 14/17;
     shape-outside: inset(0 0 25% 0 round 1em 1em 1em 100%);
     clip-path: inset(0 0 25% 0 round 1em 1em 1em 70%);

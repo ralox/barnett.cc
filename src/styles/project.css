@@ -276,6 +276,12 @@
     color: var(--color-util-pure);
 }
 
+.reflections ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .reflections .good-highlight {
     color: var(--color-secondary);
 }
@@ -404,13 +410,11 @@
 
     .project .reflections,
     .project-summary {
-        width: 100vw;
-        width: 100svw;
         margin: 0;
     }
 
     .project .reflections .slide {
-        padding: 1em 0.5em;
+        padding: 1em 0;
     }
 
 
