@@ -10,7 +10,7 @@
 /* BASE */
 
 .work {
-  font-size: 1rem;
+  font-size: 1em;
   min-height: 50vh;
 }
 
@@ -19,33 +19,68 @@
 
 .work .intro {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-content: center;
   text-align: left;
-  padding: 8em 2em 4em;
 }
 
-.work .intro .page-title {
-  font-size: 3em;
+.intro-bio {
+  font-size: 1vw;
+  flex-basis: 70%;
+}
+
+.intro .intro-photo {
+  float: left;
+  width: clamp(15rem, 18vw, 30rem);
+  aspect-ratio: 14/17;
+  border-radius: 1em 2em 0 0;
+  z-index: 5;
+  shape-outside: inset(0 0 10% 0 round 1em 1em 100% 1em);
+  clip-path: inset(0 0 15% 0 round 1em 1em 70% 1em);
+  margin: 0 2rem 2rem 0;
+}
+
+.intro .page-title {
+  font-size: clamp(2rem, 3.25em, 4rem);
+  line-height: 1.3;
   color: var(--color-text-dark);
-  margin: 0;
+  margin: -0.25em 0 0;
 }
 
-.work .intro .details {
-  margin-top: 0.5em;
+.intro .details {
+  font-size: clamp(1.25rem, 1.25em, 2rem);
+  font-weight: 300;
+  margin: 1em 0 3em;
+  width: 100%;
 }
 
-.work .intro .highlight {
-  color: var(--color-primary);
-  margin-right: 0.4em;
-  font-weight: 100;
-  font-family: var(--font-base);
+.intro .intro-callouts {
+  flex-basis: 30%;
+  text-align: right;
+
+  p {
+    margin: 0 1em 1em 0;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    padding: 0;
+    gap: 1em;
+  }
 }
 
-.dark-mode .intro .highlight {
-  color: var(--color-secondary);
+.callout-item {
+  display: block;
+  width: fit-content;
+  align-self: end;
+  color: var(--abs-color-text-dark);
+  font-weight: 350;
+  padding: 0.5em 1.25em;
+  border-radius: 4em;
+  background-color: var(--color-secondary-light);
 }
-
 
 /* GALLERY */
 
@@ -54,12 +89,12 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 3em;
-  padding: 2em;
 }
 
 .work .gallery-item {
-  flex: 0 0 40%;
+  flex-basis: 40%;
   min-width: 20em;
+  max-width: 40em;
   padding: 1em;
   text-align: left;
   transition: all 500ms;
@@ -157,4 +192,54 @@
 
 .bad-highlight {
   color: var(--color-text-bad)
+}
+
+@media screen and (width <= 1019px) {
+  .work .intro {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+  }
+
+  .intro .intro-callouts {
+    text-align: left;
+    margin-top: -2em;
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    ul {
+      flex-flow: row wrap;
+    }
+
+    .callout-item {
+      display: inline-block;
+      align-self: start;
+    }
+  }
+}
+
+@media screen and (width <= 900px) {
+    .work .gallery-item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (width <= 586px) {
+  .intro .intro-photo {
+    float: right;
+    width: clamp(12rem, 30vw, 30rem);
+    aspect-ratio: 14/17;
+    shape-outside: inset(0 0 25% 0 round 1em 1em 1em 100%);
+    clip-path: inset(0 0 25% 0 round 1em 1em 1em 70%);
+    margin: 0 0 2em 2em;
+  }
+
+  .intro .details {
+    clear: both;
+    position: relative;
+    top: -1em;
+  }
 }

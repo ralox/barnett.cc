@@ -6,8 +6,7 @@ export default function PageHeader() {
   return (
     <header className="page-header">
       <Link role="heading" aria-level="1" to="/" className="title">
-        <img src={process.env.PUBLIC_URL +  "/img/portrait.png"} className="logo" alt="logo" />
-        <div class="site-title">Dave Barnett</div>
+        Barnett
       </Link>
       <nav>
         <Link
@@ -26,7 +25,7 @@ export default function PageHeader() {
         */}
         <Link
           className="nav-link"
-          to={{ pathname: "/work", hash: "#about" }}
+          to="/about"
         >
           About
         </Link>

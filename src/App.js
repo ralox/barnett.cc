@@ -9,6 +9,7 @@ import PageHeader from './components/PageHeader';
 import PageFooter from './components/PageFooter';
 
 import Work from './views/Work';
+import About from './views/About';
 import NotFound from './views/NotFound';
 import AdvancedComponents from './views/demos/AdvancedComponents';
 import AdvancedPrototyping from './views/demos/AdvancedPrototyping';
@@ -18,7 +19,6 @@ import WholesalePricing from './views/projects/wholesale-pricing';
 import Cohorts from './views/projects/cohorts';
 import Aria from './views/projects/aria';
 import MyLW from './views/projects/mylw';
-import Recs from './components/Recs';
 
 function App() {
   const scroller = CheckScroll();
@@ -40,6 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Work />} />
           <Route exact path="/work" element={<Work />} />
+          <Route exact path="/about" element={<About />} />
           <Route path="/work/upgrades" element={<Upgrades />} />
           <Route path="/work/manage-liability" element={<ManageLiability />} />
           <Route path="/work/wholesale-pricing" element={<WholesalePricing />} />
@@ -51,7 +52,6 @@ function App() {
           <Route path="/advanced-components" element={<AdvancedComponents />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Recs />
         <PageFooter />
       </ScrollToTop>
     </div>

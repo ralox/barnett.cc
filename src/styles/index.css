@@ -45,13 +45,13 @@
   --abs-color-primary-offset: rgb(157, 86, 169);
   --color-primary-offset: var(--abs-color-primary-offset);
 
-  --abs-color-secondary: rgb(254, 178, 37);
+  --abs-color-secondary: rgb(70, 159, 222);
   --color-secondary: var(--abs-color-secondary);
   
-  --abs-color-secondary-dark: rgb(191, 135, 51);
+  --abs-color-secondary-dark: rgb(71, 108, 135);
   --color-secondary-dark: var(--abs-color-secondary-dark);
 
-  --abs-color-secondary-light: rgb(255, 208, 97);
+  --abs-color-secondary-light: rgb(176 222 255);
   --color-secondary-light: var(--abs-color-secondary-light);
 
   --abs-color-text-default: rgb(68, 68, 68);
@@ -63,8 +63,8 @@
   --abs-color-text-soft: rgb(136, 136, 136);
   --color-text-soft: var(--abs-color-text-soft);
 
-  --abs-color-text-disabled: rgb(187, 187, 187);
-  --color-text-disabled: var(--abs-color-text-disabled);
+  --abs-color-text-light: rgb(187, 187, 187);
+  --color-text-light: var(--abs-color-text-light);
 
   --abs-color-util-pure: rgb(255, 255, 255);
   --color-util-pure: var(--abs-color-util-pure);
@@ -82,8 +82,16 @@
   --shadow-default: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
 
   /* fonts */
-  --font-base: Inter, 'Open Sans', sans-serif;
-  --font-feature: Philosopher, serif;
+  --font-base: "Noto Sans", 'Open Sans', sans-serif;
+  --font-feature: "Noto Serif", serif;
+
+  /* These fonts can be modified with:
+    *  font-optical-sizing: auto;
+    *  font-weight: <weight>;
+    *  font-style: normal;
+    *  font-variation-settings:
+        "wdth" 100;
+  */
 
   /* Tokens */
   --color-link: var(--color-primary-dark);
@@ -94,13 +102,11 @@
   DARK MODE
 */
 .dark-mode {
-  --color-bg: rgb(65, 65, 65);
+  --color-bg: rgb(37, 37, 37);
   --color-bg-dark: rgb(254, 254, 254);
   --color-bg-offset: rgb(39, 39, 39);
-  --color-text-default: rgb(254, 254, 254);
-  --color-text-dark: rgb(255, 255, 255);
-  --color-text-soft: rgb(238, 238, 238);
-  --color-text-disabled: rgb(187, 187, 187);
+  --color-text-default: var(--abs-color-text-light);
+  --color-text-dark: var(--abs-color-text-light);
   --color-primary: var(--color-primary-dark);
   --color-util-pure: rgb(0, 0, 0);
   --color-util-pure-80: rgba(0, 0, 0, 0.8);
@@ -186,7 +192,7 @@
 */
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: clamp(16px, 1vw, 24px);
   color: var(--color-text-default);
   background-color: var(--color-bg);
   font-family: var(--font-base);
@@ -221,7 +227,7 @@ a:where(:hover,:focus,:active) {
 */
 h1 {
   font-size: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em 0 1em;
   font-family: var(--font-feature);
 }
 

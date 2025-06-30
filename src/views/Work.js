@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import Recs from '../components/Recs';
 import {Link} from 'react-router-dom';
 import '../styles/work.css';
 import About from './About';
@@ -12,9 +13,22 @@ export default function Work() {
     <section className="page-wrapper">
       <main className="work">
         <div className="intro">
-          <h1 class="page-title"><span className="highlight">Dave</span>designs ideas and systems.</h1>
-          <p className="details">🎨 Product Designer + 💻 Front-End Developer | former Lead UX Architect @CoxAutomotive</p>
+          <div className="intro-bio">
+            <img className="intro-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait photo of Dave"/>
+            <h1 className="page-title">Product leader <br/>Designer <br/>& Developer</h1>
+            <p className="details">With 12 years of experience solving <br/>complex design challenges and <br/>mastering new tools and tech stacks</p>
+          </div>
+          <div className="intro-callouts">
+            <p>Let me help with</p>
+            <ul>
+              <li className="callout-item">Design Systems</li>
+              <li className="callout-item">Accessibility</li>
+              <li className="callout-item">Team Workshopping</li>
+              <li className="callout-item">Agentic AI / MCP</li>
+            </ul>
+          </div>
         </div>
+
         <div className="cta-group">
           <Link to="/advanced-prototyping" className="cta-btn">
             Explore an advanced Figma prototype <span className="arrow">→</span>
@@ -30,7 +44,7 @@ export default function Work() {
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Merchandising Vehicle Upgrades</h2>
-              <div className="gallery-subtitle">Multi-Feature Strategy @ Cox Automotive</div>
+              <div className="gallery-subtitle">Cox Automotive</div>
               <div className="gallery-summary">
                 Leveraging build data to empower and scale dealership marketing.
               </div>
@@ -42,7 +56,7 @@ export default function Work() {
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Financial Model Cohorts</h2>
-              <div className="gallery-subtitle">Feature Design @ Mosaic</div>
+              <div className="gallery-subtitle">Mosaic</div>
               <div className="gallery-summary">
                 Accelerating CFO forecasts for clients, investments, and staff over time.
               </div>
@@ -55,7 +69,7 @@ export default function Work() {
             <div className="gallery-detail">
               <h2 className="gallery-title">ARIA</h2>
               <div className="gallery-subtitle">
-                New Product Design and Development @ Quavo
+                Quavo
               </div>
               <div className="gallery-summary">
                 Enabling automated fraudulent transaction detection and response.
@@ -69,7 +83,7 @@ export default function Work() {
             <div className="gallery-detail">
               <h2 className="gallery-title">My Liquid Web</h2>
               <div className="gallery-subtitle">
-                Customer Portal Redesign @  Liquid Web
+                Liquid Web
               </div>
               <div className="gallery-summary">
                 Empowering customers to build and manage network devices and services.
@@ -82,7 +96,7 @@ export default function Work() {
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Wholesale Auto Liability</h2>
-              <div className="gallery-subtitle">Feature Design @ Cox Automotive</div>
+              <div className="gallery-subtitle">Cox Automotive</div>
               <div className="gallery-summary">
                 Building auction transparency and trust while reducing financial liability.
               </div>
@@ -94,16 +108,14 @@ export default function Work() {
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Wholesale Auto Pricing</h2>
-              <div className="gallery-subtitle">Internal Tools @ Cox Automotive</div>
+              <div className="gallery-subtitle">Cox Automotive</div>
               <div className="gallery-summary">
                 Enriching administrative pricing tools for wholesale vehicles.
               </div>
             </div>
           </Link>
         </div>
-        <div id="about">
-          <About />
-        </div>
+        <Recs />
       </main>
     </section>
   );
