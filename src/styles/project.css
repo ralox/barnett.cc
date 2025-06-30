@@ -23,7 +23,7 @@
     position: relative;
     font-size: clamp(12px, 1vw + 1rem, 24px);
     text-align: left;
-    padding: 8em 10vw 0;
+    padding: 4em 10vw 0;
 }
 
 /* General Spacing */
@@ -58,10 +58,14 @@
     background-color: var(--color-secondary);
     color: var(--abs-color-bg);
     padding: 1em 2em;
-    border-radius: 4px;
-    box-shadow: 0 0.25em 0.5em -1em rgba(50, 0, 50, 0.2), 0 1em 3em -1em rgba(50, 0, 50, 0.2);
+    border-radius: 0.5em 0.5em 0 0;
 }
 
+.project-intro .project-hero-img {
+    width: clamp(10em,100%,40em);
+    border-radius: 0 0 0.5em 0.5em;
+    box-shadow: 0 0.25em 0.5em -1em rgba(50, 0, 50, 0.2), 0 1em 3em -1em rgba(50, 0, 50, 0.2);
+}
 
 /* SLIDE WRAPPER */
 

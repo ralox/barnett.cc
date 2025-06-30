@@ -13,13 +13,14 @@ export default function Upgrades() {
     <SlideObserver>
       <div className="page-wrapper">
         <article className="upgrades project">
-          <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/upgrades.png)"}}>
+          <div className="project-intro">
             <h1 className="project-title">Merchandising Vehicle Upgrades</h1>
             <div className="project-subtitle">Multi-Feature Strategy @ Cox Automotive</div>
             <div className="project-summary">
               Supercharged dealer merchanising through automated vehicle highlights which enable busy dealers to tell unique stories 
               for every vehicle on their lot while providing shoppers with greater confidence in pricing transparency.
             </div>
+            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/upgrades.png"} alt="Final shopping solution on tablet" />
           </div>
 
           <section className="slide-wrapper">

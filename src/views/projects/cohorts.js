@@ -12,12 +12,13 @@ export default function Cohorts() {
     <SlideObserver>
       <div className="page-wrapper">
         <article className="cohorts project">
-          <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/cohorts.png)"}}>
+          <div className="project-intro">
             <h1 className="project-title">Financial Model Cohorts</h1>
             <div className="project-subtitle">Feature Design @ Mosaic</div>
             <div className="project-summary">
               Demystified cohort analysis, a vital part of the CFO toolkit, to deliver a solution that saves clients roughly $10,000 a year.
             </div>
+            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/cohorts.png"} alt="Financial model sheet on a laptop" />
           </div>
 
           <section className="slide-wrapper">

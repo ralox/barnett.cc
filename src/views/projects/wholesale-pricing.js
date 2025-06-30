@@ -13,13 +13,14 @@ export default function WholesalePricing() {
     <SlideObserver>
       <div className="page-wrapper">
         <article className="wholesale-pricing project">
-          <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/wholesale-pricing.png)"}}>
+          <div className="project-intro">
             <h1 className="project-title">Wholesale Auto Pricing</h1>
             <div className="project-subtitle">Internal Tools @ Cox Automotive</div>
             <div className="project-summary">
               Optimized administrator tooling to highlight critical data points and better reflect market conditions, 
               reducing the time spent on manual pricing by 15% and driving additional units to auction. 
             </div>
+            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/wholesale-pricing.png"} alt="Teaser highlight of administrator pricing view" />
           </div>
           
           <section className="slide-wrapper">

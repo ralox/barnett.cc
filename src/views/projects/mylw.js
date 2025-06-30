@@ -12,13 +12,14 @@ export default function MyLW() {
     <SlideObserver>
       <div className="page-wrapper">
         <article className="mylw project">
-          <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/mylw.png)"}}>
+          <div className="project-intro">
             <h1 className="project-title">My Liquid Web</h1>
             <div className="project-subtitle">Customer Portal Redesign @ Liquid Web</div>
             <div className="project-summary">
               Unified brand strategy while optimizing an abstract and interwoven information architecture to empower customers 
               and reduce reliance on technical support for routine tasks.
             </div>
+            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/mylw.png"} alt="Customper portal homescreen on a monitor beside a laptop showing the server health analytics screen." />
           </div>
 
           <section className="slide-wrapper logo-intro">

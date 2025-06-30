@@ -13,13 +13,14 @@ export default function ManageLiability() {
     <SlideObserver>
       <div className="page-wrapper">
         <article className="manage-liability project">
-          <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/manage-liability.png)"}}>
+          <div className="project-intro">
             <h1 className="project-title">Wholesale Auto Liability</h1>
             <div className="project-subtitle">Feature Design @ Cox Automotive</div>
             <div className="project-summary">
               Simplified and elevated dealer disclosure on wholesale vehicles, reducing post-sale arbitration by 50 units a week and 
               saving the business roughly $20,000 a week in fees and liabilities.
             </div>
+            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/manage-liability.png"} alt="Abstract image of warning icons commonly seen on vehicle dashboards" />
           </div>
 
           <section className="slide-wrapper">

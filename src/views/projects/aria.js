@@ -12,12 +12,13 @@ export default function Aria() {
     <SlideObserver>
       <div className="page-wrapper">
         <article className="aria project">
-          <div className="project-intro" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + "/img/aria.png)"}}>
+          <div className="project-intro">
             <h1 className="project-title">ARIA</h1>
             <div className="project-subtitle">New Product Design and Development @ Quavo</div>
             <div className="project-summary">
               Stepped into a leadership role, tackling design and development for Quavo's second flagship product, ARIA.
             </div>
+            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/aria.png"} alt="ARIA decision matrix on abstract background" />
           </div>
 
           <section className="slide-wrapper slide-tilt color-block color-block-primary">
