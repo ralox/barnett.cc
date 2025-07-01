@@ -25,27 +25,27 @@ export default function About() {
           <p>
             Originally from Michigan, I now live in Texas with my wife and three cats. We love to see the world whenever possible.
           </p>
-          <p>
-            <span class="country-tag" alt="Canada 2004,2018">🇨🇦</span>
-            <span class="country-tag" alt="France 2014">🇫🇷</span>
-            <span class="country-tag" alt="Monaco 2014">🇲🇨</span>
-            <span class="country-tag" alt="Taiwan 2015,19,22,23,24,25">🇹🇼</span>
-            <span class="country-tag" alt="Japan 2015,23">🇯🇵</span>
-            <span class="country-tag" alt="Germany 2019">🇩🇪</span>
-            <span class="country-tag" alt="Czechia 2019">🇨🇿</span>
-            <span class="country-tag" alt="UK 2023">🇬🇧</span>
-            (
-            <span class="country-tag" alt="England 2023">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
-            <span class="country-tag" alt="Wales 2023">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
-            <span class="country-tag" alt="Scotland 2023">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
-            )
-            <span class="country-tag" alt="Mexico 2021,22,23">🇲🇽</span>
-            <span class="country-tag" alt="New Zealand 2024">🇳🇿</span>
-            <span class="country-tag" alt="Thailand 2025">🇹🇭</span>
-          </p>
           <ul className="identity">
-            <li>🤝 <a href="https://www.16personalities.com/infps-at-work" target="blank">Assertive Mediator (INFP-A)</a></li>
-            <li>🦅 Ravenclaw</li>
+            <li alt="Travels"><span>✈️ </span>  
+              <span class="country-tag" alt="Canada 2004,2018">🇨🇦</span>
+              <span class="country-tag" alt="France 2014">🇫🇷</span>
+              <span class="country-tag" alt="Monaco 2014">🇲🇨</span>
+              <span class="country-tag" alt="Taiwan 2015,19,22,23,24,25">🇹🇼</span>
+              <span class="country-tag" alt="Japan 2015,23">🇯🇵</span>
+              <span class="country-tag" alt="Germany 2019">🇩🇪</span>
+              <span class="country-tag" alt="Czechia 2019">🇨🇿</span>
+              <span class="country-tag" alt="UK 2023">🇬🇧</span>
+              (
+              <span class="country-tag" alt="England 2023">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+              <span class="country-tag" alt="Wales 2023">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
+              <span class="country-tag" alt="Scotland 2023">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+              )
+              <span class="country-tag" alt="Mexico 2021,22,23">🇲🇽</span>
+              <span class="country-tag" alt="New Zealand 2024">🇳🇿</span>
+              <span class="country-tag" alt="Thailand 2025">🇹🇭</span>
+            </li>
+            <li alt="MBTI">🧠 <a href="https://www.16personalities.com/infps-at-work" target="blank">Assertive Mediator (INFP-A)</a></li>
+            <li alt="Harry Potter House">🧙🏻 Ravenclaw</li>
           </ul>
         </div>
         <div className="bio-skills">
