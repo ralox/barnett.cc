@@ -64,6 +64,71 @@ export default function About() {
             <li className="skill-pill">React</li>
           </ul>
         </div>
+        <div className="bio-background">
+          <h2 className="section-title">Background</h2>
+          <div className="bio-background-links">
+            <a
+              className="nav-link linkedin-link"
+              href="https://www.linkedin.com/in/daveryanbarnett/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View LinkedIn Profile"
+            >
+              Connect on LinkedIn
+            </a>
+            <a
+              className="nav-link"
+              href="https://s3.us-west-2.amazonaws.com/barnett.cc/Barnett-UX-Resume-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Full Resume (PDF)
+            </a>
+          </div>
+          <ul className="role-list">
+            <li className="role-item">
+              <div className="role-header">
+                <h3 className="role-title">Lead UX Architect</h3>
+                <div className="role-org">Cox Automotive</div>
+              </div>
+              <p className="role-description">Supporting the global automotive industry, through trusted brands like Kelly Blue Book and Autotrader, requires a UX practice that is incredibly mature and specialized. As a UX <em>architect</em>, I worked with product leaders and UX researchers to fill strategic roadmaps. Through multiple channels, I constructed stories and crafted organized project plans including wireframes, flows, scope, roadblocks, dependencies, and user needs so that our design team could rapidly deliver solutions.</p>
+            </li>
+            <li className="role-item">
+              <div className="role-header">
+                <h3 className="role-title">Senior Product Designer</h3>
+                <div className="role-org">Mosaic.tech</div>
+              </div>
+              <p className="role-description">In this fast-paced startup environment serving CFOs and entrepreneurs, we had a lean design team of three. I was responsible for all aspects of UX within the Financial Model; the visual and logical spreadsheet tooling that leaders use to build financial plans. As the senior designer, I also lead the design system coordination with our front-end partners and helped to guide early, dynamic growth.</p>
+            </li>
+            <li className="role-item">
+              <div className="role-header">
+                <h3 className="role-title">Product Experience Architect</h3>
+                <div className="role-org">Quavo, Inc.</div>
+              </div>
+              <p className="role-description">
+                This fintech startup launched with the goal of automating fraud management and hit the ground running as a custom development shop. I joined as a PEGA developer but continued to lend design exepertise to the core products. To leverage my hybrid skill set, the CTO expanded my responsibilities to include new reactive development, design system setup, and mentoring. Before moving on, it meant a lot to me to help hire the first dedicated UX designer and fulltime front-end developer.
+              </p>
+            </li>
+            <li className="role-item">
+              <div className="role-header">
+                <h3 className="role-title">User Experience Designer</h3>
+                <div className="role-org">Liquid Web</div>
+              </div>
+              <p className="role-description">
+                This hosting company was built on deep technical roots and, upon arrival, I was drowning in it. As a solo designer embedded in the dev team, I was submerged in command line tools, server administration, networking lingo, and given full access to the entire codebase. In redesigning and <em>re-writing</em> the shopping cart experience as well as authoring large portions of their global stylesheets, I gained a deeper understanding of product development and learned to value code as a UX tool.
+              </p>
+            </li>
+            <li className="role-item">
+              <div className="role-header">
+                <h3 className="role-title">User Experience Designer</h3>
+                <div className="role-org">Auto-Owners Insurance</div>
+              </div>
+              <p className="role-description">
+                Auto-Owners was my introduction to UX and I was just their third designer. Our small team supported all products and departments as an internal hub. We worked with decentralized teams to curate standards and guidelines before the growth of digital design systems. With Axure, I built a library of interactive components that operated alongside Photoshop mockups. I ran moderated usability studies, performed field research, and even got the opportunity to design their first mobile app.
+              </p>
+            </li>
+          </ul>
+        </div>
       </main>
       <Recs />
     </section>

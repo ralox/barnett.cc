@@ -4,6 +4,7 @@
     IMAGE
     BIO
     SKILLS
+    BACKGROUND
     MEDIA QUERIES
         <= 985
 ==================================*/
@@ -106,6 +107,43 @@
   padding: 0.25em 1em;
   border-radius: 4em;
   background-color: var(--color-primary-light);
+}
+
+/* BACKGROUND */
+
+.bio-background {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: var(--color-bg-offset);
+  border-radius: 4px;
+}
+
+.bio-background-links {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.role-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.role-item {
+  margin-bottom: 1em;
+}
+
+.role-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.role-org::before {
+  content: "@ ";
 }
 
 /* MEDIA QUERIES */
