@@ -26,7 +26,7 @@ export default function About() {
             Originally from Michigan, I now live in Texas with my wife and three cats. We love to see the world whenever possible.
           </p>
           <ul className="identity">
-            <li alt="Travels"><span>✈️ </span>  
+            <li><span title="Travels">✈️ </span>  
               <span class="country-tag" alt="Canada 2004,2018">🇨🇦</span>
               <span class="country-tag" alt="France 2014">🇫🇷</span>
               <span class="country-tag" alt="Monaco 2014">🇲🇨</span>
@@ -44,8 +44,8 @@ export default function About() {
               <span class="country-tag" alt="New Zealand 2024">🇳🇿</span>
               <span class="country-tag" alt="Thailand 2025">🇹🇭</span>
             </li>
-            <li alt="MBTI">🧠 <a href="https://www.16personalities.com/infps-at-work" target="blank">Assertive Mediator (INFP-A)</a></li>
-            <li alt="Harry Potter House">🧙🏻 Ravenclaw</li>
+            <li><span title="MBTI">🧠</span> <a href="https://www.16personalities.com/infps-at-work" target="blank">Assertive Mediator (INFP-A)</a></li>
+            <li><span title="Harry Potter House">🧙🏻</span> Ravenclaw</li>
           </ul>
         </div>
         <div className="bio-skills">
