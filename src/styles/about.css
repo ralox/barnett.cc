@@ -12,11 +12,15 @@
 /* BASE */
 
 .about {
-  font-size: 1rem;
+  font-size: 1em;
   max-width: 180ch;
   min-height: 50vh;
   text-align: left;
   padding: 8em 10vw 0;
+
+  h2,h3,p {
+    max-width: 75ch;
+  }
 }
 
 
@@ -148,6 +152,7 @@
 
 /* MEDIA QUERIES */
 
+/*
 @media (width >= 2500px) {
   .about {
     width: 1200px;
@@ -155,6 +160,7 @@
     margin: auto;
   }
 }
+*/
 
 @media screen and (width <= 450px) {
   .about .bio-photo {

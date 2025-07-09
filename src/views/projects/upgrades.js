@@ -14,19 +14,36 @@ export default function Upgrades() {
       <div className="page-wrapper">
         <article className="upgrades project">
           <div className="project-intro">
-            <h1 className="project-title">Merchandising Vehicle Upgrades</h1>
-            <div className="project-subtitle">Multi-Feature Strategy @ Cox Automotive</div>
+            <h1 className="project-title">Merchandising Upgrades</h1>
+            <div className="project-subtitle">Automated Differentiation for 14,000 Dealers @ Cox Automotive</div>
             <div className="project-summary">
-              Supercharged dealer merchanising through automated vehicle highlights which enable busy dealers to tell unique stories 
-              for every vehicle on their lot while providing shoppers with greater confidence in pricing transparency.
+              Transforming how dealers market used vehicles by automatically detecting and surfacing hidden value in upgrades, saving up to 15 hours weekly and improving shopper confidence.
             </div>
             <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/upgrades.png"} alt="Final shopping solution on tablet" />
           </div>
 
+           <section className="slide-wrapper">
+            <div className="slide txt-solo">
+              <div className="slide-notes">
+                <h2>Overview</h2>
+                <ul>
+                  <li>Role: Lead UX Architect</li>
+                  <li>Tools: Figma, UserTesting platform</li>
+                  <li>Methods: User interviews, competitive analysis, data audit, iterative testing</li>
+                  <li>Scale: 14,000+ dealers, millions of vehicles</li>
+                </ul>
+                <p>
+                  Cox Automotive serves thousands of dealers managing millions of used vehicle sales annually. With razor-thin margins under $500 per vehicle and dealers spending 15 hours weekly on manual merchandising research, we needed to automate the process of surfacing each vehicle's unique value proposition to help dealers tell compelling stories without added overhead.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
-                <h2>Problem Discovery</h2>
+                <h2>Discovery</h2>
+                <img className="lazy-load" style={{width: "18em"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-discovery.png"} alt="Double Diamond, highlighting the problem discovery phase" />
                 <p>
                   Cox Automotive works with thousands of dealers who rely on millions of used vehicle sales every year. Marketing this fluxuating and unfamiliar inventory is time consuming and margins are razor-thin.
                 </p>
