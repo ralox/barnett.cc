@@ -5,7 +5,7 @@
   margin-bottom: 4em;
 }
 
-.embedded-prototype-container {
+.advanced-prototyping .embedded-prototype-container {
   background: #000;
   border-image: fill 0 linear-gradient(black,black);
   border-image-outset: 0 100vw;
@@ -26,7 +26,7 @@
   }
 }
 
-.embedded-prototype {
+.advanced-prototyping .embedded-prototype {
   border: none;
 }
 
@@ -49,7 +49,7 @@
   flex-direction: row-reverse;
 }
 
-.gallery-item {
+.advanced-prototyping .gallery-item {
   .gallery-img,
   .gallery-detail {
     flex-basis: 40%;
@@ -62,7 +62,7 @@
   }
 }
 
-.variant-loop {
+.advanced-prototyping .variant-loop {
   .gallery-img {
     flex-basis: 50%;
     min-width: 30em;
@@ -79,7 +79,7 @@
   }
 }
 
-.gallery-item img {
+.advanced-prototyping .gallery-item img {
   border-radius: 4px;
   object-fit: contain;
   object-position: top;
