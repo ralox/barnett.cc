@@ -28,16 +28,8 @@ export default function Work() {
           </div>
         </div>
 
-        <div className="cta-group">
-          <Link to="/advanced-prototyping" className="cta-btn">
-            Explore an advanced Figma prototype <span className="arrow">→</span>
-          </Link>
-          <Link to="/advanced-components" className="cta-btn">
-            Learn useful component techniques <span className="arrow">→</span>
-          </Link>
-        </div>
         <div className="gallery">
-          <Link to="/work/upgrades" className="gallery-item">
+          <Link to="/work/upgrades" className="gallery-item gallery-highlight">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/upgrades.png"} alt=""/>
             </div>
@@ -45,23 +37,69 @@ export default function Work() {
               <h2 className="gallery-title">Merchandising Vehicle Upgrades</h2>
               <div className="gallery-subtitle">Cox Automotive</div>
               <div className="gallery-summary">
-                Leveraging build data to empower and scale dealership marketing.
+                Leveraging build data to empower and scale dealership marketing
               </div>
             </div>
           </Link>
-          <Link to="/work/cohorts" className="gallery-item">
+           <Link to="/advanced-prototyping" className="gallery-item">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/music-player.png"} alt=""/>
+            </div>
+            <div className="gallery-detail">
+              <h2 className="gallery-title">Interactive Music Player</h2>
+              <div className="gallery-summary">
+                Advanced Figma prototyping. No code, no AI
+              </div>
+            </div>
+          </Link>
+          <Link to="/advanced-components" className="gallery-item">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/components.png"} alt=""/>
+            </div>
+            <div className="gallery-detail">
+              <h2 className="gallery-title">Figma Component Techniques</h2>
+              <div className="gallery-summary">
+                Everyday Figma foundations for design systems
+              </div>
+            </div>
+          </Link>
+          <Link to="/work/cohorts" className="gallery-item gallery-highlight">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/cohorts.png"} alt=""/>
             </div>
             <div className="gallery-detail">
               <h2 className="gallery-title">Financial Model Cohorts</h2>
-              <div className="gallery-subtitle">Mosaic</div>
+              <div className="gallery-subtitle">Mosaic.Tech</div>
               <div className="gallery-summary">
-                Accelerating CFO forecasts for clients, investments, and staff over time.
+                Accelerating CFO forecasts for clients, investments, and staff over time
               </div>
             </div>
           </Link>
-          <Link to="/work/aria" className="gallery-item">
+          <Link to="/work/manage-liability" className="gallery-item gallery-minor">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt=""/>
+            </div>
+            <div className="gallery-detail">
+              <h2 className="gallery-title">Wholesale Auto Liability</h2>
+              <div className="gallery-subtitle">Cox Automotive</div>
+              <div className="gallery-summary">
+                Building auction transparency and trust while reducing financial liability
+              </div>
+            </div>
+          </Link>
+          <Link to="/work/wholesale-pricing" className="gallery-item gallery-minor">
+            <div className="gallery-photo">
+              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt=""/>
+            </div>
+            <div className="gallery-detail">
+              <h2 className="gallery-title">Wholesale Auto Pricing</h2>
+              <div className="gallery-subtitle">Cox Automotive</div>
+              <div className="gallery-summary">
+                Enriching administrative pricing tools for wholesale vehicles
+              </div>
+            </div>
+          </Link>
+          <Link to="/work/aria" className="gallery-item gallery-minor">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/aria.png"} alt=""/>
             </div>
@@ -71,11 +109,11 @@ export default function Work() {
                 Quavo
               </div>
               <div className="gallery-summary">
-                Enabling automated fraudulent transaction detection and response.
+                Enabling automated fraudulent transaction detection and response
               </div>
             </div>
           </Link>
-          <Link to="/work/mylw" className="gallery-item">
+          <Link to="/work/mylw" className="gallery-item gallery-minor">
             <div className="gallery-photo">
               <img src={process.env.PUBLIC_URL +  "/img/mylw.png"} alt=""/>
             </div>
@@ -85,31 +123,7 @@ export default function Work() {
                 Liquid Web
               </div>
               <div className="gallery-summary">
-                Empowering customers to build and manage network devices and services.
-              </div>
-            </div>
-          </Link>
-          <Link to="/work/manage-liability" className="gallery-item nda-locked">
-            <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/manage-liability.png"} alt=""/>
-            </div>
-            <div className="gallery-detail">
-              <h2 className="gallery-title">Wholesale Auto Liability</h2>
-              <div className="gallery-subtitle">Cox Automotive</div>
-              <div className="gallery-summary">
-                Building auction transparency and trust while reducing financial liability.
-              </div>
-            </div>
-          </Link>
-          <Link to="/work/wholesale-pricing" className="gallery-item nda-locked">
-            <div className="gallery-photo">
-              <img src={process.env.PUBLIC_URL +  "/img/wholesale-pricing.png"} alt=""/>
-            </div>
-            <div className="gallery-detail">
-              <h2 className="gallery-title">Wholesale Auto Pricing</h2>
-              <div className="gallery-subtitle">Cox Automotive</div>
-              <div className="gallery-summary">
-                Enriching administrative pricing tools for wholesale vehicles.
+                Empowering customers to build and manage network devices and services
               </div>
             </div>
           </Link>
