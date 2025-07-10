@@ -27,6 +27,8 @@
 }
 
 .advanced-prototyping .embedded-prototype {
+  aspect-ratio: 450/1000;
+  width: clamp(10em, 100%, 450px);
   border: none;
 }
 
@@ -35,12 +37,13 @@
   flex-flow: column wrap;
   align-content: center;
   gap: 8em;
+  width: 100%;
 }
 
 .advanced-prototyping .gallery-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  width: 100%;
   gap: 2em;
   justify-content: center;
 }
@@ -65,8 +68,8 @@
 .advanced-prototyping .variant-loop {
   .gallery-img {
     flex-basis: 50%;
-    min-width: 30em;
   }
+
   .gallery-detail {
     flex-basis: 30%;
   }

@@ -14,7 +14,7 @@ export default function AdvancedPrototyping() {
             <h1>Interactive Music Player</h1>
             <p>Scroll down to see how this advanced prototype works</p>
           </div>
-          <iframe title="Live Figma Prototype" className="embedded-prototype" width="450" height="1000" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
+          <iframe title="Live Figma Prototype" className="embedded-prototype" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
         </div>
         <div className="gallery">
           <div className="gallery-item">
