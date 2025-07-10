@@ -18,8 +18,8 @@
 
 .advanced-components .gallery-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  width: 100%;
   gap: 2em;
 }
 
