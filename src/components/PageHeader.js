@@ -34,7 +34,7 @@ export default function PageHeader() {
         <span className="non-page-nav">
           <a
             className="nav-link"
-            href="https://s3.us-west-2.amazonaws.com/barnett.cc/Barnett-UX-Resume-2025.pdf"
+            href="https://s3.us-west-2.amazonaws.com/barnett.cc/Barnett-UX-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
