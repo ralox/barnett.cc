@@ -4,12 +4,15 @@ import '../../styles/advanced-components.css';
 
 export default function AdvancedComponents() {
   useEffect(() => {
-    document.title = "Advanced Components | Barnett UX";
+    document.title = "Component Techniques | Barnett UX";
   },[]);
   return (
     <div className="page-wrapper">
       <main className="advanced-components">
-        <h1>Advanced Components</h1>
+        <h1>Component Techniques</h1>
+        <div className="project-summary">
+          Flexible, powerful systems are built on basic foundations. Below are just a few examples of how I approach components in real-world situations.
+        </div>
         <div className="gallery">
           {/*
           <div className="gallery-item">
@@ -38,7 +41,7 @@ export default function AdvancedComponents() {
               <h2 className="gallery-title">Icon Wrapper</h2>
               <div className="gallery-subtitle">Fixing a Messy Library</div>
               <p>
-                This custom icon library was a constantly expanding mess of colors and dimensions. Developers would normalize the icons within the code, which inspired me to do the same in Figma. <span className="good-highlight">Let's look at how a utility wrapper helped me patch-up and expand these troublesome icons.</span>
+                This custom icon library was a constantly expanding mess of colors and dimensions. Developers would normalize the icons within the code, which inspired me to do the same in Figma. <span className="good-highlight">Let's look at how a utility wrapper helped me patch-up and expand an underlying library.</span>
               </p>
             </div>
             <iframe className="gallery-video" width="560" height="315" src="https://www.youtube.com/embed/xF6pW8QR3w4" title="Component Walkthrough: Icon Wrapper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -49,7 +52,7 @@ export default function AdvancedComponents() {
               <div className="gallery-subtitle">Easy-Baked Dynamic Colors</div>
               <p>
                 In this system, tags did a lot of work; from callouts and badges to inline selects and multi-select lists... 
-                and always with a unique splash of color. <span className="good-highlight">Let me show you how I used opacity to rapidly build interactive variations.</span>
+                and always with a unique splash of color. <span className="good-highlight">Let me show you how I set it up to rapidly build interactive variants.</span>
               </p>
             </div>
             <iframe className="gallery-video" width="560" height="315" src="https://www.youtube.com/embed/HrmeiaiCak0" title="Component Walkthrough: Tags" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            

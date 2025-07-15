@@ -49,10 +49,6 @@
   align-items: center;
 }
 
-.page-header .linkedin-link {
-  display: inline-flex;
-}
-
 .page-header .nav-link {
   margin: 0 0.5em;
   color: inherit;
@@ -60,20 +56,27 @@
 
 .page-header .nav-link:is(:hover,:active,:focus) {
   color: var(--color-primary-offset);
+
+  .inline-icon path {
+    stroke: var(--color-primary-offset);
+    fill: var(--color-primary-offset);
+  }
 }
 
-.page-header .linkedin-img {
-  width: 1.25em;
-  opacity: 0.5;
+.page-header .back-nav.nav-link {
+  height: 1.25em;
+  margin: 0;
 }
 
-.dark-mode .linkedin-img {
-  filter: grayscale(1) brightness(4);
-}
+.page-header .inline-icon {
+  display: inline;
+  width: 0.75em;
+  margin: 0 0.5ch 0;
 
-.linkedin-link:is(:hover,:active,:focus) .linkedin-img,
-.dark-mode-toggle:is(:hover,:active,:focus) img {
-  opacity: 1;
+  path {
+    stroke: var(--color-text-default);
+    fill: var(--color-text-default);
+  }
 }
 
 .dark-mode-toggle {
@@ -82,13 +85,18 @@
   cursor: pointer;
 }
 
-.dark-mode-toggle img {
-  width: 1.5em;
-  opacity: 0.5;
+.dark-mode-toggle svg.inline-icon {
+  width: 1.25em;
+
+  path {
+    fill: var(--color-text-default);
+    stroke: var(--color-text-default);
+  }
 }
 
-.dark-mode .dark-mode-toggle img {
-  filter: invert(1);
+.dark-mode .dark-mode-toggle svg path {
+  fill: var(--color-text-light);
+  stroke: var(--color-text-light);
 }
 
 .page-header .non-page-nav {

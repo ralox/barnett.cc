@@ -4,18 +4,17 @@ import '../../styles/advanced-prototyping.css';
 
 export default function AdvancedPrototyping() {
   useEffect(() => {
-    document.title = "Advanced Prototyping | Barnett UX";
+    document.title = "Interactive Music Player | Barnett UX";
   },[]);
   return (
     <div className="page-wrapper">
       <main className="advanced-prototyping">
         <div className="embedded-prototype-container">
           <div className="intro">
-            <h1>Advanced Figma Prototyping</h1>
-            <p className="callout">Explore this fun Figma prototype!</p>
-            <p>Then read on to see how it's done.</p>
+            <h1>Interactive Music Player</h1>
+            <p>Scroll down to see how this advanced prototype works</p>
           </div>
-          <iframe title="Live Figma Prototype" className="embedded-prototype" width="450" height="1000" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
+          <iframe title="Live Figma Prototype" className="embedded-prototype" src="https://embed.figma.com/proto/C63DE72FhCWAdlmIXGE5pA/Portfolio?node-id=1090-41007&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1090%3A40271&starting-point-node-id=1090%3A41007&embed-host=share" allowfullscreen></iframe>
         </div>
         <div className="gallery">
           <div className="gallery-item">
