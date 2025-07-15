@@ -23,7 +23,6 @@
   DEFAULT VARS
 */
 :root {
-  /* color pairs -- absolute + light mode */
   --abs-color-bg: rgb(254, 254, 254);
   --color-bg: var(--abs-color-bg);
 
@@ -104,7 +103,7 @@
 .dark-mode {
   --color-bg: rgb(37, 37, 37);
   --color-bg-dark: rgb(254, 254, 254);
-  --color-bg-offset: rgb(39, 39, 39);
+  --color-bg-offset: rgb(48, 48, 48);
   --color-text-default: var(--abs-color-text-light);
   --color-text-dark: var(--abs-color-text-light);
   --color-primary: var(--color-primary-dark);
@@ -231,10 +230,13 @@ h1 {
   font-family: var(--font-feature);
 }
 
+h2,h3,h4,h5 {
+  margin-bottom: 0.5em;
+}
+
 h2 {
   font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 0.5em;
+  font-weight: 500;
   font-family: var(--font-feature);
 }
 

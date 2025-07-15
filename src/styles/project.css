@@ -60,8 +60,17 @@
     margin-bottom: 1em;
 }
 
-.project-summary {
+.project-overview {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+}
+
+.project-splash {
     width: clamp(10em,100%,75ch);
+}
+
+.project-summary {
     background-color: var(--color-secondary);
     color: var(--abs-color-bg);
     padding: 1em 2em;
@@ -69,11 +78,30 @@
 }
 
 .project-intro .project-hero-img {
-    width: clamp(10em,100%,75ch);
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 0 0 0.5em 0.5em;
-    box-shadow: 0 0.25em 0.5em -1em rgba(50, 0, 50, 0.2), 0 1em 3em -1em rgba(50, 0, 50, 0.2);
+}
+
+.project-notes {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 30%;
+    flex-grow: 1;
+    max-width: 75ch;
+    gap: 2em;
+}
+
+.project-note {
+    flex-grow: 1;
+    width: clamp(10em,50%,20em);
+    background: var(--color-bg-offset);
+    padding: 1em;
+    border-radius: 0.5em;
+
+    .project-note-label {
+        font-weight: bold;
+    }
 }
 
 /* SLIDE WRAPPER */
@@ -107,7 +135,7 @@
 
 /* Color Blocks */
 
-.color-block {
+.color-block:not(.color-block-offset) {
     color: var(--abs-color-util-pure);
 }
 
@@ -126,13 +154,18 @@
     border-image-outset: 0 100vw;
 }
 
+.color-block-offset::before {
+    border-image: fill 0 linear-gradient(var(--color-bg-offset),var(--color-bg-offset));
+    border-image-outset: 0 100vw;
+}
+
 
 /* SLIDE CONTENT */
 
 .slide {
     display: flex;
     max-width: 100%;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
     gap: 2em;
     padding: 2em 0;
@@ -235,6 +268,7 @@
     color: var(--color-util-pure);
     background-color: var(--color-secondary);
 }
+
 
 /* NDAs */
 

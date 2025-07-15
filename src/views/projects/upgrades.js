@@ -16,24 +16,40 @@ export default function Upgrades() {
           <div className="project-intro">
             <h1 className="project-title">Merchandising Upgrades</h1>
             <div className="project-subtitle">Automated Differentiation for 14,000 Dealers @ Cox Automotive</div>
-            <div className="project-summary">
-              Transforming how dealers market used vehicles by automatically detecting and surfacing hidden value in upgrades, saving up to 15 hours weekly and improving shopper confidence.
+            <div className="project-overview">
+              <div className="project-splash">
+                <div className="project-summary">
+                  Transforming how dealers market used vehicles by automatically detecting and surfacing hidden value in upgrades, saving up to 15 hours weekly and improving shopper confidence.
+                </div>
+                <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/upgrades.png"} alt="Final shopping solution on tablet" />
+              </div>
+              <div className="project-notes">
+                <div className="project-note project-role">
+                  <div className="project-note-label">Role</div>
+                  Lead UX Architect | Research & Discovery
+                </div>
+                <div className="project-note project-tools">
+                  <div className="project-note-label">Tools</div>
+                  Figma, UserTesting, Mural, Rally, Notion, Zoom
+                </div>
+                <div className="project-note project-timeline">
+                  <div className="project-note-label">Timeline</div>
+                  4 Months
+                </div>
+                <div className="project-note project-impact">
+                  <div className="project-note-label">Impact</div>
+                  15 hours or $600/week (~$8.4 million potential)
+                </div>
+              </div>
             </div>
-            <img className="project-hero-img" src={process.env.PUBLIC_URL + "/img/upgrades.png"} alt="Final shopping solution on tablet" />
           </div>
 
            <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes">
-                <h2>Overview</h2>
-                <ul>
-                  <li>Role: Lead UX Architect</li>
-                  <li>Tools: Figma, UserTesting platform</li>
-                  <li>Methods: User interviews, competitive analysis, data audit, iterative testing</li>
-                  <li>Scale: 14,000+ dealers, millions of vehicles</li>
-                </ul>
+                <h2>Background</h2>
                 <p>
-                  Cox Automotive serves thousands of dealers managing millions of used vehicle sales annually. With razor-thin margins under $500 per vehicle and dealers spending 15 hours weekly on manual merchandising research, we needed to automate the process of surfacing each vehicle's unique value proposition to help dealers tell compelling stories without added overhead.
+                  Cox Automotive serves thousands of dealers managing millions of used vehicle sales annually. These sales operate on razor-thin margins, often under $500 per vehicle. We suspected that, with our industry-leading data, we could give our dealers a competitive edge by helping them tell unique stories about each vehicle.
                 </p>
               </div>
             </div>
@@ -42,42 +58,37 @@ export default function Upgrades() {
           <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
-                <h2>Discovery</h2>
-                <img className="lazy-load" style={{width: "18em"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-discovery.png"} alt="Double Diamond, highlighting the problem discovery phase" />
+                 <div className="slide-wrapper color-block color-block-offset">
+                  <div className="slide stacked">
+                     <h2>Discovery</h2>
+                    <img className="lazy-load" style={{width: "75ch"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-discover.svg"} alt="Double Diamond, highlighting the problem discovery phase" />
+                  </div>
+                </div>
+                <h3>User Research</h3>
                 <p>
-                  Cox Automotive works with thousands of dealers who rely on millions of used vehicle sales every year. Marketing this fluxuating and unfamiliar inventory is time consuming and margins are razor-thin.
+                  To discover the details of this sales journey, we looked at the data from our merchandising tools and identified dealerships who were already building unique vehicle highlights. From there, I needed to uncover what the process looked like, how much time and energy went into it, and what was driving value for these dealers.
                 </p>
                 <p>
-                  What makes each vehicle stand out and how can we help dealers tell that story in a way that connects with shoppers, without added overhead?
+                  I conducted in-depth, one-on-one interviews with 5 dealership owners and marketing managers to understand their current workflows. My research revealed that, on average, these dealers spent 3 hours each day manually piecing together vehicle specifications. They needed to hunt across unfamiliar makes and models using third-party tools, looking for ways to differentiate each vehicle and optimize returns. Then they had to design and publish these details individually for every unit on their lot.
+                </p>
+                <p>
+                  To get the other side of the story, I also spoke with 7 active used vehicle shoppers, recruited through UserTesting.com. I had each shopper walk me through their current search goals, the sites they use, and share a specific listing that caught their eye. These interviews showed two distinct behaviors: feature-driven buyers seeking specific capabilities, likely at a premium, and value-driven shoppers who quickly dismiss higher-priced options if the justification isn't obvious.
                 </p>
               </div>
             </div>
           </section>
 
-          <section className="slide-wrapper slide-tilt color-block color-block-dark persona-block persona-gary">
-            <div className="slide txt-img">
-              <div className="slide-images fade-in fade-from-left">
-                <div className="image-wrapper">
-                  <img className="lazy-load" style={{width: "18em"}} lazy-src={process.env.PUBLIC_URL + "/img/upgrades-process-notes.png"} alt="Research plan checklist" />
-                </div>
-              </div>
-              <div className="slide-notes fade-in fade-from-right">
-                <div className="persona-subtitle">Persona Notes</div>
-                <h2>Gary, Merchandising Manager</h2>
+          {/* image here */}
+
+          <section className="slide-wrapper">
+            <div className="slide txt-solo">
+              <div className="slide-notes fade-in fade-from-bottom">
+                <h3>Competitive Analysis & Data Audit</h3>
                 <p>
-                  Gary markets his revolving, used vehicle inventory around common features, often relying on automatic tools and bulk operations to save time. Chasing down package data is prohibitive and would take away time from other tasks; especially when dealing with numerous makes. Without surfacing each vehicle's differentiating features or manufacturer-specific selling points, he's potentially leaving money on the table.
+                  After speaking with dealers and shoppers, we analyzed how competitors and manufacturers highlight unique features. I paid special attention to new car builders and official window stickers as informed shoppers would use these to access OEM-specific language. Prior research also told us that official OEM documents carried the highest levels of trust with shoppers, so it was worthwhile to reflect on the type of information, level of detail, and organizational structures they used.
                 </p>
                 <p>
-                  <span className="persona-list-header">Goals</span>
-                  <ul>
-                    <li>Save time</li>
-                    <li>Optimize ROI</li>
-                  </ul>
-                  <span className="persona-list-header">Pain Points</span>
-                  <ul>
-                    <li>Making compelling sales stories for each vehicle</li>
-                    <li>Creating value differentiation between similar models</li>
-                  </ul>
+                  We pulled 50 official window stickers from real vehicles and compared them against our internal data. While I identified gaps, inconsistencies, and imperfections in our API service, the audit suggested that there was enough information to tell compelling upgrade stories that would mirror what shoppers experience from other trusted sources.
                 </p>
               </div>
             </div>
@@ -96,6 +107,39 @@ export default function Upgrades() {
                 <div className="caption">
                   I evaluated the hygiene and consistency of our internal APIs.
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="slide-wrapper">
+            <div className="slide txt-solo">
+              <div className="slide-notes fade-in fade-from-bottom">
+                <h3>Problem Validation</h3>
+                <p>
+                  Our research suggested that our used vehicle sales were in fact leaving money on the table. In a market with slim margins, dealers were individually researching and crafting stories for every vehicle. Worse yet were dealers who weren't differentiating at all between similar models, leading them and their customers to undervalue or dismiss their vehicles.
+                </p>
+                <div className="slide-images fade-in fade-from-left">
+                  <div className="image-wrapper">
+                    <img className="lazy-load" style={{width: "18em"}} lazy-src={process.env.PUBLIC_URL + "/img/upgrades-process-notes.png"} alt="Research plan checklist" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="slide-wrapper">
+            <div className="slide txt-solo">
+              <div className="slide-notes fade-in fade-from-bottom">
+                 <div className="slide-wrapper color-block color-block-offset">
+                  <div className="slide stacked">
+                     <h2>Defining</h2>
+                    <img className="lazy-load" style={{width: "75ch"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-define.svg"} alt="Double Diamond, highlighting the defining phase"/>
+                  </div>
+                </div>
+                <h3>Information Architecture & Ideation</h3>
+                <p>
+                  With research insights in hand, we began exploring how to surface upgrade data within existing dealer tools. We identified three key questions: optimal placement, appropriate detail level, and shopper value perception. The existing Vehicle Intelligence 360 infrastructure provided our technical foundation, allowing us to focus on presentation and user experience rather than data collection.
+                </p>
               </div>
             </div>
           </section>
