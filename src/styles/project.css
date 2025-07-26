@@ -10,8 +10,6 @@
         NDAs
     REFLECTIONS
     INTERSECTION - FADE
-    SCROLL - TILT
-
     MEDIA QUERIES
         <= 715
         <= 400
@@ -22,15 +20,10 @@
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     position: relative;
     font-size: 1em;
     text-align: left;
-    padding: 4em 10vw 0;
-
-    p,h2,h3,h4,li {
-        max-width: 75ch;
-    }
 }
 
 /* General Spacing */
@@ -111,7 +104,6 @@
     position: relative;
     align-items: center;
     min-height: max-content;
-    /*margin-bottom: 2em;*/
 }
 
 .slide-wrapper::before {
@@ -159,13 +151,21 @@
     border-image-outset: 0 100vw;
 }
 
+.color-block.contained {
+    margin: 2em 0;
+
+    &::before {
+        border-image-outset: 1em;
+    }
+}
+
 
 /* SLIDE CONTENT */
 
 .slide {
     display: flex;
     max-width: 100%;
-    align-items: start;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 2em;
     padding: 2em 0;
@@ -199,7 +199,7 @@
 }
 
 .slide.txt-solo {
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -218,6 +218,16 @@
 .mobile-help-text {
     display: none;
     visibility: hidden;
+}
+
+.slide.heading-banner {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+    .slide-wrapper:has(&) {
+        margin-top: 4em;
+    }
 }
 
 /* Images */

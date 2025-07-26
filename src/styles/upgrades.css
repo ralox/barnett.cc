@@ -3,7 +3,8 @@
     COLOR OVERRIDES
     PERSONA SLIDES
     C-W-R MOCKS
-    FOLLOW-UP PROJECTS
+    FOOTER
+    MEDIA QUERIES
 ==================================*/
 
 
@@ -17,6 +18,31 @@
 .dark-mode .upgrades {
     --color-primary: #3e5c9c;
     --color-secondary: #3e7bc4;
+}
+
+/* DESIGN PROCESS */
+
+.upgrades .design-process {
+    font-size: clamp(12px, 2vw, 1em);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    font-weight: 800;
+    color: #848A88;
+    padding: 1em 0 2em;
+
+    .design-phase {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 0.25em;
+    }
+
+    .phase-icon {
+        display: inline;
+        height: 2.5em;
+        aspect-ratio: 1.5/1;
+    }
 }
 
 /* C-W-R MOCKS */
@@ -33,28 +59,40 @@
     min-width: 8em;
 }
 
-/* FOLLOW-UP PROJECTS */
 
-.project-group {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    gap: 2em;
+/* FOOTER */
 
-    .slide-images {
-        flex-grow: 1;
-        width: clamp(30em, 40%, 75ch);
-        box-sizing: border-box;
+.upgrades-footer {
+    position: relative;
+    min-height: 20em;
+    padding: 8em 0;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0 0 0 0;
+        border-image: url("../../public/img/vehicle-tiling-pattern.png") fill 0;
+        border-image-repeat: repeat;
+        border-image-outset: 0 100vw;
+        
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0 0 0 0;
+        border-image: linear-gradient(rgba(250,250,250,0.2),#fff 90%) fill 0;
+        border-image-repeat: repeat;
+        border-image-outset: 0 100vw;
     }
 }
 
-.upgrade-follow-up .slide-notes {
-    width: clamp(30em, 60%, 100%);
-}
+/* MEDIA QUERIES */
 
-.upgrade-follow-up .project-group .slide-images {
-    flex-grow: 1;
-    /*min-width: 25em;*/
-    /*max-width: 90vw;*/
-    width: clamp(20em, 45%, 90vw);
+@media (width <= 500px) {
+    .upgrades .design-process {
+        font-size: 1rem;
+        flex-flow: column nowrap;
+    }   
 }

@@ -44,22 +44,60 @@ export default function Upgrades() {
             </div>
           </div>
 
+          <h2>Project Overview</h2>
+
            <section className="slide-wrapper">
             <div className="slide txt-solo">
               <div className="slide-notes">
-                <h2>Background</h2>
+                <h3>Background</h3>
                 <p>
                   Cox Automotive serves thousands of dealers managing millions of used vehicle sales annually. These sales operate on razor-thin margins, often under $500 per vehicle. We suspected that, with our industry-leading data, we could give our dealers a competitive edge by helping them tell unique stories about each vehicle.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="slide-wrapper">
+            <div className="slide txt-solo">
+              <div className="slide-notes">
+                <h3>The Design Process</h3>
+                <p>
+                  The process I follow mirrors the classic Double Diamond, alternating between phases of diverging research and ideation followed by converging analysis and execution.
+                </p>
+                <div className="design-process">
+                  <div className="design-phase">
+                    Discover
+                    <img className="phase-icon" src={process.env.PUBLIC_URL + "/img/dd-discover.svg"} alt="" />
+                  </div>
+                  <div className="design-phase">
+                    Define
+                    <img className="phase-icon" src={process.env.PUBLIC_URL + "/img/dd-define.svg"} alt="" />
+                  </div>
+                  <div className="design-phase">
+                    Develop
+                    <img className="phase-icon" src={process.env.PUBLIC_URL + "/img/dd-develop.svg"} alt="" />
+                  </div>
+                  <div className="design-phase">
+                    Deliver
+                    <img className="phase-icon" src={process.env.PUBLIC_URL + "/img/dd-deliver.svg"} alt="" />
+                  </div>
+                </div>
+                <p>
+                   Each half of the process seeks to answer a basic question:
+                </p>
+                <ol>
+                  <li>Do we have the right problem?</li>
+                  <li>Do we have the right solution?</li>
+                </ol>
               </div>
             </div>
             {/* jump to solution */}
           </section>
 
           <div className="slide-wrapper color-block color-block-offset">
-            <div className="slide stacked">
-                <h2>Problem Discovery</h2>
-              <img className="lazy-load" style={{width: "75ch"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-discover.svg"} alt="Double Diamond, highlighting the problem discovery phase" />
+            <div className="slide heading-banner">
+              <h2>Problem Discovery</h2>
+              <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/dd-discover.svg"} alt="Highlighting the problem discovery phase of the double diamond" />
             </div>
           </div>
 
@@ -70,11 +108,25 @@ export default function Upgrades() {
                 <p>
                   To discover the details of this sales journey, we looked at the data from our merchandising tools and identified dealerships who were already building unique vehicle highlights. From there, I needed to uncover what the process looked like, how much time and energy went into it, and what was driving value for these dealers.
                 </p>
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/dealers.png"} alt="" 
+                  style={{
+                    float:"left",
+                    width:"clamp(15em,30%,100%",
+                    shapeOutside:"circle()",
+                  }}
+                />
                 <p>
                   I conducted in-depth, one-on-one interviews with 5 dealership owners and marketing managers to understand their current workflows. My research revealed that, on average, these dealers spent 3 hours each day manually piecing together vehicle specifications. They needed to hunt across unfamiliar makes and models using third-party tools, looking for ways to differentiate each vehicle and optimize returns. Then they had to design and publish these details individually for every unit on their lot.
                 </p>
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/shoppers.png"} alt="" 
+                  style={{
+                    float:"right",
+                    width:"clamp(15em,30%,100%)",
+                    marginRight:"10%"
+                  }}
+                />
                 <p>
-                  To get the other side of the story, I also spoke with 7 active used vehicle shoppers, recruited through UserTesting.com. I had each shopper walk me through their current search goals, the sites they use, and share a specific listing that caught their eye. These interviews showed two distinct behaviors: feature-driven buyers seeking specific capabilities, likely at a premium, and value-driven shoppers who quickly dismiss higher-priced options if the justification isn't obvious.
+                  To get the other side of the story, I also spoke with 7 active used vehicle shoppers, recruited through UserTesting. I had each shopper walk me through their current search goals, the sites they use, and share a specific listing that caught their eye. These interviews showed two distinct behaviors: <em>feature-driven shoppers</em> seeking specific capabilities, likely at a premium, and <em>value-driven shoppers</em> who quickly dismiss higher-priced options if the justification isn't obvious.
                 </p>
               </div>
             </div>
@@ -87,33 +139,32 @@ export default function Upgrades() {
               <div className="slide-notes fade-in fade-from-bottom">
                 <h3>Competitive Analysis & Data Audit</h3>
                 <p>
-                  After speaking with dealers and shoppers, we analyzed how competitors and manufacturers highlight unique features. I paid special attention to new car builders and official window stickers as informed shoppers would use these to access OEM-specific language. Prior research also told us that official OEM documents carried the highest levels of trust with shoppers, so it was worthwhile to reflect on the type of information, level of detail, and organizational structures they used.
-                </p>
-                <p>
-                  We pulled 50 official window stickers from real vehicles and compared them against our internal data. While I identified gaps, inconsistencies, and imperfections in our API service, the audit suggested that there was enough information to tell compelling upgrade stories that would mirror what shoppers experience from other trusted sources.
+                  After speaking with dealers and shoppers, we analyzed how competitors and manufacturers highlight unique features. I paid special attention to new car builders as informed shoppers would use these to access OEM-specific language; as well as official window stickers which command the highest levels of trust.
                 </p>
               </div>
-                <div className="slide img-group">
-                  <div className="image-wrapper captioned fade-in">
-                      <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/upgrades-oem-eval.png"} alt="Three major stages of ideation" />
-                      <div className="caption">
-                        We compared window stickers against our internal data, looking for gaps or deviation.
-                      </div>
-                  </div>
-                  <div className="image-wrapper captioned no-stretch fade-in">
-                    <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/upgrades-api-eval.png"} alt="New index sheet" />
-                    <div className="caption">
-                      I evaluated the hygiene and consistency of our internal APIs.
-                    </div>
-                  </div>
-                </div>
+              <div className="image-wrapper fade-from-bottom">
+                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/upgrades-oem-eval.png"} alt="Example of an official Ford window sticker with light evaluation highlights" />
+              </div>
+            </div>
+          </section>
+
+          <section className="slide-wrapper">
+            <div className="slide txt-solo">
+              <div className="slide-notes fade-in fade-from-bottom">
+                <p>
+                  The team pulled 50 official window stickers from real vehicles and we combed through looking for content patterns while checking that our internal data matched and offered enough consistency to be reliable. While I noted a handful of issues with the content, there were no glaring misalignments. We may not be able to speak eloquently about a feature, but we could reliably point it out.
+                </p>
+              </div>
+              <div className="image-wrapper fade-from-bottom">
+                <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/api-data-notes.gif"} alt="Marked-up notes on API data, such as outdated trials and incomplete feature lists" />
+              </div>
             </div>
           </section>
 
           <div className="slide-wrapper color-block color-block-offset">
-            <div className="slide stacked">
-                <h2>Problem Definition</h2>
-              <img className="lazy-load" style={{width: "75ch"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-define.svg"} alt="Double Diamond, highlighting the defining phase"/>
+            <div className="slide heading-banner">
+              <h2>Problem Definition</h2>
+              <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/dd-define.svg"} alt="Highlighting the defining phase of the double diamond"/>
             </div>
           </div>
 
@@ -121,9 +172,15 @@ export default function Upgrades() {
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
                 <h3>Synthesis</h3>
-                <div className="image-wrapper img-checklist">
-                  <img className="lazy-load" style={{width: "18em"}} lazy-src={process.env.PUBLIC_URL + "/img/upgrades-process-notes.png"} alt="Research plan checklist" />
-                </div>
+                <img className="lazy-load" 
+                    lazy-src={process.env.PUBLIC_URL + "/img/upgrades-process-notes.png"} 
+                    alt="Research plan checklist" 
+                    style={{
+                    float:"left",
+                    width:"clamp(15em,30%,100%",
+                    margin:"0 1em 1em 0"
+                  }}
+                />
                 <p>
                   Our research suggested that used vehicle sales were in fact leaving money on the table. In a market with slim margins, dealers were individually researching and crafting stories for every vehicle. Worse yet were dealers who weren't differentiating at all between similar models, leading them and their customers to undervalue or outright dismiss vehicles.
                 </p>
@@ -137,12 +194,12 @@ export default function Upgrades() {
             </div>
           </section>
 
-          <section className="slide-wrapper">
+          <section className="slide-wrapper color-block color-block-dark contained">
             <div className="slide txt-solo">
               <div className="slide-notes fade-in fade-from-bottom">
-                <h3>Opportunity</h3>
+                <h3>Added Opportunities</h3>
                 <p>
-                   While the automated nature of VI360 was a perfect fit for the initial problem, it wasn't the whole picture. We knew that we'd need two more solutions to close the gaps: one catering to wholesale buyers and another for merchandising managers. We won't explore those in detail, but here's a peek at the sibling projects:
+                   While we had a great answer for the initial problem, we knew there was a bigger picture that would require two additional solutions. The first catering to wholesale buyers and the second to merchandising managers. We won't explore those in detail, but here's a peek:
                 </p>
               </div>
               <div className="project-group">
@@ -167,9 +224,9 @@ export default function Upgrades() {
           </section>
 
           <div className="slide-wrapper color-block color-block-offset">
-            <div className="slide stacked">
-                <h2>Solution Development</h2>
-              <img className="lazy-load" style={{width: "75ch"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-develop.svg"} alt="Double Diamond, highlighting the devliver phase"/>
+            <div className="slide heading-banner">
+              <h2>Solution Development</h2>
+              <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/dd-develop.svg"} alt="Highlighting the devliver phase of the double diamond"/>
             </div>
           </div>
 
@@ -219,7 +276,7 @@ export default function Upgrades() {
             </div>
           </section>
 
-          <section className="slide-wrapper slide-tilt color-block color-block-primary">
+          <section className="slide-wrapper color-block color-block-primary contained">
             <div className="slide txt-img">
               <div className="slide-notes fade-in fade-from-left">
                 <h3>User Testing</h3>
@@ -293,15 +350,15 @@ export default function Upgrades() {
           </section>
 
           <div className="slide-wrapper color-block color-block-offset">
-            <div className="slide stacked">
-                <h2>Solution Delivery</h2>
-              <img className="lazy-load" style={{width: "75ch"}} lazy-src={process.env.PUBLIC_URL + "/img/dd-deliver.svg"} alt="Double Diamond, highlighting the problem discovery phase" />
+            <div className="slide heading-banner">
+              <h2>Solution Delivery</h2>
+              <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/dd-deliver.svg"} alt="Highlighting the problem discovery phase of the double diamond" />
             </div>
           </div>
 
           <section className="slide-wrapper color-block color-block-dark">
             <div className="slide img-group stacked">
-              <h2>Final Solution</h2>
+              <h3>Final Solution</h3>
               <p>
                 By leveraging existing data, we created scannable upgrade lists that help dealers justify premium pricing while giving shoppers confidence in their purchasing decisions. The solution integrates seamlessly into existing dealer and shopper workflows without additional data entry or maintenance.
               </p>
@@ -313,9 +370,9 @@ export default function Upgrades() {
             </div>
           </section>
 
-          
-
-          {/* next up... continue navigating with widget */}
+          <section className="upgrades-footer">
+            {/* next up... continue navigating with widget */}
+          </section>
 
         </article>
       </div>

@@ -2,14 +2,19 @@
   INDEX
     HEADER LOGO
     HEADER NAV
-    MAIN
+    MAIN / ARTICLE
     GALLERY
     FOOTER
     NOT FOUND (404)
+    MEDIA QUERIES
 ==================================*/
 
 .App {
   text-align: center;
+}
+
+ p,h2,h3,h4,li {
+    max-width: 75ch;
 }
 
 /* HEADER LOGO */
@@ -105,10 +110,11 @@
   margin-left: 0.5em;
 }
 
-/* MAIN */
+/* MAIN / ARTICLE */
 
-main {
-  padding: 8em 10vw 0;
+main, article {
+  max-width: 1440px;
+  margin: 8em 10vw 0;
 }
 
 /* GALLERY */
@@ -179,4 +185,13 @@ main {
 
 .not-found .page-title {
   margin-bottom: 1em;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (width >= 1440px) {
+  main, article {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
