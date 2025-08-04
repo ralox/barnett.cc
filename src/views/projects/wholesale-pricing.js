@@ -12,7 +12,7 @@ export default function WholesalePricing() {
   return (
     <SlideObserver>
       <div className="page-wrapper">
-        <article className="wholesale-pricing project">
+        <main className="wholesale-pricing project">
           <div className="project-intro">
             <h1 className="project-title">Wholesale Auto Pricing</h1>
             <div className="project-subtitle">Internal Tools @ Cox Automotive</div>
@@ -48,7 +48,7 @@ export default function WholesalePricing() {
             </div>
           </section>
           */}
-        </article>
+        </main>
       </div>
     </SlideObserver>
   );

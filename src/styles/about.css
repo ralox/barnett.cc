@@ -12,11 +12,15 @@
 /* BASE */
 
 .about {
-  font-size: 1rem;
+  font-size: 1em;
   max-width: 180ch;
   min-height: 50vh;
   text-align: left;
-  padding: 8em 10vw 0;
+  margin: 8em 10vw 0;
+
+  h2,h3,p {
+    max-width: 75ch;
+  }
 }
 
 
@@ -25,7 +29,7 @@
 .about .bio-photo {
   width: clamp(15em, 25vw, 30em);
   aspect-ratio: 14/17;
-  border-radius: 4px;
+  border-radius: var(--static-radius-small);
   z-index: 5;
   float: right;
   margin: 0 0 2em 2em;
@@ -75,7 +79,7 @@
   left: 0.25em;
   padding: 0.2em 0.8em;
   width: auto;
-  border-radius: 1em 1em 1em 0;
+  border-radius: var(--static-radius-large) var(--static-radius-large) var(--static-radius-large) 0;
   background: #444;
   color: #fff;
 }
@@ -92,7 +96,7 @@
   flex-wrap: wrap;
   flex-basis: 30%;
   list-style: none;
-  gap: 0.5em;
+  gap: var(--static-spacing-xsmall);
   padding: 0;
 }
 
@@ -105,7 +109,7 @@
 .bio-skills .skill-pill {
   color: #000;
   padding: 0.25em 1em;
-  border-radius: 4em;
+  border-radius: var(--static-radius-xlarge);
   background-color: var(--color-primary-light);
 }
 
@@ -115,13 +119,13 @@
   margin: 4em 0 2em;
   padding: 1em;
   background-color: var(--color-bg-offset);
-  border-radius: 4px;
+  border-radius: var(--static-radius-small);
 }
 
 .bio-background-links {
   display: flex;
   flex-flow: row wrap;
-  gap: 1em;
+  gap: var(--static-spacing-small);
 }
 
 .role-list {
@@ -138,7 +142,7 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  gap: 0.5em;
+  gap: var(--static-spacing-xsmall);
   margin-bottom: 0.5em;
 }
 
@@ -148,6 +152,7 @@
 
 /* MEDIA QUERIES */
 
+/*
 @media (width >= 2500px) {
   .about {
     width: 1200px;
@@ -155,6 +160,7 @@
     margin: auto;
   }
 }
+*/
 
 @media screen and (width <= 450px) {
   .about .bio-photo {

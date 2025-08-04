@@ -16,7 +16,7 @@ export default function About() {
           <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait of Dave"/>
           <h2>Career</h2>
           <p>
-            I'm a product creator with deep expertise in technical execution and user validation but I'm also passionate about direct user research and collaborative product workshops. As of 2025, I've spent 2 years automating tests, 4 years developing UIs, and a combined <em>12 years designing</em> at both startups and Fortune 500s.
+            Hi, I'm Dave, a product creator with deep expertise in technical execution and user validation who's also passionate about direct user research and collaborative product workshops. As of 2025, I've spent 3 years testing, 4 years developing UIs, and a combined <em>12 years designing</em> at both startups and Fortune 500s.
           </p>
           <p>
             What I love most is building dynamic, scalable, and durable design systems and tools.

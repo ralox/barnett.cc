@@ -12,7 +12,7 @@ export default function ManageLiability() {
   return (
     <SlideObserver>
       <div className="page-wrapper">
-        <article className="manage-liability project">
+        <main className="manage-liability project">
           <div className="project-intro">
             <h1 className="project-title">Wholesale Auto Liability</h1>
             <div className="project-subtitle">Feature Design @ Cox Automotive</div>
@@ -48,7 +48,7 @@ export default function ManageLiability() {
             </div>
           </section>
           */}
-        </article>
+        </main>
       </div>
     </SlideObserver>
   );

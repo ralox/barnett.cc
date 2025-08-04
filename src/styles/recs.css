@@ -66,9 +66,9 @@
 
 .rec-detail-wrapper {
   font-size: clamp(12px, 1vw + 1rem, 18px);
-  border-image: fill 0 linear-gradient(var(--abs-color-bg-dark),var(--abs-color-bg-dark));
+  border-image: fill 0 linear-gradient(var(--static-color-grey-37),var(--static-color-grey-37));
   border-image-outset: 0 100vw;
-  color: var(--abs-color-util-pure);
+  color: var(--static-color-grey-238);
   padding: 1em 2em;
 }
 
@@ -86,7 +86,7 @@
 .rec-title {
   font-size: 0.9em;
   font-weight: 300;
-  color: var(--color-primary-light);
+  color: var(--static-color-gold);
 }
 
 .rec-quote {
