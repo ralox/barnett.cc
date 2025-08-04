@@ -67,7 +67,7 @@
     flex-flow: column nowrap;
     list-style: none;
     padding: 0;
-    gap: 1em;
+    gap: var(--static-spacing-small);
   }
 }
 
@@ -75,11 +75,11 @@
   display: block;
   width: fit-content;
   align-self: end;
-  color: var(--abs-color-text-dark);
+  color: var(--static-color-black);
   font-weight: 350;
   padding: 0.5em 1.25em;
-  border-radius: 4em;
-  background-color: var(--color-secondary-light);
+  border-radius: var(--static-radius-xlarge);
+  background-color: var(--color-primary-light);
 }
 
 /* GALLERY */
@@ -88,7 +88,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 3em;
+  gap: var(--static-spacing-medium);
 }
 
 .work .gallery-item {
@@ -96,14 +96,14 @@
   flex-grow: 1;
   display: flex;
   flex-flow: row wrap;
-  gap: 2em;
+  gap: var(--static-spacing-medium);
   align-items: center;
   padding: 1em;
   text-align: left;
   transition: all 500ms;
   color: inherit;
   background-color: var(--color-bg-offset);
-  border-radius: 0.5em;
+  border-radius: var(--static-radius-small);
   box-sizing: border-box;
 }
 
@@ -137,7 +137,7 @@
   cursor: pointer;
   background-color: var(--color-util-pure-80);
   box-shadow: var(--shadow-default);
-  border-radius: 4px;
+  border-radius: var(--static-radius-small);
   transform: scale(1.05);
 }
 

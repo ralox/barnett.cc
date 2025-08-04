@@ -11,7 +11,7 @@ export default function Aria() {
   return (
     <SlideObserver>
       <div className="page-wrapper">
-        <article className="aria project">
+        <main className="aria project">
           <div className="project-intro">
             <h1 className="project-title">ARIA</h1>
             <div className="project-subtitle">New Product Design and Development @ Quavo</div>
@@ -232,7 +232,7 @@ export default function Aria() {
               </div>
             </div>
           </section>
-        </article>
+        </main>
       </div>
     </SlideObserver>
   );

@@ -1,11 +1,12 @@
 .advanced-components {
   font-size: clamp(12px, 1vw + 1rem, 24px);
-  padding: 4em 2em 2em;
-  margin-bottom: 4em;
+  padding: var(--static-spacing-medium);
+  margin-top: var(--static-spacing-large);
+  margin-bottom: var(--static-spacing-large);
 }
 
 .advanced-components .project-summary {
-  border-radius: 0.5em;
+  border-radius: var(--static-radius-small);
   margin: 1em auto;
 }
 
@@ -20,7 +21,7 @@
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  gap: 2em;
+  gap: var(--static-spacing-medium);
 }
 
 .advanced-components .gallery-item:nth-child(odd) {

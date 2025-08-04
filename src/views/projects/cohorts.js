@@ -11,7 +11,7 @@ export default function Cohorts() {
   return (
     <SlideObserver>
       <div className="page-wrapper">
-        <article className="cohorts project">
+        <main className="cohorts project">
           <div className="project-intro">
             <h1 className="project-title">Financial Model Cohorts</h1>
             <div className="project-subtitle">Feature Design @ Mosaic</div>
@@ -338,7 +338,7 @@ export default function Cohorts() {
             </div>
           </section>
 
-        </article>
+        </main>
       </div>
     </SlideObserver>
   );

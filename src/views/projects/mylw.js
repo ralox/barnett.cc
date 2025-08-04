@@ -11,7 +11,7 @@ export default function MyLW() {
   return (
     <SlideObserver>
       <div className="page-wrapper">
-        <article className="mylw project">
+        <main className="mylw project">
           <div className="project-intro">
             <h1 className="project-title">My Liquid Web</h1>
             <div className="project-subtitle">Customer Portal Redesign @ Liquid Web</div>
@@ -245,7 +245,7 @@ export default function MyLW() {
             </div>
           </section>
 
-        </article>
+        </main>
       </div>
     </SlideObserver>
   );
