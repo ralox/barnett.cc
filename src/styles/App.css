@@ -35,6 +35,10 @@ h2,h3,p,ol,ul {
   transition: background-color 1s;
 }
 
+.dark-mode .page-header {
+  background-color: rgba(17,17,17,0.8);
+}
+
 .page-header:hover {
   background-color: var(--color-util-pure);
 }
