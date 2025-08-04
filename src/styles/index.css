@@ -1,6 +1,6 @@
 /*==================================
   INDEX
-    DEFAULT VARS
+    VARIABLES
     DARK MODE
 
     RESETS
@@ -20,100 +20,104 @@
 
 
 /* 
-  DEFAULT VARS
+  VARIABLES
 */
 :root {
-  --abs-color-bg: rgb(254, 254, 254);
-  --color-bg: var(--abs-color-bg);
+  /* Static Tokens */
+  --static-color-white: rgb(255, 255, 255);
+  --static-color-grey-238: rgb(238, 238, 238);
+  --static-color-grey-187: rgb(187, 187, 187);
+  --static-color-grey-110: rgb(110, 110, 110);
+  --static-color-grey-68: rgb(68, 68, 68);
+  --static-color-grey-48: rgb(48, 48, 48);
+  --static-color-grey-37: rgb(37, 37, 37);
+  --static-color-black: rgb(17, 17, 17);
 
-  --abs-color-bg-dark: rgb(17, 17, 17);
-  --color-bg-dark: var(--abs-color-bg-dark);
+  --static-color-blue-light: rgb(176 222 255);
+  --static-color-blue-medium: rgb(70, 159, 222);
+  --static-color-blue-dark: rgb(71, 108, 135);
 
-  --abs-color-bg-offset: rgb(238, 238, 238);
-  --color-bg-offset: var(--abs-color-bg-offset);
+  --static-color-purple-light: rgb(206, 120, 222);
+  --static-color-purple-medium: rgb(157, 86, 169);
+  --static-color-purple-dark: rgb(122, 59, 133);
 
-  --abs-color-primary: rgb(46, 154, 160);
-  --color-primary: var(--abs-color-primary);
-
-  --abs-color-primary-dark: rgb(73, 128, 131);
-  --color-primary-dark: rgb(73, 128, 131);
-
-  --abs-color-primary-light: rgb(94, 204, 210);
-  --color-primary-light: var(--abs-color-primary-light);
-
-  --abs-color-primary-offset: rgb(157, 86, 169);
-  --color-primary-offset: var(--abs-color-primary-offset);
-
-  --abs-color-secondary: rgb(70, 159, 222);
-  --color-secondary: var(--abs-color-secondary);
+  --static-color-gold: rgb(214, 166, 70);
   
-  --abs-color-secondary-dark: rgb(71, 108, 135);
-  --color-secondary-dark: var(--abs-color-secondary-dark);
+  --static-purple-shadow: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
 
-  --abs-color-secondary-light: rgb(176 222 255);
-  --color-secondary-light: var(--abs-color-secondary-light);
+  --static-font-noto-sans: "Noto Sans", 'Open Sans', sans-serif;
+  --static-font-noto-serif: "Noto Serif", serif;
 
-  --abs-color-text-default: rgb(68, 68, 68);
-  --color-text-default: var(--abs-color-text-default);
+  --static-spacing-xsmall: 0.5em;
+  --static-spacing-small: 1em;
+  --static-spacing-medium: 2em;
+  --static-spacing-large: 4em;
+  --static-spacing-xlarge: 8em;
 
-  --abs-color-text-dark: rgb(17, 17, 17);
-  --color-text-dark: var(--abs-color-text-dark);
+  --static-radius-small: 0.25em;
+  --static-radius-medium: 0.5em;
+  --static-radius-large: 1em;
+  --static-radius-xlarge: 4em;
 
-  --abs-color-text-soft: rgb(110, 113, 113);
-  --color-text-soft: var(--abs-color-text-soft);
+  
 
-  --abs-color-text-light: rgb(187, 187, 187);
-  --color-text-light: var(--abs-color-text-light);
+  /* Dynamic & Semantic Vars */
+  --color-bg: var(--static-color-white);
+  --color-bg-dark: var(--static-color-black);
+  --color-bg-offset: var(--static-color-grey-238);
 
-  --abs-color-util-pure: rgb(255, 255, 255);
-  --color-util-pure: var(--abs-color-util-pure);
+  --color-primary-light: var(--static-color-blue-light);
+  --color-primary: var(--static-color-blue-medium);
+  --color-primary-dark: var(--static-color-blue-dark);
 
-  --abs-color-util-pure-80: rgba(255, 255, 255, 0.8);
-  --color-util-pure-80: var(--abs-color-util-pure-80);
+  --color-secondary-light: var(--static-color-purple-light);
+  --color-secondary: var(--static-color-purple-medium);
+  --color-secondary-dark: var(--static-color-purple-dark);
 
-  --abs-color-text-good: rgb(59, 97, 158);
-  --color-text-good: var(--abs-color-text-good);
+  --color-text-default: var(--static-color-grey-68);
+  --color-text-dark: var(--static-color-black);
+  --color-text-soft: var(--static-color-grey-110);
+  --color-text-light: var(--static-color-grey-187);
+  --color-util-pure: var(--static-color-white);
+  --shadow-default: var(--static-purple-shadow);
 
-  --abs-color-text-bad: rgb(173, 92, 38);
-  --color-text-bad: var(--abs-color-text-bad);
-
-  --abs-shadow-default: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
-  --shadow-default: 0 0.25em 0.5em rgba(50, 0, 50, 0.2), 0 1em 3em -0.5em rgba(50, 0, 50, 0.2);
-
-  /* fonts */
   --font-base: "Noto Sans", 'Open Sans', sans-serif;
   --font-feature: "Noto Serif", serif;
+  --color-link: var(--color-primary-dark);
+  --color-active: var(--static-color-purple);
 
-  /* These fonts can be modified with:
+  /* Fonts
+
+    fonts can be modified with:
     *  font-optical-sizing: auto;
     *  font-weight: <weight>;
     *  font-style: normal;
     *  font-variation-settings:
         "wdth" 100;
   */
-
-  /* Tokens */
-  --color-link: var(--color-primary-dark);
+  --font-base: var(--static-font-noto-sans);
+  --font-feature: var( --static-font-noto-serif);
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 
 }
 
 /*
   DARK MODE
+
+  Overrides for dark mode
 */
 .dark-mode {
-  --color-bg: rgb(37, 37, 37);
-  --color-bg-dark: rgb(254, 254, 254);
-  --color-bg-offset: rgb(48, 48, 48);
-  --color-text-default: var(--abs-color-text-light);
-  --color-text-dark: var(--abs-color-text-light);
+  --color-bg: var(--static-color-grey-37);
+  --color-bg-dark: var(--static-color-grey-187);
+  --color-bg-offset: var(--static-color-grey-48);
+  --color-text-default: var(--static-color-grey-187);
+  --color-text-dark: var(--static-color-grey-187);
   --color-primary: var(--color-primary-dark);
-  --color-util-pure: rgb(0, 0, 0);
-  --color-util-pure-80: rgba(0, 0, 0, 0.8);
-  --color-text-good: rgb(107, 160, 245);
-  --color-text-bad: rgb(231, 145, 89);
+  --color-util-pure: var(--static-color-black);
   --shadow-default: 0 0.25em 0.5em rgba(15, 30, 50, 0.4), 0 1em 3em -0.5em rgba(15, 30, 50, 0.4);
-
   --color-link:  var(--color-secondary);
+  --color-active: var(--color-secondary-light);
 }
 
 
@@ -203,7 +207,7 @@ body {
   INTERACTION CORE
 */
 :focus {
-  outline: 1px dotted var(--color-primary-offset);
+  outline: 1px dotted var(--color-active);
 }
 
 a {
@@ -212,11 +216,7 @@ a {
 }
 
 a:where(:hover,:focus,:active) {
-  color: var(--color-primary-offset);
-}
-
-.dark-mode a:where(:hover,:focus,:active) {
-  color: var(--color-primary-light);
+  color: var(--color-active);
 }
 
 
@@ -244,6 +244,5 @@ h2 {
   CODE BLOCK
 */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
 }

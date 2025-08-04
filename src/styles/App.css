@@ -13,8 +13,8 @@
   text-align: center;
 }
 
- p,h2,h3,h4,li {
-    max-width: 75ch;
+h2,h3,p,ol,ul {
+  max-width: 75ch;
 }
 
 /* HEADER LOGO */
@@ -22,7 +22,7 @@
 .page-header {
   position: fixed;
   inset: 0 0 auto 0;
-  background-color: var(--color-util-pure-80);
+  background-color: rgba(255,255,255,0.8);
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
@@ -60,11 +60,11 @@
 }
 
 .page-header .nav-link:is(:hover,:active,:focus) {
-  color: var(--color-primary-offset);
+  color: var(--color-active);
 
   .inline-icon path {
-    stroke: var(--color-primary-offset);
-    fill: var(--color-primary-offset);
+    stroke: var(--color-active);
+    fill: var(--color-active);
   }
 }
 
@@ -110,9 +110,9 @@
   margin-left: 0.5em;
 }
 
-/* MAIN / ARTICLE */
+/* MAIN */
 
-main, article {
+main {
   max-width: 1440px;
   margin: 8em 10vw 0;
 }
@@ -132,7 +132,7 @@ main, article {
 
 .gallery-photo img,
 .gallery-video {
-  border-radius: 4px;
+  border-radius: var(--static-radius-small);
 }
 
 .gallery-detail :is(p, ul) {
@@ -155,7 +155,7 @@ main, article {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 1em;
+  gap: var(--static-spacing-small);
   margin: 1em auto;
 }
 
@@ -189,8 +189,8 @@ main, article {
 
 /* MEDIA QUERIES */
 
-@media screen and (width >= 1440px) {
-  main, article {
+@media screen and (width >= 2016px) {
+  main {
     margin-left: auto;
     margin-right: auto;
   }

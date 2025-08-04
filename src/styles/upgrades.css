@@ -3,6 +3,7 @@
     COLOR OVERRIDES
     PERSONA SLIDES
     C-W-R MOCKS
+    MICRO-CARD
     FOOTER
     MEDIA QUERIES
 ==================================*/
@@ -23,24 +24,24 @@
 /* DESIGN PROCESS */
 
 .upgrades .design-process {
-    font-size: clamp(12px, 2vw, 1em);
     display: flex;
-    flex-flow: row nowrap;
-    gap: 1em;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: var(--static-spacing-medium);
+}
+
+.upgrades .design-phase {
     font-weight: 800;
-    color: #848A88;
-    padding: 1em 0 2em;
-
-    .design-phase {
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        gap: 0.25em;
-    }
-
+    color: var(--color-text-soft);
+    width: fit-content;
+    min-width: 13em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+    
     .phase-icon {
         display: inline;
-        height: 2.5em;
         aspect-ratio: 1.5/1;
     }
 }
@@ -57,6 +58,86 @@
     flex-grow: 1;
     width: clamp(8em, 30%, 100%);
     min-width: 8em;
+}
+
+.word-cloud {
+    max-width: 75ch;
+    margin: var(--static-spacing-medium) auto;
+}
+
+/* MICRO-CARD */
+/* 
+    TODO: move this to project space or component
+*/
+
+.micro-card-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    min-width: 10em;
+    gap: 1em;
+}
+
+.micro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    font-family: var(--font-feature);
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-text-soft);
+    flex-basis: 10em;
+    width: max-content;
+    aspect-ratio: 1/1;
+    border-image: url("../../public/img/border-sketch-1.svg") fill 0;
+
+    &:nth-child(+2) {
+        border-image: url("../../public/img/border-sketch-2.svg") fill 0;
+    }
+
+    &:nth-child(+3) {
+        border-image: url("../../public/img/border-sketch-3.svg") fill 0;
+    }
+
+    &:nth-child(+4) {
+        border-image: url("../../public/img/border-sketch-4.svg") fill 0;
+    }
+
+    .micro-card-label {
+        /* nothing yet... */
+    }
+
+    .micro-card-data {
+        font-size: 2em;
+    }
+
+    .callout-block &,
+    .color-block & {
+        color: var(--color-text-white);
+    }
+}
+
+.callout-block .micro-card,
+.color-block .micro-card {
+    border-image: url("../../public/img/border-sketch-1-white.svg") fill 0;
+
+    &:nth-child(+2) {
+        border-image: url("../../public/img/border-sketch-2-white.svg") fill 0;
+    }
+
+    &:nth-child(+3) {
+        border-image: url("../../public/img/border-sketch-3-white.svg") fill 0;
+    }
+
+    &:nth-child(+4) {
+        border-image: url("../../public/img/border-sketch-4-white.svg") fill 0;
+    }
+}
+
+.api-audit,
+.window-sticker {
+    min-width: 30em;
 }
 
 
@@ -88,7 +169,19 @@
     }
 }
 
+.dark-mode .upgrades-footer::after {
+    border-image: linear-gradient(rgba(0,0,0,0.2),#000 90%) fill 0;
+    border-image-repeat: repeat;
+    border-image-outset: 0 100vw;
+}
+
 /* MEDIA QUERIES */
+
+@media (width <= 1160px) {
+    .upgrades .design-phase {
+        flex-basis: 40%;
+    }   
+}
 
 @media (width <= 500px) {
     .upgrades .design-process {
