@@ -5,6 +5,7 @@
     BIO
     SKILLS
     BACKGROUND
+    ROLE TIMELINE
     MEDIA QUERIES
         <= 985
 ==================================*/
@@ -116,39 +117,119 @@
 /* BACKGROUND */
 
 .bio-background {
-  margin: 4em 0 2em;
-  padding: 1em;
+  margin: var(--static-spacing-medium) 0 var(--static-spacing-medium);
+  padding: var(--static-spacing-medium);
   background-color: var(--color-bg-offset);
   border-radius: var(--static-radius-small);
+
+  .section-title,
+  .role-org {
+    height: 0;
+    opacity: 0;
+  }
 }
 
 .bio-background-links {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--static-spacing-small);
+  justify-content: center;
+  gap: var(--static-spacing-large);
 }
 
-.role-list {
+/* ROLE TIMELINE */
+
+.about .role-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
   list-style: none;
   padding: 0;
   margin-top: 1em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid var(--color-text-dark);
+  }
 }
 
-.role-item {
-  margin-bottom: 1em;
-}
-
-.role-header {
+.about .role-item {
+  position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   align-items: center;
-  gap: var(--static-spacing-xsmall);
-  margin-bottom: 0.5em;
+  gap: var(--static-spacing-medium);
 }
 
-.role-org::before {
-  content: "@ ";
+.about .role-card-wrapper,
+.about .role-recs {
+  width: 50%;
 }
+
+.about .role-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: var(--static-spacing-medium);
+}
+
+.about .role-card {
+  width: clamp(15em, 25vw, 20em);
+  background: var(--color-bg-dark);
+  color: var(--color-util-pure);
+  border-radius: var(--static-radius-small);
+  overflow: hidden;
+
+  .dark-mode & {
+    background: var(--static-color-grey-68);
+  }
+}
+
+.about .org-logo {
+  max-width: 80%;
+  margin: var(--static-spacing-small) auto var(--static-spacing-small);
+}
+
+.about .role-title {
+  width: 100%;
+  text-align: center;
+  padding: var(--static-spacing-small);
+  background: var(--static-color-grey-48);
+
+  .dark-mode & {
+    background: var(--static-color-grey-110);
+  }
+}
+
+.about .role-year {
+  position: absolute;
+  right: calc(50% - 2.5em);
+  bottom: 1.5em;
+  color: var(--color-text-dark);
+  padding: var(--static-spacing-xsmall);
+  width: 5em;
+  text-align: center;
+  background-color: var(--color-bg-offset);
+}
+
+.about .role-item:nth-child(2n+0) {
+  flex-direction: row-reverse;
+
+    .role-card-wrapper {
+      justify-content: start;
+    }
+
+    .role-year {
+      left: calc(50% - 2.5em);
+    }
+
+}
+
 
 /* MEDIA QUERIES */
 
@@ -161,11 +242,40 @@
   }
 }
 */
+@media screen and (width <= 875px) {
+  .about .role-year {
+    bottom: -2em;
+  }
+}
+
+@media screen and (width <= 875px) {
+  .about .role-card-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 @media screen and (width <= 450px) {
   .about .bio-photo {
     float: none;
     width: 100%;
     margin: 0 0 2em;
+  }
+
+  .about .bio-background-links {
+    gap: var(--static-spacing-small)
+  }
+
+  .about .role-card-wrapper {
+    width: auto;
+  }
+
+  .about .role-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .role-item:nth-child(2n+0) {
+    flex-direction: column;
   }
 }

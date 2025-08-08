@@ -116,7 +116,7 @@
   --color-primary: var(--color-primary-dark);
   --color-util-pure: var(--static-color-black);
   --shadow-default: 0 0.25em 0.5em rgba(15, 30, 50, 0.4), 0 1em 3em -0.5em rgba(15, 30, 50, 0.4);
-  --color-link:  var(--color-secondary);
+  --color-link:  var(--color-primary-light);
   --color-active: var(--color-secondary-light);
 }
 
