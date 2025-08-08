@@ -65,7 +65,7 @@ export default function Recs() {
       id: 2,
       recName:"John Woodruff",
       imgSrc:"john.png",
-      recTitle:"Senior Software Engineer - Mosaic",
+      recTitle:"Team Lead Engineer - HiBob",
       recQuote:"Dave is one of the best designers I've ever worked with... As both a designer and a person I would work with Dave again in a heartbeat."
     },
     {
@@ -79,7 +79,7 @@ export default function Recs() {
       id: 4,
       recName:"Jeffrey Riggle",
       imgSrc:"riggle.png",
-      recTitle:"Staff Software Engineer - Mosaic",
+      recTitle:"Tech Lead - HiBob",
       recQuote:"Dave is an absolute rockstar designer. He has an unbelievable talent for taking complex and abstract problems and boiling them down to solid, well understood, and high fidelity mocks."
     },
   ]

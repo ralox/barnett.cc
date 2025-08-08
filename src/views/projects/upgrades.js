@@ -109,23 +109,11 @@ export default function Upgrades() {
                   <p>
                     To discover the details of this sales journey, we looked at the data from our merchandising tools and identified dealerships who were already building unique vehicle highlights. From there, I needed to uncover what the process looked like, how much time and energy went into it, and what was driving value for these dealers.
                   </p>
-                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/dealers.png"} alt="" 
-                    style={{
-                      float:"left",
-                      width:"clamp(15em,30%,100%",
-                      shapeOutside:"circle()",
-                    }}
-                  />
+                  <img className="lazy-load illustration-dealers" lazy-src={process.env.PUBLIC_URL + "/img/dealers.png"} alt=""/>
                   <p>
                     I conducted in-depth, one-on-one interviews with 5 dealership owners and marketing managers to understand their current workflows. My research revealed that, on average, these dealers spent 3 hours each day manually piecing together vehicle specifications. They needed to hunt across unfamiliar makes and models using third-party tools, looking for ways to differentiate each vehicle and optimize returns. Then they had to design and publish these details individually for every unit on their lot.
                   </p>
-                  <img className="lazy-load" lazy-src={process.env.PUBLIC_URL + "/img/shoppers.png"} alt="" 
-                    style={{
-                      float:"right",
-                      width:"clamp(15em,30%,100%)",
-                      marginRight:"10%"
-                    }}
-                  />
+                  <img className="lazy-load illustration-shoppers" lazy-src={process.env.PUBLIC_URL + "/img/shoppers.png"} alt=""/>
                   <p>
                     To get the other side of the story, I also spoke with 7 active used vehicle shoppers, recruited through UserTesting. I had each shopper walk me through their current search goals, the sites they use, and share a specific listing that caught their eye. These interviews showed two distinct behaviors: <em>feature-driven shoppers</em> seeking specific capabilities, likely at a premium, and <em>value-driven shoppers</em> who quickly dismiss higher-priced options if the justification isn't obvious.
                   </p>

@@ -46,6 +46,17 @@
     }
 }
 
+.illustration-dealers {
+    float: left;
+    width: clamp(15em,30%,100%);
+    shape-outside: circle();
+}
+
+.illustration-shoppers {
+    float: right;
+    width: clamp(15em,30%,100%);
+}
+
 /* C-W-R MOCKS */
 
 .upgrades-crawl-walk-run-inset {
@@ -187,5 +198,13 @@
     .upgrades .design-process {
         font-size: 1rem;
         flex-flow: column nowrap;
-    }   
+    }
+
+    .illustration-dealers {
+        float: none;
+    }
+    .illustration-shoppers {
+        float: none;
+        justify-self: end;
+    }
 }
