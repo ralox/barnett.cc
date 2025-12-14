@@ -29,7 +29,7 @@
 
 .about .bio-photo {
   width: clamp(15em, 25vw, 30em);
-  aspect-ratio: 14/17;
+  aspect-ratio: 1117/1124;
   border-radius: var(--static-radius-small);
   z-index: 5;
   float: right;

@@ -15,7 +15,7 @@ export default function Work() {
           <div className="intro-bio">
             <img className="intro-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait of Dave"/>
             <h1 className="page-title">Product leader <br/>Designer <br/>& Developer</h1>
-            <p className="details">With 12 years of experience solving <br/>complex design challenges and <br/>mastering new tools and tech stacks</p>
+            <p className="details">With 12+ years of experience solving <br/>complex design challenges and <br/>mastering new tools and tech stacks</p>
           </div>
           <div className="intro-callouts">
             <p>Let me help with</p>

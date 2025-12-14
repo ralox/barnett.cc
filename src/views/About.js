@@ -13,13 +13,13 @@ export default function About() {
       <main className="about">
         <h1 class="page-title">About Me</h1>
         <div className="bio">
-          <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/port-blue.png"} alt="Portrait of Dave"/>
+          <img className="bio-photo" src={process.env.PUBLIC_URL +  "/img/happy-dave.png"} alt="Portrait of Dave"/>
           <h2>Career</h2>
           <p>
             Hi, I'm Dave, a product creator with deep expertise in technical execution and user validation who's also passionate about direct user research and collaborative product workshops. As of 2025, I've spent 3 years testing, 4 years developing UIs, and a combined <em>12 years designing</em> at both startups and Fortune 500s.
           </p>
           <p>
-            What I love most is building dynamic, scalable, and durable design systems and tools.
+            What I love most is building dynamic, scalable, and durable design systems and tools that are easy to maintain and intuitive to use.
           </p>
           <h2>Personal</h2>
           <p>
@@ -27,22 +27,23 @@ export default function About() {
           </p>
           <ul className="identity">
             <li><span title="Travels">✈️ </span>  
-              <span class="country-tag" alt="Canada 2004,2018">🇨🇦</span>
-              <span class="country-tag" alt="France 2014">🇫🇷</span>
+              <span class="country-tag" alt="Canada 2004,18">🇨🇦</span>
+              <span class="country-tag" alt="France 2014,26">🇫🇷</span>
               <span class="country-tag" alt="Monaco 2014">🇲🇨</span>
               <span class="country-tag" alt="Taiwan 2015,19,22,23,24,25">🇹🇼</span>
               <span class="country-tag" alt="Japan 2015,23">🇯🇵</span>
               <span class="country-tag" alt="Germany 2019">🇩🇪</span>
               <span class="country-tag" alt="Czechia 2019">🇨🇿</span>
-              <span class="country-tag" alt="UK 2023">🇬🇧</span>
+              <span class="country-tag" alt="UK 2023,26">🇬🇧</span>
               (
-              <span class="country-tag" alt="England 2023">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+              <span class="country-tag" alt="England 2023,26">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
               <span class="country-tag" alt="Wales 2023">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
               <span class="country-tag" alt="Scotland 2023">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
               )
               <span class="country-tag" alt="Mexico 2021,22,23">🇲🇽</span>
               <span class="country-tag" alt="New Zealand 2024">🇳🇿</span>
-              <span class="country-tag" alt="Thailand 2025">🇹🇭</span>
+              <span class="country-tag" alt="Netherlands 2026">🇳🇱</span>
+              <span class="country-tag" alt="Belgium 2026">🇧🇪</span>
             </li>
             <li><span title="MBTI">🧠</span> <a href="https://www.16personalities.com/infps-at-work" target="blank">Assertive Mediator (INFP-A)</a></li>
             <li><span title="Harry Potter House">🧙🏻</span> Ravenclaw</li>
@@ -91,7 +92,7 @@ export default function About() {
                 <div className="role-card">
                   <img className="org-logo" src={process.env.PUBLIC_URL +  "/img/timeline/cox-wash-logo.png"} alt=""/>
                   <div className="role-org">Cox Automotive</div>
-                  <div className="role-title">Lead UX Architect</div>
+                  <div className="role-title">Lead Product Designer</div>
                   <div className="role-year">2023</div>
                 </div>
               </div>
@@ -113,7 +114,7 @@ export default function About() {
                 <div className="role-card">
                   <img className="org-logo" src={process.env.PUBLIC_URL +  "/img/timeline/quavo-wash-logo.png"} alt=""/>
                   <div className="role-org">Quavo, Inc.</div>
-                  <div className="role-title">Product Experience Architect</div>
+                  <div className="role-title">Product Experience Designer</div>
                   <div className="role-year">2018</div>
                 </div>
               </div>
@@ -124,7 +125,7 @@ export default function About() {
                 <div className="role-card">
                   <img className="org-logo" src={process.env.PUBLIC_URL +  "/img/timeline/lw-wash-logo.png"} alt=""/>
                   <div className="role-org">Liquid Web</div>
-                  <div className="role-title">User Experience Designer</div>
+                  <div className="role-title">UX Designer</div>
                   <div className="role-year">2013</div>
                 </div>
               </div>
