@@ -40,7 +40,7 @@ export default function About() {
               <span class="country-tag" alt="Wales 2023">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
               <span class="country-tag" alt="Scotland 2023">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
               )
-              <span class="country-tag" alt="Mexico 2021,22,23">🇲🇽</span>
+              <span class="country-tag" alt="Mexico 2021,22,23,26">🇲🇽</span>
               <span class="country-tag" alt="New Zealand 2024">🇳🇿</span>
               <span class="country-tag" alt="Netherlands 2026">🇳🇱</span>
               <span class="country-tag" alt="Belgium 2026">🇧🇪</span>
@@ -87,6 +87,17 @@ export default function About() {
             </a>
           </div>
           <ul className="role-list">
+            <li className="role-item">
+              <div className="role-card-wrapper">
+                <div className="role-card">
+                  <img className="org-logo" src={process.env.PUBLIC_URL +  "/img/timeline/sw-wash-logo.png"} alt=""/>
+                  <div className="role-org">Signalwire</div>
+                  <div className="role-title">Product Designer</div>
+                  <div className="role-year">2026</div>
+                </div>
+              </div>
+              <div className="role-recs"></div>
+            </li>
             <li className="role-item">
               <div className="role-card-wrapper">
                 <div className="role-card">
