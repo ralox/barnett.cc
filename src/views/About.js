@@ -53,13 +53,15 @@ export default function About() {
           <h2 className="section-title">Skills</h2>
           <ul>
             <li className="skill-pill key-skill">UI & Interaction Design</li>
-            <li className="skill-pill key-skill">Figma</li>
             <li className="skill-pill key-skill">Prototyping</li>
             <li className="skill-pill key-skill">Usability Testing</li>
             <li className="skill-pill key-skill">Research & Design Thinking</li>
-            <li className="skill-pill key-skill">HTML & CSS</li>
             <li className="skill-pill key-skill">WCAG Accessibility</li>
-            <li className="skill-pill">Sketch / Axure</li>
+            <li className="skill-pill key-skill">Claude Code</li>
+            <li className="skill-pill key-skill">Claude Design</li>
+            <li className="skill-pill">Figma</li>
+            <li className="skill-pill">SVG Graphics</li>
+            <li className="skill-pill">HTML & CSS</li>
             <li className="skill-pill">Javascript</li>
             <li className="skill-pill">Vue.js</li>
             <li className="skill-pill">React</li>
